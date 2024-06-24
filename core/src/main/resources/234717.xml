@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<afData>
+	<afUnboundData>
+		<data>
+		</data>
+	</afUnboundData>
+	<afBoundData>
+		<brochureData
+			xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<planId>PLAN-234717</planId>
+			<language>English</language>
+			<productPlanId>PLAN-234717</productPlanId>
+			<planName>Group Accident 7000</planName>
+			<productCoverages>
+				<productCoverage>
+					<brochureNumber>example1</brochureNumber>
+					<productCoverageName>Nonoccupational Plan-AR</productCoverageName>
+					<productCoverageLevel>High</productCoverageLevel>
+				</productCoverage>
+				<productCoverage>
+					<brochureNumber>example3</brochureNumber>
+					<productCoverageName>Mental Illness Limited Benefit Insert-ID</productCoverageName>
+					<productCoverageLevel>High</productCoverageLevel>
+				</productCoverage>
+				<productCoverage>
+					<brochureNumber>example4</brochureNumber>
+					<productCoverageName>24 Hour High with Wellness Plan-HI</productCoverageName>
+					<productCoverageLevel>High</productCoverageLevel>
+				</productCoverage>
+			</productCoverages>
+		</brochureData>
+	</afBoundData>
+	<afSubmissionInfo>
+		<lastFocusItem></lastFocusItem>
+		<stateOverrides/>
+		<signers/>
+	</afSubmissionInfo>
+</afData>

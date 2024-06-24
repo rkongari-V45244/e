@@ -1,0 +1,16 @@
+{
+	"filenetCertPdk": "$[secret:filenetCertPdk]",
+	"filenetKeyStorePass": "",
+	"filenetTokenProviderURL": "$[env:filenetTokenProviderURL]",
+	"filenetTokenUser": "$[env:filenetTokenUser]",
+	"filenetDocumentsURL": "$[env:filenetDocumentsURL]",
+	"filenetDocumentsRetrieveURL": "$[env:filenetDocumentsRetrieveURL]",
+	"filenetCredsUser" : "$[env:filenetCredsUser]",
+	"filenetCredsUserPass" : "$[secret:filenetServiceUserPassword]",
+	"filenetCredsPFXPath": "certificates/$[env:filenetCredsPFXPath]",
+	"objectStore": "ACC",
+	"version": "1",
+	"insertData": "insert",
+	"asmNotification": "not send",
+	"docClass": "GRP_ACCOUNT_SETUPMAINT"
+}

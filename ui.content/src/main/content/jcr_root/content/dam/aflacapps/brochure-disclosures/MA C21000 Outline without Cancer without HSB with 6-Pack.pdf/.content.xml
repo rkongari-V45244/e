@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="862ff959-8ec2-46cb-91f0-d6987507d41b">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:56:50.391+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="Elizabeth Goodall"
+            dam:extracted="{Date}2023-09-18T19:56:48.094+05:30"
+            dam:numPages="{Long}4"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Adobe PDF Library 15.0"
+            dam:sha1="88c911defeaaf3dd584c0ac8c8579cecf6f774c0"
+            dam:size="{Long}112439"
+            dc:creator="[Elizabeth Goodall]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="\0"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Adobe PDF Library 15.0"
+            pdfx:Company="Aflac"
+            pdfx:SourceModified="D:20160713172436"
+            xmp:CreateDate="{Date}2016-07-13T22:54:56.000+05:30"
+            xmp:CreatorTool="Acrobat PDFMaker 15 for Word"
+            xmp:MetadataDate="{Date}2016-07-13T13:24:57.000-04:00"
+            xmpMM:DocumentID="uuid:beeb3d85-3fa4-425c-b5b7-c9a056db10eb"
+            xmpMM:InstanceID="uuid:714765ab-e5fa-4909-9782-23fd7ee3d450"
+            xmpMM:subject="{Long}[30]"
+            xmpMM:subject_xmpArrayType="rdf:Seq"
+            xmp:ModifyDate="{Date}2016-07-13T22:54:57.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

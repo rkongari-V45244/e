@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2024-02-02T14:50:21.665+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aflacapps/settings/wcm/templates/blank-af"
+        jcr:language="en"
+        jcr:lastModified="{Date}2021-03-24T18:22:20.809+05:30"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="brochure-automation"
+        sling:resourceType="fd/af/components/page2/aftemplatedpage">
+        <guideContainer
+            fd:version="1.1"
+            jcr:lastModified="{Date}2023-04-03T14:49:40.155+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideContainer"
+            _invokeSubmitActionSync="true"
+            actionType="fd/af/components/guidesubmittype/restendpoint"
+            autoSaveStartExpression="true"
+            autoSaveStrategyType="fd/af/components/actions/autosave/eventbased"
+            clientLibRef="aflacapps.base, cq.jquery.ui"
+            disableSwipeGesture="{Boolean}false"
+            dorType="generate"
+            enableAsyncSubmission="true"
+            enableFocusOnFirstField="{Boolean}true"
+            enableLayoutLayer="false"
+            enableServerValidation="true"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="guide1"
+            textIsRich="true"
+            thankYouMessage="Thank you for submitting the form."
+            thankYouOption="page"
+            themeRef="/content/dam/formsanddocuments-themes/aflacapps/aflac-theme"
+            useExistingAF="false">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                mobileLayout="fd/af/layouts/mobile/step"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Root Panel"
+                sling:resourceType="fd/af/components/rootPanel"
+                dorExcludeDescription="true"
+                dorExcludeTitle="true"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="{Boolean}true"
+                    toolbarPosition="Bottom"/>
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                    <guidebutton
+                        cq:cssClass="guide-1687861267957"
+                        jcr:lastModified="{Date}2023-06-28T11:07:07.698+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Home"
+                        sling:resourceType="fd/af/components/guidebutton"
+                        cssStyle=".guide-1687861267957 button:not(.af-icon-button):hover{&#xa;color:#ffffff;&#xa;background:#666666;&#xa;&#xa;}&#xa;.guide-1687861267957 button:not(.af-icon-button),.guide-1687861267957 input[type='button']{&#xa;border-top-right-radius:18px;&#xa;border-bottom-left-radius:18px;&#xa;border-bottom-right-radius:18px;&#xa;border-top-left-radius:18px;&#xa;padding-top:10px;&#xa;padding-right:0px;&#xa;padding-bottom:10px;&#xa;padding-left:0px;&#xa;margin-top:5px;&#xa;&#xa;}&#xa;.guide-1687861267957.guidebutton {&#xa;width:92px;&#xa;display:inline-block;&#xa;}&#xa;.guide-1687861267957.guidebutton button {&#xa;width:100%;&#xa;}&#xa;"
+                        dorExclusion="true"
+                        guideNodeClass="guideButton"
+                        name="homeButton"
+                        shortDescription="&lt;p>Back to Landing Page&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true]"
+                        type="Button">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="11"
+                                width="1"/>
+                        </cq:responsive>
+                        <fd:rules
+                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.homeButton&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;homeButton&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;redirectHomePage&quot;\,&quot;displayName&quot;:&quot;redirectHomePage&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nredirectHomePage();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_button
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[border-top-right-radius:18px,border-bottom-left-radius:18px,border-bottom-right-radius:18px,border-top-left-radius:18px,padding-top:10px,padding-right:0px,padding-bottom:10px,padding-left:0px,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;92px&quot;\,&quot;display&quot;:&quot;inline-block&quot;}}\,&quot;button&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton button&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;100%&quot;}}}},margin-top:5px]"
+                                default_x0023_default_x0023_ui="[display:inline-block,marginLock:linkOff,borderRadiusPopover:18px,paddingLock:linkOff,paddingPopover:10px\, 0px\, 10px\, 0px,width:92px,marginPopover:5px\, —\, —\, —]"
+                                default_x0023_hover="[color:#ffffff,background:#666666]"
+                                default_x0023_hover_x0023_ui="[backgroundColor:#666666]"/>
+                        </style>
+                    </guidebutton>
+                    <guideheader_copy_cop
+                        cq:cssClass="guide-1678694169907"
+                        jcr:lastModified="{Date}2022-07-11T09:56:22.274+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Adaptive Form Header"
+                        sling:resourceType="fd/af/components/guideheader"
+                        cssStyle=".guide-1678694169907 .afHeader{&#xa;margin-left:20px;&#xa;&#xa;}&#xa;"
+                        name="header1657513582696">
+                        <guideimage
+                            cq:cssClass="guide-1657618101148"
+                            jcr:lastModified="{Date}2022-07-30T15:23:59.998+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Logo"
+                            sling:resourceType="fd/af/components/guideimage"
+                            altText="Company Name"
+                            css="logoImage"
+                            cssStyle="\0"
+                            fileName="3Color+Pantone+pos+Aflac+Logo.png"
+                            fileReference="/content/dam/aflacapps/3Color+Pantone+pos+Aflac+Logo.png"
+                            guideNodeClass="guideImage"
+                            imageRotate="0"
+                            name="logoImage">
+                            <style jcr:primaryType="nt:unstructured">
+                                <af_headerlogo
+                                    jcr:primaryType="nt:unstructured"
+                                    default_x0023_default="[]"/>
+                            </style>
+                        </guideimage>
+                        <guidetextdraw
+                            jcr:lastModified="{Date}2023-03-10T17:00:11.174+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/components/guidetextdraw"
+                            _value="&lt;p>Welcome to Standard Brochures Automation&lt;/p>&#xd;&#xa;"
+                            css="headerText"
+                            guideNodeClass="guideTextDraw"
+                            name="headerText"
+                            textIsRich="true"/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_header
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[margin-left:20px]"
+                                default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:—\, —\, —\, 20px]"/>
+                        </style>
+                    </guideheader_copy_cop>
+                    <panel_copy
+                        cq:cssClass="guide-1678694212430"
+                        jcr:lastModified="{Date}2022-07-28T18:37:22.836+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Details"
+                        sling:resourceType="fd/af/components/panel"
+                        cssStyle=".guide-1678694212430 .guideGridFluidLayout{&#xa;&#xa;}&#xa;"
+                        guideNodeClass="guidePanel"
+                        name="Details"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidedropdownlist
+                                cq:cssClass="guide-1679391888745"
+                                jcr:lastModified="{Date}2023-03-15T12:16:30.799+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Line of Business"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                cssStyle=".guide-1679391888745 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;color:#000000;&#xa;&#xa;}&#xa;.guide-1679391888745 label{&#xa;color:#000000;&#xa;font-weight: 600;&#xa;&#xa;}&#xa;.guide-1679391888745 .dropDownList  select{&#xa;color:#000000;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideDropDownList"
+                                name="lineOfBusiness"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.lineOfBusiness&quot;\,&quot;type&quot;:&quot;DROPDOWN|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;lineOfBusiness&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.ProductSeries&quot;\,&quot;displayName&quot;:&quot;Product Series&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Product Series/&quot;\,&quot;name&quot;:&quot;ProductSeries&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:false\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nProductSeries.visible = true;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.lineOfBusiness&quot;\,&quot;type&quot;:&quot;DROPDOWN|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;lineOfBusiness&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;onChangingLob&quot;\,&quot;displayName&quot;:&quot;onChangingLob&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;value&quot;\,&quot;description&quot;:&quot;value&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.lineOfBusiness&quot;\,&quot;displayName&quot;:&quot;Line of Business&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Line of Business/&quot;\,&quot;name&quot;:&quot;lineOfBusiness&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nonChangingLob(this.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_dropdownlist
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000]"/>
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000,cssOverride:font-weight: 600;]"/>
+                                    <af_dropdownlistwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000]"/>
+                                </style>
+                            </guidedropdownlist>
+                            <guidedropdownlist_co
+                                cq:cssClass="guide-1679391949305"
+                                jcr:lastModified="{Date}2023-03-15T13:23:04.869+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Product Series"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                cssStyle=".guide-1679391949305 .dropDownList  select{&#xa;color:#000000;&#xa;&#xa;}&#xa;.guide-1679391949305 label{&#xa;color:#000000;&#xa;font-weight: 600;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideDropDownList"
+                                name="ProductSeries"
+                                textIsRich="[true,true]"
+                                visible="{Boolean}false">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.ProductSeries&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;ProductSeries&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.situsStatesTb&quot;\,&quot;displayName&quot;:&quot;Situs&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Situs/&quot;\,&quot;name&quot;:&quot;situsStatesTb&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:false\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsitusStatesTb.visible = true;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.ProductSeries&quot;\,&quot;type&quot;:&quot;DROPDOWN|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;ProductSeries&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;onChangingProductSeries&quot;\,&quot;displayName&quot;:&quot;onChangingProductSeries&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;value&quot;\,&quot;description&quot;:&quot;value&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.ProductSeries&quot;\,&quot;displayName&quot;:&quot;Product Series&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Product Series/&quot;\,&quot;name&quot;:&quot;ProductSeries&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nonChangingProductSeries(this.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_dropdownlistwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000]"/>
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000,cssOverride:font-weight: 600;]"/>
+                                </style>
+                            </guidedropdownlist_co>
+                            <guidetextbox_1066113786
+                                cq:cssClass="guide-1679391965723"
+                                jcr:lastModified="{Date}2023-03-17T15:28:45.344+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Situs"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1679391965723 label{&#xa;color:#000000;&#xa;font-weight: 600;&#xa;&#xa;}&#xa;.guide-1679391965723 .textField input[type='text']{&#xa;color:#000000;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTextBox"
+                                name="situsStatesTb"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000,cssOverride:font-weight: 600;]"/>
+                                    <af_textboxwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000]"/>
+                                </style>
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.situsStatesTb&quot;\,&quot;type&quot;:&quot;TEXT FIELD|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;situsStatesTb&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;autoCompleteSitus&quot;\,&quot;displayName&quot;:&quot;autoCompleteSitus&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nautoCompleteSitus();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.situsStatesTb&quot;\,&quot;type&quot;:&quot;TEXT FIELD|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;situsStatesTb&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.language&quot;\,&quot;displayName&quot;:&quot;Language&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Language/&quot;\,&quot;name&quot;:&quot;language&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:false\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nlanguage.visible = true;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.situsStatesTb&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;situsStatesTb&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:null}}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;validBrochureSitus&quot;\,&quot;displayName&quot;:&quot;validBrochureSitus&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;situs&quot;\,&quot;description&quot;:&quot;situs&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.situsStatesTb&quot;\,&quot;displayName&quot;:&quot;Situs&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Situs/&quot;\,&quot;name&quot;:&quot;situsStatesTb&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nvalidBrochureSitus(this.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox_1066113786>
+                            <guidetextbox
+                                cq:cssClass="guide-1679391981830"
+                                jcr:lastModified="{Date}2023-03-23T17:00:11.922+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Language"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1679391981830 .dropDownList  select{&#xa;color:#000000;&#xa;&#xa;}&#xa;.guide-1679391981830 label{&#xa;color:#000000;&#xa;font-weight: 600;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideDropDownList"
+                                name="language"
+                                options="[English=English,Spanish=Spanish]"
+                                textIsRich="[true,true]"
+                                visible="{Boolean}false">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_dropdownlistwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000]"/>
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000,cssOverride:font-weight: 600;]"/>
+                                </style>
+                                <fd:rules
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.language&quot;\,&quot;type&quot;:&quot;DROPDOWN|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;language&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;onChangeingLanguage&quot;\,&quot;displayName&quot;:&quot;onChangeingLanguage&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;value&quot;\,&quot;description&quot;:&quot;value&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.language&quot;\,&quot;displayName&quot;:&quot;Language&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Language/&quot;\,&quot;name&quot;:&quot;language&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nonChangeingLanguage(this.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    fd:visible="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;VISIBLE_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.language&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;name&quot;:&quot;language&quot;}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.situsStatesTb&quot;\,&quot;displayName&quot;:&quot;Situs&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Details/Situs/&quot;\,&quot;name&quot;:&quot;situsStatesTb&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.Details&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;IS_EMPTY&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:null}}]}}\,{&quot;nodeName&quot;:&quot;Else&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;DONOTHING_OR_SHOW&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;Show&quot;\,&quot;value&quot;:null}}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ([null\,\\&quot;\\&quot;].indexOf(situsStatesTb.value) > -1) ) {\\n    false;\\n } else {\\n    true;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Visibility&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox>
+                        </items>
+                        <cq:responsive jcr:primaryType="nt:unstructured"/>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_responsivepanel
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[]"
+                                default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:Set]"/>
+                        </style>
+                        <fd:rules
+                            fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details&quot;\,&quot;type&quot;:&quot;PANEL|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;Details&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;onInitializePageBrouchure&quot;\,&quot;displayName&quot;:&quot;onInitializePageBrouchure&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nonInitializePageBrouchure();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </panel_copy>
+                    <guidebutton_5026075
+                        cq:cssClass="guide-1659938749588"
+                        jcr:lastModified="{Date}2023-03-20T15:09:06.687+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Next"
+                        sling:resourceType="fd/af/components/guidebutton"
+                        cssStyle=".guide-1659938749588 button:not(.af-icon-button):hover{&#xa;color:#ffffff;&#xa;background:#666666;&#xa;&#xa;}&#xa;.guide-1659938749588 button:not(.af-icon-button),.guide-1659938749588 input[type='button']{&#xa;border-top-right-radius:18px;&#xa;border-bottom-left-radius:18px;&#xa;border-bottom-right-radius:18px;&#xa;border-top-left-radius:18px;&#xa;padding-top:10px;&#xa;padding-right:0px;&#xa;padding-bottom:10px;&#xa;padding-left:0px;&#xa;margin-left:8px;&#xa;&#xa;}&#xa;.guide-1659938749588.guidebutton {&#xa;width:92px;&#xa;display:inline-block;&#xa;}&#xa;.guide-1659938749588.guidebutton button {&#xa;width:100%;&#xa;}&#xa;"
+                        dorExclusion="true"
+                        guideNodeClass="guideButton"
+                        name="Broc_Next"
+                        textIsRich="[true,true]"
+                        type="Button"
+                        visible="{Boolean}false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                        <fd:rules
+                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.Broc_Next&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;Broc_Next&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel&quot;\,&quot;displayName&quot;:&quot;Section&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Section/&quot;\,&quot;name&quot;:&quot;coveragePanel&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ncoveragePanel.visible = true;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.Broc_Next&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;Broc_Next&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;onClickNext&quot;\,&quot;displayName&quot;:&quot;onClickNext&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nonClickNext();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.Details.Broc_Next&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;Broc_Next&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SET_VALUE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.coverageNameTB&quot;\,&quot;displayName&quot;:&quot;Coverage Name&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Coverage Panel/Coverage Name/&quot;\,&quot;name&quot;:&quot;coverageNameTB&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.coveragePanel&quot;}}\,{&quot;nodeName&quot;:&quot;to&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;autoCompleteCoverageName&quot;\,&quot;displayName&quot;:&quot;autoCompleteCoverageName&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ncoverageNameTB.value = autoCompleteCoverageName();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_button
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[border-top-right-radius:18px,border-bottom-left-radius:18px,border-bottom-right-radius:18px,border-top-left-radius:18px,padding-top:10px,padding-right:0px,padding-bottom:10px,padding-left:0px,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;92px&quot;\,&quot;display&quot;:&quot;inline-block&quot;}}\,&quot;button&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton button&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;100%&quot;}}}},margin-left:8px]"
+                                default_x0023_default_x0023_ui="[display:inline-block,marginLock:linkOff,borderRadiusPopover:18px,paddingLock:linkOff,paddingPopover:10px\, 0px\, 10px\, 0px,width:92px,marginPopover:—\, —\, —\, 8px]"
+                                default_x0023_hover="[color:#ffffff,background:#666666]"
+                                default_x0023_hover_x0023_ui="[backgroundColor:#666666]"/>
+                        </style>
+                    </guidebutton_5026075>
+                    <panel_890902483
+                        jcr:lastModified="{Date}2023-03-20T15:00:58.347+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Error Panel"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="errorPanel"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextdraw
+                                cq:cssClass="guide-1679392001232"
+                                jcr:lastModified="{Date}2023-03-24T11:42:40.526+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>&lt;b>&amp;nbsp;No brochures are allowed for the given inputs.&lt;/b>&lt;/p>&#xd;&#xa;"
+                                cssStyle=".guide-1679392001232 .guideTextDraw.guideStaticText{&#xa;background:#D3D3D3;&#xa;color:#666;&#xa;border-color:#666;&#xa;border-top-left-radius:4px;&#xa;border-top-right-radius:4px;&#xa;border-bottom-left-radius:4px;&#xa;border-bottom-right-radius:4px;&#xa;margin-top:0px;&#xa;margin-right:0px;&#xa;margin-left:12px;&#xa;margin-bottom:0px;&#xa;padding-right:0.5px;&#xa;padding-bottom:0.5px;&#xa;padding-left:0.5px;&#xa;padding-top:0.5px;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="textdraw1679304480238"
+                                textIsRich="true">
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_textdraw
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:#D3D3D3,color:#666,border-color:#666,border-top-left-radius:4px,border-top-right-radius:4px,border-bottom-left-radius:4px,border-bottom-right-radius:4px,margin-top:0px,margin-right:0px,margin-left:12px,margin-bottom:0px,padding-right:0.5px,padding-bottom:0.5px,padding-left:0.5px,padding-top:0.5px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:#D3D3D3,borderRadiusPopover:4px,marginLock:linkOff,marginPopover:0px\, 0px\, 0px\, 12px,paddingPopover:0.5px]"/>
+                                </style>
+                            </guidetextdraw>
+                        </items>
+                    </panel_890902483>
+                    <panel
+                        jcr:lastModified="{Date}2023-03-15T16:33:31.913+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Coverage Panel"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="coveragePanel"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextbox_copy
+                                cq:cssClass="guide-1679392010840"
+                                jcr:lastModified="{Date}2023-03-17T12:33:35.017+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Coverage Name"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1679392010840 label{&#xa;color:#000000;&#xa;font-weight: 600;&#xa;&#xa;}&#xa;.guide-1679392010840 .textField input[type='text']{&#xa;color:#000000;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTextBox"
+                                name="coverageNameTB"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000,cssOverride:font-weight: 600;]"/>
+                                    <af_textboxwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000]"/>
+                                </style>
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.coverageNameTB&quot;\,&quot;type&quot;:&quot;TEXT FIELD|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;coverageNameTB&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;autoCompleteCoverageName&quot;\,&quot;displayName&quot;:&quot;autoCompleteCoverageName&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:false\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nautoCompleteCoverageName();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox_copy>
+                            <guidedropdownlist_383830629
+                                cq:cssClass="guide-1679392026664"
+                                jcr:lastModified="{Date}2023-04-06T11:45:18.873+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Coverage Level"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                cssStyle=".guide-1679392026664 .dropDownList  select{&#xa;color:#000000;&#xa;&#xa;}&#xa;.guide-1679392026664 label{&#xa;color:#000000;&#xa;font-weight: 600;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideDropDownList"
+                                name="coverageLevel"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.coverageLevel&quot;\,&quot;type&quot;:&quot;DROPDOWN|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;coverageLevel&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;onChangeingCoverageLevel&quot;\,&quot;displayName&quot;:&quot;onChangeingCoverageLevel&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;value&quot;\,&quot;description&quot;:&quot;value&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.coverageLevel&quot;\,&quot;displayName&quot;:&quot;Coverage Level&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Coverage Panel/Coverage Level/&quot;\,&quot;name&quot;:&quot;coverageLevel&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.coveragePanel&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nonChangeingCoverageLevel(this.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_dropdownlistwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000]"/>
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#000000,cssOverride:font-weight: 600;]"/>
+                                </style>
+                            </guidedropdownlist_383830629>
+                            <guidecheckbox
+                                cq:cssClass="guide-1681716344937"
+                                jcr:lastModified="{Date}2023-04-18T11:29:28.390+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Check Box"
+                                sling:resourceType="fd/af/components/guidecheckbox"
+                                _value="0"
+                                alignment="guideFieldHorizontalAlignment"
+                                cssStyle=".guide-1681716344937 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;margin-top:29px;&#xa;&#xa;}&#xa;"
+                                enabled="{Boolean}true"
+                                guideNodeClass="guideCheckBox"
+                                hideTitle="true"
+                                name="folderLanguageCB"
+                                options="[0 = Enrollment is Electronic]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_checkboxfield
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[margin-top:29px]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:29px\, —\, —\, —,paddingLock:link,paddingPopover:Set]"/>
+                                </style>
+                                <fd:rules
+                                    fd:enabled="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;DISABLE_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.folderLanguageCB&quot;\,&quot;type&quot;:&quot;CHECK BOX|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;folderLanguageCB&quot;}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;countFL&quot;\,&quot;displayName&quot;:&quot;countFL&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NUMERIC_LITERAL&quot;\,&quot;value&quot;:&quot;1&quot;}}]}}\,{&quot;nodeName&quot;:&quot;Else&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;DONOTHING_OR_ENABLE&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;Enable&quot;\,&quot;value&quot;:null}}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:false\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif (countFL() == 1) {\\n    false;\\n } else {\\n    true;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Enabled&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.folderLanguageCB&quot;\,&quot;type&quot;:&quot;CHECK BOX|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;folderLanguageCB&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign&quot;\,&quot;displayName&quot;:&quot;Product Design&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Product Design/&quot;\,&quot;name&quot;:&quot;ProductDesign&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;resetReorderTable&quot;\,&quot;displayName&quot;:&quot;resetReorderTable&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;resetBrochureTable&quot;\,&quot;displayName&quot;:&quot;resetBrochureTable&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nProductDesign.visible = false;\\nresetReorderTable();\\nresetBrochureTable();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.folderLanguageCB&quot;\,&quot;type&quot;:&quot;CHECK BOX|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;folderLanguageCB&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;onChangeingFolderLanguageCB&quot;\,&quot;displayName&quot;:&quot;onChangeingFolderLanguageCB&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nonChangeingFolderLanguageCB();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidecheckbox>
+                            <guidebutton_199915954
+                                cq:cssClass="guide-1681715624979"
+                                jcr:lastModified="{Date}2023-04-17T11:25:41.030+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Clear"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1681715624979 button:not(.af-icon-button),.guide-1681715624979 input[type='button']{&#xa;border-top-right-radius:18px;&#xa;border-bottom-left-radius:18px;&#xa;border-bottom-right-radius:18px;&#xa;border-top-left-radius:18px;&#xa;background:#F89627;&#xa;border-color:#F89627;&#xa;margin-left:10px;&#xa;&#xa;}&#xa;.guide-1681715624979.guidebutton {&#xa;width:80px;&#xa;display:inline;&#xa;}&#xa;.guide-1681715624979.guidebutton button {&#xa;width:100%;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="clearButton"
+                                textIsRich="[true,true]"
+                                type="Button"
+                                visible="{Boolean}false">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        behavior="newline"
+                                        offset="0"
+                                        width="1"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_button
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[border-top-right-radius:18px,border-bottom-left-radius:18px,border-bottom-right-radius:18px,border-top-left-radius:18px,background:#F89627,border-color:#F89627,margin-left:10px,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;80px&quot;\,&quot;display&quot;:&quot;inline&quot;}}\,&quot;button&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton button&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;100%&quot;}}}}]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,borderRadiusPopover:18px,backgroundColor:#F89627,display:inline,paddingLock:link,paddingPopover:Set,marginPopover:—\, —\, —\, 10px,width:80px]"/>
+                                </style>
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.clearButton&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;clearButton&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CLEAR_VALUE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.coverageNameTB&quot;\,&quot;displayName&quot;:&quot;Coverage Name&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Coverage Panel/Coverage Name/&quot;\,&quot;name&quot;:&quot;coverageNameTB&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.coveragePanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CLEAR_VALUE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.coverageLevel&quot;\,&quot;displayName&quot;:&quot;Coverage Level&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Coverage Panel/Coverage Level/&quot;\,&quot;name&quot;:&quot;coverageLevel&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.coveragePanel&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ncoverageNameTB.value = null;\\ncoverageLevel.value = null;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.clearButton&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;clearButton&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.addButton&quot;\,&quot;displayName&quot;:&quot;Add&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Coverage Panel/Add/&quot;\,&quot;name&quot;:&quot;addButton&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.coveragePanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.clearButton&quot;\,&quot;displayName&quot;:&quot;Clear&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Coverage Panel/Clear/&quot;\,&quot;name&quot;:&quot;clearButton&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.coveragePanel&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\naddButton.visible = false;\\nthis.visible = false;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.clearButton&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;clearButton&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;clearBrochureButton&quot;\,&quot;displayName&quot;:&quot;clearBrochureButton&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nclearBrochureButton();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidebutton_199915954>
+                            <guidebutton_2002480450
+                                cq:cssClass="guide-1681715940867"
+                                jcr:lastModified="{Date}2023-04-17T12:47:56.563+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Add"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1681715940867 button:not(.af-icon-button):hover{&#xa;color:#ffffff;&#xa;background:#666666;&#xa;&#xa;}&#xa;.guide-1681715940867 button:not(.af-icon-button),.guide-1681715940867 input[type='button']{&#xa;border-top-right-radius:18px;&#xa;border-bottom-left-radius:18px;&#xa;border-bottom-right-radius:18px;&#xa;border-top-left-radius:18px;&#xa;margin-left:25px;&#xa;&#xa;}&#xa;.guide-1681715940867.guidebutton {&#xa;width:80px;&#xa;display:inline;&#xa;}&#xa;.guide-1681715940867.guidebutton button {&#xa;width:100%;&#xa;}&#xa;.guide-1681715940867 button:not(.af-icon-button):hover .iconButton-label{&#xa;background:#666666;&#xa;color:#ffffff;&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="addButton"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.addButton&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;addButton&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign&quot;\,&quot;displayName&quot;:&quot;Product Design&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Product Design/&quot;\,&quot;name&quot;:&quot;ProductDesign&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nProductDesign.visible = true;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.coveragePanel.addButton&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;addButton&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;addBrochureTableData&quot;\,&quot;displayName&quot;:&quot;addBrochureTableData&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\naddBrochureTableData();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="1"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_button
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[border-top-right-radius:18px,border-bottom-left-radius:18px,border-bottom-right-radius:18px,border-top-left-radius:18px,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;80px&quot;\,&quot;display&quot;:&quot;inline&quot;}}\,&quot;button&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton button&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;100%&quot;}}}},margin-left:25px]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,borderRadiusPopover:18px,paddingLock:link,paddingPopover:Set,display:inline,width:80px,marginPopover:—\, —\, —\, 25px]"
+                                        default_x0023_hover="[color:#ffffff,background:#666666]"
+                                        default_x0023_hover_x0023_ui="[backgroundColor:#666666]"/>
+                                    <af_buttontext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_hover="[background:#666666,color:#ffffff]"
+                                        default_x0023_hover_x0023_ui="[backgroundColor:#666666]"/>
+                                </style>
+                            </guidebutton_2002480450>
+                        </items>
+                        <fd:rules
+                            fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1678863032300&quot;\,&quot;type&quot;:&quot;PANEL|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;panel1678863032300&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;pop_dropdown&quot;\,&quot;displayName&quot;:&quot;pop_dropdown&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\npop_dropdown();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </panel>
+                    <panel_1872932356_cop
+                        cq:cssClass="guide-1678694271164"
+                        jcr:lastModified="{Date}2023-03-13T15:55:02.899+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Design"
+                        sling:resourceType="fd/af/components/panel"
+                        cssStyle=".guide-1678694271164 .guideGridFluidLayout{&#xa;margin-bottom:30px;&#xa;&#xa;}&#xa;"
+                        guideNodeClass="guidePanel"
+                        name="ProductDesign"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <cq:responsive jcr:primaryType="nt:unstructured"/>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_responsivepanel
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[margin-bottom:30px]"
+                                default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:—\, —\, 30px\, —]"/>
+                        </style>
+                        <fd:rules
+                            fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign&quot;\,&quot;type&quot;:&quot;PANEL|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;ProductDesign&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;setValue&quot;\,&quot;displayName&quot;:&quot;setValue&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsetValue();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <table_553568577
+                                jcr:lastModified="{Date}2023-03-16T13:48:23.856+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="ProductDesignTable"
+                                sling:resourceType="fd/af/components/table"
+                                guideNodeClass="guideTable"
+                                name="ProductDesignTable"
+                                sortingEnabled="false"
+                                textIsRich="true">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/tableLayout"
+                                    columns="2"
+                                    mobileLayout="headersLeft"
+                                    rows="2"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/tableLayout">
+                                    <HeaderRow
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Header Row"
+                                        sling:resourceType="fd/af/components/tableHeader"
+                                        guideComponentType="true"
+                                        guideNodeClass="guideTableRow"
+                                        name="headerRow">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/headerLayout"
+                                            nonNavigable="{Boolean}true"/>
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/headerLayout">
+                                            <tableItem
+                                                jcr:lastModified="{Date}2023-03-16T13:46:51.095+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Coverage Name&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItemCoverageName"
+                                                textIsRich="true"/>
+                                            <tableItem1
+                                                jcr:lastModified="{Date}2023-03-16T13:47:21.565+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Coverage Level&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItemCoverageLevel"
+                                                textIsRich="true"/>
+                                            <headerItem1678959898023
+                                                jcr:lastModified="{Date}2023-03-16T15:16:05.559+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="\0"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItemBrochureID"
+                                                visible="{Boolean}false"/>
+                                            <headerItem1678960747185
+                                                jcr:lastModified="{Date}2023-03-16T15:29:56.456+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="\0"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItemPlanDesign"
+                                                visible="{Boolean}false"/>
+                                        </items>
+                                    </HeaderRow>
+                                    <Row1
+                                        jcr:lastModified="{Date}2023-03-16T13:44:48.536+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Row 1"
+                                        sling:resourceType="fd/af/components/tableRow"
+                                        enabled="{Boolean}true"
+                                        guideComponentType="true"
+                                        guideNodeClass="guideTableRow"
+                                        maxOccur="-1"
+                                        minOccur="0"
+                                        name="productDesignRow1"
+                                        visible="{Boolean}true">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/rowLayout"
+                                            nonNavigable="{Boolean}true"/>
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/rowLayout">
+                                            <tableItem
+                                                cq:cssClass="guide-1679300894009"
+                                                jcr:lastModified="{Date}2023-03-27T14:03:44.582+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text Box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1679300894009 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;outline: none;&#xa;&#xa;}&#xa;.guide-1679300894009 .textField input[type='text']{&#xa;color:#000000;&#xa;outline: none;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="pdCoverageName"
+                                                shortDescription="&lt;p>Coverage Name Description&lt;/p>&#xd;&#xa;"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textbox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:outline: none;]"/>
+                                                    <af_textboxwidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:outline: none;,color:#000000]"/>
+                                                </style>
+                                            </tableItem>
+                                            <tableItem1
+                                                cq:cssClass="guide-1679300927137"
+                                                jcr:lastModified="{Date}2023-03-20T14:01:54.233+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text Box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1679300927137 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;outline: none;&#xa;&#xa;}&#xa;.guide-1679300927137 .textField input[type='text']{&#xa;color:#000000;&#xa;outline: none;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="pdCoverageLevel"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textbox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:outline: none;]"/>
+                                                    <af_textboxwidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:outline: none;,color:#000000]"/>
+                                                </style>
+                                            </tableItem1>
+                                            <headerItem1678959898236
+                                                jcr:lastModified="{Date}2023-03-16T15:16:31.127+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="pdBrochureId"
+                                                textIsRich="[true,true,true]"
+                                                visible="{Boolean}false"/>
+                                            <headerItem1678960747302
+                                                jcr:lastModified="{Date}2023-03-16T15:30:03.363+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="pdPlanDesign"
+                                                textIsRich="[true,true,true]"
+                                                visible="{Boolean}false"/>
+                                        </items>
+                                    </Row1>
+                                </items>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.ProductDesignTable&quot;\,&quot;type&quot;:&quot;TABLE|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;ProductDesignTable&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;reorderRows&quot;\,&quot;displayName&quot;:&quot;reorderRows&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;bIDfromClick&quot;\,&quot;description&quot;:&quot;bIDfromClick&quot;}\,{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;pdFromClick&quot;\,&quot;description&quot;:&quot;pdFromClick&quot;}]\,&quot;impl&quot;:&quot;$0($1\,$2)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.ProductDesignTable.productDesignRow1.pdBrochureId&quot;\,&quot;displayName&quot;:&quot;Text box&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Product Design/ProductDesignTable/Row 1/Text box/&quot;\,&quot;name&quot;:&quot;pdBrochureId&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.ProductDesign.ProductDesignTable.productDesignRow1&quot;}}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.ProductDesignTable.productDesignRow1.pdPlanDesign&quot;\,&quot;displayName&quot;:&quot;Text box&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Product Design/ProductDesignTable/Row 1/Text box/&quot;\,&quot;name&quot;:&quot;pdPlanDesign&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.ProductDesign.ProductDesignTable.productDesignRow1&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nreorderRows(pdBrochureId.value\,pdPlanDesign.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </table_553568577>
+                            <table_20623242
+                                cq:cssClass="guide-1681889568434"
+                                jcr:lastModified="{Date}2023-03-16T11:14:34.017+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Brochure Reorder Table"
+                                sling:resourceType="fd/af/components/table"
+                                cssStyle=".guide-1681889568434 .guideTableNode table{&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTable"
+                                name="brochureReorderTable"
+                                sortingEnabled="false"
+                                textIsRich="true">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/tableLayout"
+                                    columns="2"
+                                    mobileLayout="headersLeft"
+                                    rows="2"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/tableLayout">
+                                    <HeaderRow
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Header Row"
+                                        sling:resourceType="fd/af/components/tableHeader"
+                                        guideComponentType="true"
+                                        guideNodeClass="guideTableRow"
+                                        name="headerRow">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/headerLayout"
+                                            nonNavigable="{Boolean}true"/>
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/headerLayout">
+                                            <tableItem
+                                                jcr:lastModified="Mon Mar 13 2023 15:43:40 GMT+0530"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Form Number&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem"
+                                                textIsRich="true"/>
+                                            <headerItem1678702392257
+                                                jcr:lastModified="Mon Mar 13 2023 15:43:55 GMT+0530"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Plan Design&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem16787023922571678702393010"
+                                                textIsRich="true"/>
+                                        </items>
+                                    </HeaderRow>
+                                    <Row1678702653021
+                                        jcr:lastModified="{Date}2023-03-16T11:15:57.894+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="fd/af/components/tableRow"
+                                        enabled="{Boolean}true"
+                                        guideComponentType="true"
+                                        guideNodeClass="guideTableRow"
+                                        maxOccur="-1"
+                                        minOccur="0"
+                                        name="brochureReorderRow1"
+                                        visible="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tableItem1678702653022
+                                                cq:cssClass="guide-1679301004266"
+                                                jcr:lastModified="{Date}2023-03-20T14:02:04.361+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1679301004266 .textField input[type='text']{&#xa;color:#000000;&#xa;outline: none;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="brFormNumber"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textboxwidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:outline: none;,color:#000000]"/>
+                                                </style>
+                                            </tableItem1678702653022>
+                                            <tableItem1678702653023
+                                                cq:cssClass="guide-1679301012655"
+                                                jcr:lastModified="{Date}2023-03-27T14:32:30.036+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1679301012655 .textField input[type='text']{&#xa;color:#000000;&#xa;outline: none;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="brPlanDesign"
+                                                shortDescription="&lt;p>Plan Design Desc&lt;/p>&#xd;&#xa;"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textboxwidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:outline: none;,color:#000000]"/>
+                                                </style>
+                                            </tableItem1678702653023>
+                                        </items>
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/rowLayout"
+                                            nonNavigable="\{Boolean}true"/>
+                                    </Row1678702653021>
+                                </items>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.brochureReorderTable&quot;\,&quot;type&quot;:&quot;TABLE|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;brochureReorderTable&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;hideRuntimeControls&quot;\,&quot;displayName&quot;:&quot;hideRuntimeControls&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nhideRuntimeControls();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_table
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:Set]"/>
+                                </style>
+                            </table_20623242>
+                            <panel
+                                cq:cssClass="guide-1659076750240"
+                                jcr:lastModified="Fri Jul 29 2022 11:56:18 GMT+0530"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Buttons2"
+                                sling:resourceType="fd/af/components/panel"
+                                cssStyle=".guide-1659076750240 .guideGridFluidLayout{&#xa;margin-left:10px;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guidePanel"
+                                name="Buttons2"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guidebutton_copy_cop
+                                        cq:cssClass="guide-1681711431772"
+                                        jcr:lastModified="{Date}2023-04-19T16:00:42.656+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Reset All"
+                                        sling:resourceType="fd/af/components/guidebutton"
+                                        cssStyle=".guide-1681711431772 button:not(.af-icon-button),.guide-1681711431772 input[type='button']{&#xa;border-top-right-radius:18px;&#xa;border-bottom-left-radius:18px;&#xa;border-bottom-right-radius:18px;&#xa;border-top-left-radius:18px;&#xa;background:#F89627;&#xa;border-color:#F89627;&#xa;&#xa;}&#xa;.guide-1681711431772.guidebutton {&#xa;display:inline;&#xa;}&#xa;"
+                                        dorExclusion="true"
+                                        guideNodeClass="guideButton"
+                                        name="resetAll"
+                                        shortDescription="&lt;p>Clear All Coverages&lt;/p>&#xd;&#xa;"
+                                        textIsRich="[true,true]"
+                                        type="Button">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="1"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_button
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[border-top-right-radius:18px,border-bottom-left-radius:18px,border-bottom-right-radius:18px,border-top-left-radius:18px,background:#F89627,border-color:#F89627,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;display&quot;:&quot;inline&quot;}}}}]"
+                                                default_x0023_default_x0023_ui="[marginLock:linkOff,borderRadiusPopover:18px,backgroundColor:#F89627,marginPopover:Set,paddingLock:link,paddingPopover:Set,display:inline]"/>
+                                        </style>
+                                        <fd:rules
+                                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.Buttons2.resetAll&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;resetAll&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;resetReorderTable&quot;\,&quot;displayName&quot;:&quot;resetReorderTable&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;resetBrochureTable&quot;\,&quot;displayName&quot;:&quot;resetBrochureTable&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nresetReorderTable();\\nresetBrochureTable();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                    </guidebutton_copy_cop>
+                                    <guidebutton_copy
+                                        cq:cssClass="guide-1678705926535"
+                                        jcr:lastModified="{Date}2023-04-17T11:32:54.289+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Reset Ordering"
+                                        sling:resourceType="fd/af/components/guidebutton"
+                                        cssStyle=".guide-1678705926535 button:not(.af-icon-button),.guide-1678705926535 input[type='button']{&#xa;border-top-right-radius:18px;&#xa;border-bottom-left-radius:18px;&#xa;border-bottom-right-radius:18px;&#xa;border-top-left-radius:18px;&#xa;background:#F89627;&#xa;border-color:#F89627;&#xa;margin-left:25px;&#xa;&#xa;}&#xa;.guide-1678705926535.guidebutton {&#xa;display:inline;&#xa;}&#xa;"
+                                        dorExclusion="true"
+                                        guideNodeClass="guideButton"
+                                        name="Reset"
+                                        shortDescription="&lt;p>Clear Form Numbers&lt;/p>&#xd;&#xa;"
+                                        textIsRich="[true,true]"
+                                        type="Button">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="2"/>
+                                        </cq:responsive>
+                                        <fd:rules
+                                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.Buttons2.Reset&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;Reset&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;resetReorderTable&quot;\,&quot;displayName&quot;:&quot;resetReorderTable&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nresetReorderTable();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_button
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[border-top-right-radius:18px,border-bottom-left-radius:18px,border-bottom-right-radius:18px,border-top-left-radius:18px,background:#F89627,border-color:#F89627,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;display&quot;:&quot;inline&quot;}}}},margin-left:25px]"
+                                                default_x0023_default_x0023_ui="[marginLock:linkOff,borderRadiusPopover:18px,backgroundColor:#F89627,paddingLock:link,paddingPopover:Set,display:inline,marginPopover:—\, —\, —\, 25px]"/>
+                                        </style>
+                                    </guidebutton_copy>
+                                    <guideradiobutton
+                                        cq:cssClass="guide-1698412121763"
+                                        jcr:lastModified="{Date}2023-10-27T18:43:38.648+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Radio Button"
+                                        sling:resourceType="fd/af/components/guideradiobutton"
+                                        _value="Plan ID"
+                                        alignment="guideFieldHorizontalAlignment"
+                                        cssStyle=".guide-1698412121763 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;margin-top:-10px;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideRadioButton"
+                                        hideTitle="true"
+                                        name="planRadio"
+                                        options="[Plan ID=Plan ID,Group=Group #]"
+                                        textIsRich="[true,true]">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="3"/>
+                                        </cq:responsive>
+                                        <fd:rules
+                                            fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.Buttons2.planRadio&quot;\,&quot;type&quot;:&quot;RADIO BUTTON|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;planRadio&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:null}}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;planRadioChange&quot;\,&quot;displayName&quot;:&quot;planRadioChange&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nplanRadioChange();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.Buttons2.planRadio&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;planRadio&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:null}}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;planRadioChange&quot;\,&quot;displayName&quot;:&quot;planRadioChange&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nplanRadioChange();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_radiobutton
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[margin-top:-10px]"
+                                                default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:-10px\, —\, —\, —]"/>
+                                        </style>
+                                    </guideradiobutton>
+                                    <guidetextbox
+                                        cq:cssClass="guide-1698412247553"
+                                        jcr:lastModified="{Date}2023-11-01T12:09:49.576+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        cssStyle=".guide-1698412247553 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;margin-top:-10px;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        hideTitle="true"
+                                        mandatory="true"
+                                        name="planID"
+                                        placeholderText="Enter Plan ID / Group #"
+                                        shortDescription="&lt;p>Hint : Format eg. Plan-123 or AGC1234567890 OR 123&lt;/p>&#xd;&#xa;"
+                                        textIsRich="[true,true,true]">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="3"/>
+                                        </cq:responsive>
+                                        <fd:rules
+                                            fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.Buttons2.planID&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;planID&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:null}}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;validGroup&quot;\,&quot;displayName&quot;:&quot;validGroup&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nvalidGroup();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[margin-top:-10px]"
+                                                default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:-10px\, —\, —\, —]"/>
+                                        </style>
+                                    </guidetextbox>
+                                    <guidebutton
+                                        cq:cssClass="guide-1678705913111"
+                                        jcr:lastModified="Mon Mar 13 2023 16:40:22 GMT+0530"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Generate"
+                                        sling:resourceType="fd/af/components/guidebutton"
+                                        cssStyle=".guide-1678705913111 button:not(.af-icon-button):hover{&#xa;color:#ffffff;&#xa;background:#666666;&#xa;&#xa;}&#xa;.guide-1678705913111 button:not(.af-icon-button),.guide-1678705913111 input[type='button']{&#xa;border-top-right-radius:18px;&#xa;border-bottom-left-radius:18px;&#xa;border-bottom-right-radius:18px;&#xa;border-top-left-radius:18px;&#xa;&#xa;}&#xa;.guide-1678705913111.guidebutton {&#xa;display:inline;&#xa;}&#xa;"
+                                        dorExclusion="true"
+                                        guideNodeClass="guideButton"
+                                        name="generate"
+                                        textIsRich="[true,true]"
+                                        type="Button">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="1"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_button
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[border-top-right-radius:18px,border-bottom-left-radius:18px,border-bottom-right-radius:18px,border-top-left-radius:18px,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;display&quot;:&quot;inline&quot;}}}}]"
+                                                default_x0023_default_x0023_ui="[marginLock:linkOff,borderRadiusPopover:18px,paddingLock:linkOff,paddingPopover:Set,marginPopover:Set,display:inline]"
+                                                default_x0023_hover="[color:#ffffff,background:#666666]"
+                                                default_x0023_hover_x0023_ui="[backgroundColor:#666666]"/>
+                                        </style>
+                                        <fd:rules
+                                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.Buttons2.generate&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;generate&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;generatePdfOfBrochures&quot;\,&quot;displayName&quot;:&quot;generatePdfOfBrochures&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ngeneratePdfOfBrochures();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                    </guidebutton>
+                                    <guidebutton_275268717
+                                        jcr:lastModified="{Date}2023-11-10T19:14:46.764+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="fd/af/components/guidebutton"
+                                        dorExclusion="true"
+                                        guideNodeClass="guideButton"
+                                        name="downloadBrochure"
+                                        textIsRich="[true,true]"
+                                        type="Button"
+                                        visible="{Boolean}false">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="1"/>
+                                        </cq:responsive>
+                                        <fd:rules
+                                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.Buttons2.downloadBrochure&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;downloadBrochure&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;readFile&quot;\,&quot;displayName&quot;:&quot;readFile&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nreadFile();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                    </guidebutton_275268717>
+                                    <guidetextdraw_957361215
+                                        jcr:lastModified="{Date}2023-09-25T22:01:57.246+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="fd/af/components/guidetextdraw"
+                                        guideNodeClass="guideTextDraw"
+                                        name="FileNetMsg"
+                                        textIsRich="true"
+                                        visible="{Boolean}false"/>
+                                    <guidetextdraw
+                                        jcr:lastModified="{Date}2023-09-26T08:50:43.801+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="fd/af/components/guidetextdraw"
+                                        _value="&lt;p>&lt;span class=&quot;redColorText&quot;>&lt;b>There was an error in processing your request. Ensure selected formId PDFs available on WebOrdering. If the error persists, contact your administrator or Support Team.&lt;/b>&lt;/span>&lt;/p>&#xd;&#xa;"
+                                        guideNodeClass="guideTextDraw"
+                                        name="failureMsg"
+                                        textIsRich="true"
+                                        visible="{Boolean}false"/>
+                                </items>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_responsivepanel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[margin-left:10px]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:—\, —\, —\, 10px]"/>
+                                </style>
+                            </panel>
+                            <table
+                                cq:cssClass="guide-1695022450347"
+                                jcr:lastModified="{Date}2024-02-01T17:49:35.456+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="disclosuresTable"
+                                sling:resourceType="fd/af/components/table"
+                                columnWidth="0.5,0,2,1.5,1.5,3,1"
+                                cssStyle=".guide-1695022450347 .guideTableNode table .guideTableRuntimeRightControls{&#xa;display:none;&#xa;&#xa;}&#xa;.guide-1695022450347 .guideTableNode table .guideTableRowNode.guideTableHeader th{&#xa;&#xa;}&#xa;.guide-1695022450347 .guideTableNode table td{&#xa;padding-right:0.001px;&#xa;padding-bottom:0.001px;&#xa;padding-left:0.001px;&#xa;padding-top:0.001px;&#xa;margin-right:0.001px;&#xa;margin-bottom:0.001px;&#xa;margin-left:0.001px;&#xa;margin-top:0.001px;&#xa;&#xa;}&#xa;.guide-1695022450347 .guideTableNode table tr{&#xa;&#xa;}&#xa;.guide-1695022450347 .guideTableNode table tbody:nth-of-type(even) tr,.guide-1695022450347  .guideTableNode table tbody tr:nth-of-type(even){&#xa;background:#ECECEC;&#xa;&#xa;}&#xa;.guide-1695022450347 .guideTableNode table tbody:nth-of-type(odd) tr:nth-of-type(odd){&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTable"
+                                name="disclosuresTable"
+                                sortingEnabled="false"
+                                textIsRich="true">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/tableLayout"
+                                    columns="2"
+                                    mobileLayout="headersLeft"
+                                    rows="2"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/tableLayout">
+                                    <HeaderRow
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Header Row"
+                                        sling:resourceType="fd/af/components/tableHeader"
+                                        guideComponentType="true"
+                                        guideNodeClass="guideTableRow"
+                                        name="headerRow">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/headerLayout"
+                                            nonNavigable="{Boolean}true"/>
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/headerLayout">
+                                            <tableItem
+                                                jcr:lastModified="{Date}2024-02-01T17:45:47.341+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem"
+                                                textIsRich="true"
+                                                visible="{Boolean}true"/>
+                                            <headerItem1706789520688
+                                                jcr:lastModified="{Date}2024-02-01T17:45:37.860+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>File Name&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem17067895206881706789522400"
+                                                textIsRich="true"
+                                                visible="{Boolean}false"/>
+                                            <headerItem1694759737407
+                                                cq:cssClass="guide-1695024368001"
+                                                jcr:lastModified="{Date}2023-09-15T12:06:00.235+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Document Name&lt;/p>&#xd;&#xa;"
+                                                cssStyle=".guide-1695024368001 .guideTextDraw.guideStaticText{&#xa;&#xa;}&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem16947597374071694759737666"
+                                                textIsRich="true">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textdraw
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[]"/>
+                                                </style>
+                                            </headerItem1694759737407>
+                                            <headerItem1694759704608
+                                                jcr:lastModified="{Date}2023-09-15T12:05:26.884+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Document Type&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem16947597046081694759704856"
+                                                textIsRich="true"/>
+                                            <headerItem1694759773852
+                                                jcr:lastModified="{Date}2023-09-15T12:06:27.294+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Form Number&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem16947597738521694759774134"
+                                                textIsRich="true"/>
+                                            <tableItem1
+                                                jcr:lastModified="{Date}2023-09-15T12:06:39.174+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="&lt;p>Description&lt;/p>&#xd;&#xa;"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem1"
+                                                textIsRich="true"/>
+                                            <headerItem1695030989275
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextdraw"
+                                                _value="\0"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextDraw"
+                                                name="headerItem16950309892751695030990123"/>
+                                        </items>
+                                    </HeaderRow>
+                                    <Row1
+                                        jcr:lastModified="{Date}2023-09-15T17:45:46.857+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Row 1"
+                                        sling:resourceType="fd/af/components/tableRow"
+                                        enabled="{Boolean}true"
+                                        guideComponentType="true"
+                                        guideNodeClass="guideTableRow"
+                                        maxOccur="-1"
+                                        minOccur="0"
+                                        name="disclosureRow"
+                                        visible="{Boolean}true">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/rowLayout"
+                                            nonNavigable="{Boolean}true"/>
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/table/rowLayout">
+                                            <tableItem
+                                                cq:cssClass="guide-1695033180243"
+                                                jcr:lastModified="{Date}2024-02-01T17:51:03.260+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Row Checkbox"
+                                                sling:resourceType="fd/af/components/guidecheckbox"
+                                                alignment="guideFieldHorizontalAlignment"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1695033180243 .XfaCheckBox input[type='checkbox']{&#xa;margin-left:20px;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}true"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideCheckBox"
+                                                hideTitle="true"
+                                                name="RowCheckbox"
+                                                options="0="
+                                                textIsRich="[true,true]"
+                                                visible="{Boolean}true">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textareawidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:resize: none;&#xa;]"/>
+                                                    <af_checkboxwidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[margin-left:20px]"
+                                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:—\, —\, —\, 20px]"/>
+                                                </style>
+                                                <fd:rules
+                                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.disclosuresTable.disclosureRow.RowCheckbox&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;RowCheckbox&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;0&quot;}}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;brochureCheckbox&quot;\,&quot;displayName&quot;:&quot;brochureCheckbox&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nbrochureCheckbox();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                                    jcr:primaryType="nt:unstructured"/>
+                                            </tableItem>
+                                            <headerItem1706789521543
+                                                jcr:lastModified="{Date}2024-02-01T17:50:40.833+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="fileName"
+                                                textIsRich="[true,true,true]"
+                                                visible="{Boolean}false"/>
+                                            <headerItem1694759737531
+                                                cq:cssClass="guide-1695024338240"
+                                                jcr:lastModified="{Date}2023-09-18T16:04:13.766+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1695024338240 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1695024338240 .multiline.textField textArea{&#xa;color:#000000;&#xa;font-family:Arial;&#xa;vertical-align:middle;&#xa;resize: none;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                multiLine="true"
+                                                name="docName"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textbox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[]"
+                                                        default_x0023_default_x0023_ui="[paddingLock:link,marginPopover:Set,paddingPopover:Set]"/>
+                                                    <af_textareawidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[cssOverride:resize: none;,color:#000000,font-family:Arial,vertical-align:middle]"
+                                                        default_x0023_default_x0023_ui="[]"/>
+                                                </style>
+                                            </headerItem1694759737531>
+                                            <headerItem1694759704710
+                                                cq:cssClass="guide-1695034785353"
+                                                jcr:lastModified="{Date}2023-09-15T17:47:38.961+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1695034785353 .textField input[type='text']{&#xa;color:#000000;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="docType"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textboxwidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[color:#000000]"/>
+                                                </style>
+                                            </headerItem1694759704710>
+                                            <headerItem1694759773979
+                                                cq:cssClass="guide-1695034793302"
+                                                jcr:lastModified="{Date}2023-09-15T17:47:47.489+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text box"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1695034793302 .textField input[type='text']{&#xa;color:#000000;&#xa;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                name="formNo"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textboxwidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[color:#000000]"/>
+                                                </style>
+                                            </headerItem1694759773979>
+                                            <tableItem1
+                                                cq:cssClass="guide-1695031697980"
+                                                jcr:lastModified="{Date}2023-09-18T17:50:44.019+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidetextbox"
+                                                autofillFieldKeyword="name"
+                                                cssStyle=".guide-1695031697980 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;overflow:auto;&#xa;height:auto;&#xa;resize: none;&#xa;&#xa;}&#xa;.guide-1695031697980 .multiline.textField textArea{&#xa;color:#000000;&#xa;overflow:auto;&#xa;&#xa;}&#xa;.guide-1695031697980 .guideFieldWidget.textField.multiline {&#xa;display:block;&#xa;}&#xa;"
+                                                enabled="{Boolean}false"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideTextBox"
+                                                hideTitle="true"
+                                                multiLine="true"
+                                                name="desc"
+                                                textIsRich="[true,true,true]">
+                                                <style jcr:primaryType="nt:unstructured">
+                                                    <af_textbox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[overflow:auto,height:auto,cssOverride:resize: none;&#xa;]"/>
+                                                    <af_textareawidgetandtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        default_x0023_default="[color:#000000,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot; .guideFieldWidget.textField.multiline&quot;\,&quot;properties&quot;:{&quot;display&quot;:&quot;block&quot;}}}},overflow:auto]"
+                                                        default_x0023_default_x0023_mask="[border-top-width,border-right-width,border-bottom-width,border-left-width,borderWidthPopover,borderWidthLock]"
+                                                        default_x0023_default_x0023_ui="[borderWidthPopover:Set,display:block]"/>
+                                                </style>
+                                            </tableItem1>
+                                            <headerItem1695030989554
+                                                jcr:lastModified="{Date}2023-11-08T14:55:11.434+05:30"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="fd/af/components/guidebutton"
+                                                dorExclusion="true"
+                                                guideComponentType="true"
+                                                guideNodeClass="guideButton"
+                                                hideTitle="true"
+                                                name="download"
+                                                textIsRich="[true,true]"
+                                                type="Button">
+                                                <fd:rules
+                                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.disclosuresTable.disclosureRow.download&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;download&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;downloadDisclosure&quot;\,&quot;displayName&quot;:&quot;downloadDisclosure&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;fileName&quot;\,&quot;description&quot;:&quot;fileName&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.ProductDesign.disclosuresTable.disclosureRow.fileName&quot;\,&quot;displayName&quot;:&quot;Text Box&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Product Design/disclosuresTable/Row 1/Text Box/&quot;\,&quot;name&quot;:&quot;fileName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.ProductDesign.disclosuresTable.disclosureRow&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ndownloadDisclosure(fileName.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                                    jcr:primaryType="nt:unstructured"/>
+                                            </headerItem1695030989554>
+                                        </items>
+                                    </Row1>
+                                </items>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_tabletoolbar
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[display:none]"/>
+                                    <af_tableheadercell
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[]"/>
+                                    <af_tablecell
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[padding-right:0.001px,padding-bottom:0.001px,padding-left:0.001px,padding-top:0.001px,margin-right:0.001px,margin-bottom:0.001px,margin-left:0.001px,margin-top:0.001px]"
+                                        default_x0023_default_x0023_ui="[paddingPopover:0.001px,marginPopover:0.001px]"/>
+                                    <af_tablerow
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[]"
+                                        default_x0023_default_x0023_ui="[borderWidthLock:linkOff,borderWidthPopover:Set]"/>
+                                    <af_tableevenrow
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:#ECECEC]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:#ECECEC]"/>
+                                    <af_tableoddrow
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[]"
+                                        default_x0023_default_x0023_ui="[]"/>
+                                </style>
+                            </table>
+                            <guidetextbox
+                                jcr:lastModified="{Date}2024-02-02T14:42:28.154+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="selected Documents"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="selectedDocs"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false"/>
+                        </items>
+                    </panel_1872932356_cop>
+                </items>
+            </rootPanel>
+            <signerInfo
+                jcr:primaryType="nt:unstructured"
+                firstSignerFormFiller="false"
+                workflowType="SEQUENTIAL">
+                <signer0
+                    jcr:primaryType="nt:unstructured"
+                    countryCode="undefined"
+                    countryCodeSource="undefined"
+                    delegateTo="undefined"
+                    email="undefined"
+                    emailSource="undefined"
+                    phone="undefined"
+                    phoneSource="undefined"
+                    recipientRole="undefined"
+                    securityOption="undefined"
+                    signerTitle="Signer One"/>
+            </signerInfo>
+            <view jcr:primaryType="nt:unstructured">
+                <print
+                    jcr:lastModified="{Date}2023-03-13T13:24:06.077+05:30"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/authoring/components/dor/dorProperties"
+                    metaTemplateRef="/libs/fd/af/dor/templates/defaultTemplate.xdp"/>
+            </view>
+            <autoSaveInfo jcr:primaryType="nt:unstructured"/>
+        </guideContainer>
+    </jcr:content>
+    <rep:policy/>
+</jcr:root>

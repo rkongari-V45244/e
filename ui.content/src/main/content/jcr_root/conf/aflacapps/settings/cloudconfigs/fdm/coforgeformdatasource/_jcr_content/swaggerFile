@@ -1,0 +1,633 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Test Swagger API for AEM Forms",
+    "version": "1.0.0",
+    "title": "AEM FORMS API"
+  },
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "host": "localhost:8080",
+  "paths": {
+    "/bin/FetchGroupEnrollment": {
+      "get": {
+        "summary": "Fetch Group Enrollment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "groupNumber",
+            "type": "string",
+            "description": "Group Number",
+            "required": true
+          }
+        ],
+        "operationId": "FetchGroupEnrollment ",
+        "responses": {
+          "200": {
+            "description": "Success Response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GroupEnrollments"
+              }
+            }
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/bin/FetchEnrollmentPlatform": {
+      "get": {
+        "summary": "Fetch Enrollment Platform",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "groupEnrollmentRecord",
+            "type": "string",
+            "description": "group Enrollment Record value",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "groupNumber",
+            "type": "string",
+            "description": "Group Number",
+            "required": true
+          }
+        ],
+        "operationId": "FetchEnrollmentPlatform ",
+        "responses": {
+          "200": {
+            "description": "Success Response ",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EnrollmentPlatform"
+              }
+            }
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/bin/HealthFormApiResponse": {
+      "get": {
+        "summary": "Health Api Form Response",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "groupEnrollmentRecord",
+            "type": "string",
+            "description": "group Enrollment Record value",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "groupNumber",
+            "type": "string",
+            "description": "Group Number",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "enrollmentPlatform",
+            "type": "string",
+            "description": "enrollment Platform value",
+            "required": true
+          }
+        ],
+        "operationId": "HealthFormApiResponse ",
+        "responses": {
+          "200": {
+            "description": "Success Response ",
+            "schema": {
+              "$ref": "#/definitions/HealthApiResponse"
+            }
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/bin/SubmitHealthForm": {
+      "post": {
+        "summary": "SubmitHealth Form data",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/submitHealthFormRequest"
+            }
+          }
+        ],
+        "operationId": "SubmitHealthForm",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/submitHealthFormResponse"
+            }
+          },
+          "400": {
+            "description": "Invalid Order"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "GroupEnrollments": {
+      "type": "object",
+      "properties": {
+        "groupEnrollmentRecord": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "EnrollmentPlatform": {
+      "type": "object",
+      "properties": {
+        "enrollmentPlatform": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "HealthApiResponse": {
+      "type": "object",
+      "properties": {
+        "groupNumber": {
+          "type": "string"
+        },
+        "groupEnrollmentRecord": {
+          "type": "string"
+        },
+        "enrollmentPlatform": {
+          "type": "string"
+        },
+        "productsOffered": {
+          "$ref": "#/definitions/productsOffered"
+        }
+      }
+    },
+    "productsOffered": {
+      "type": "object",
+      "properties": {
+        "accidentCoverage": {
+          "$ref": "#/definitions/propertiesModel"
+        },
+        "criticalIllnessCoverage": {
+          "$ref": "#/definitions/propertiesModel"
+        },
+        "hospitalIndenityCoverage": {
+          "$ref": "#/definitions/propertiesModel"
+        },
+        "worksiteDisabilityCoverage": {
+          "$ref": "#/definitions/propertiesModel"
+        },
+        "benExtendCoverage": {
+          "$ref": "#/definitions/propertiesModel"
+        },
+        "termLifeCoverage": {
+          "$ref": "#/definitions/propertiesModel"
+        }
+      }
+    },
+    "propertiesModel": {
+      "type": "object",
+      "properties": {
+        "coverage": {
+          "type": "string"
+        },
+        "productDesription": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "productOffered": {
+          "type": "string"
+        }
+      }
+    },
+    "submitHealthFormRequest": {
+      "type": "object",
+      "properties": {
+        "groupNumber": {
+          "type": "string"
+        },
+        "groupEnrollmentRecord": {
+          "type": "string"
+        },
+        "enrollmentPlatform": {
+          "type": "string"
+        },
+        "productsOffered": {
+          "$ref": "#/definitions/productsOfferedSubmitRequest"
+        }
+      }
+    },
+    "productsOfferedSubmitRequest": {
+      "type": "object",
+      "properties": {
+        "accidentCoverage": {
+          "$ref": "#/definitions/accidentCoverage"
+        },
+        "criticalIllnessCoverage": {
+          "$ref": "#/definitions/criticalIllnessCoverage"
+        },
+        "hospitalIndenityCoverage": {
+          "$ref": "#/definitions/hospitalIndenityCoverage"
+        },
+        "worksiteDisabilityCoverage": {
+          "$ref": "#/definitions/worksiteDisabilityCoverage"
+        },
+        "benExtendCoverage": {
+          "$ref": "#/definitions/benExtendCoverage"
+        },
+        "termLifeCoverage": {
+          "$ref": "#/definitions/termLifeCoverage"
+        }
+      }
+    },
+    "accidentCoverage": {
+      "type": "object",
+      "properties": {
+        "coverage": {
+          "type": "string"
+        },
+        "productDesription": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "productOffered": {
+          "type": "string"
+        },
+        "healthQuestionsRequired": {
+          "type": "string"
+        },
+        "participationRequirement": {
+          "type": "string"
+        },
+        "newHire": {
+          "type": "string"
+        }
+      }
+    },
+    "criticalIllnessCoverage": {
+      "type": "object",
+      "properties": {
+        "coverage": {
+          "type": "string"
+        },
+        "productDesription": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "productOffered": {
+          "type": "string"
+        },
+        "tobaccoStatus": {
+          "type": "string"
+        },
+        "spouseTobaccoStatus": {
+          "type": "string"
+        },
+        "employeeIncrement": {
+          "type": "integer"
+        },
+        "spouseIncrement": {
+          "type": "integer"
+        },
+        "employeeMaxAmtElect": {
+          "type": "integer"
+        },
+        "spouseMaxAmtElect": {
+          "type": "integer"
+        },
+        "spousePercentageOfEmployee": {
+          "type": "string"
+        },
+        "childPercentageOfEmployee": {
+          "type": "string"
+        },
+        "healthQuestionsRequired": {
+          "type": "string"
+        },
+        "participationRequirement": {
+          "type": "string"
+        },
+        "newHire": {
+          "type": "string"
+        }
+      }
+    },
+    "hospitalIndenityCoverage": {
+      "type": "object",
+      "properties": {
+        "coverage": {
+          "type": "string"
+        },
+        "productDesription": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "productOffered": {
+          "type": "string"
+        },
+        "healthQuestionsRequired": {
+          "type": "string"
+        },
+        "participationRequirement": {
+          "type": "string"
+        },
+        "newHire": {
+          "type": "string"
+        }
+      }
+    },
+    "worksiteDisabilityCoverage": {
+      "type": "object",
+      "properties": {
+        "coverage": {
+          "type": "string"
+        },
+        "productOffered": {
+          "type": "string"
+        },
+        "healthQuestionsRequired": {
+          "type": "string"
+        },
+        "participationRequirement": {
+          "type": "string"
+        },
+        "newHire": {
+          "type": "string"
+        },
+        "employeeMaxAmtElect": {
+          "type": "integer"
+        },
+        "tdiMaxAmtElect": {
+          "type": "integer"
+        },
+        "employeeMinAmtElect": {
+          "type": "integer"
+        },
+        "tdiStateMinAmtElect": {
+          "type": "integer"
+        },
+        "employeeIncrement": {
+          "type": "integer"
+        },
+        "tdiStateIncrement": {
+          "type": "integer"
+        }
+      }
+    },
+    "benExtendCoverage": {
+      "type": "object",
+      "properties": {
+        "coverage": {
+          "type": "string"
+        },
+        "productOffered": {
+          "type": "string"
+        }
+      }
+    },
+    "termLifeCoverage": {
+      "type": "object",
+      "properties": {
+        "coverage": {
+          "type": "string"
+        },
+        "productOffered": {
+          "type": "string"
+        }
+      }
+    },
+    "submitHealthFormResponse": {
+      "type": "object",
+      "properties": {
+        "accountInformation": {
+          "$ref": "#/definitions/accountInformation"
+        },
+        "hospitalIndemnity": {
+          "$ref": "#/definitions/hospitalIndemnity"
+        }
+      }
+    },
+    "accountInformation": {
+      "type": "object",
+      "properties": {
+        "groupNumber": {
+          "type": "string"
+        },
+        "accountName": {
+          "type": "string"
+        },
+        "enrollmentPlatform": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "noOfEligibleEmployees": {
+          "type": "integer"
+        },
+        "deductionFrequency": {
+          "type": "string"
+        },
+        "ssnOReeid": {
+          "type": "string"
+        },
+        "domesticPartnerEligible": {
+          "type": "boolean"
+        },
+        "locations": {
+          "type": "string"
+        },
+        "productSold": {
+          "type": "string"
+        },
+        "importantDates": {
+          "$ref": "#/definitions/importantDates"
+        },
+        "enrollmentConditions": {
+          "$ref": "#/definitions/enrollmentConditions"
+        },
+        "groupContacts": {
+          "$ref": "#/definitions/groupContacts"
+        }
+      }
+    },
+    "importantDates": {
+      "type": "object",
+      "properties": {
+        "effectiveDate": {
+          "type": "string"
+        },
+        "enrollmentStartDate": {
+          "type": "string"
+        },
+        "enrollmentEndDate": {
+          "type": "string"
+        },
+        "siteTestDueDate": {
+          "type": "string"
+        }
+      }
+    },
+    "enrollmentConditions": {
+      "type": "object",
+      "properties": {
+        "openEnrollment": {
+          "$ref": "#/definitions/enrollmentConditionsProp"
+        },
+        "newHireOrOngoingEnrollment": {
+          "$ref": "#/definitions/enrollmentConditionsProp"
+        }
+      }
+    },
+    "enrollmentConditionsProp": {
+      "type": "object",
+      "properties": {
+        "selfService": {
+          "type": "boolean"
+        },
+        "1on1": {
+          "type": "boolean"
+        },
+        "callCenter": {
+          "type": "boolean"
+        }
+      }
+    },
+    "groupContacts": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "callCenter": {
+          "type": "string"
+        }
+      }
+    },
+    "hospitalIndemnity": {
+      "type": "object",
+      "properties": {
+        "planNamingConvention": {
+          "type": "string"
+        },
+        "planSeries": {
+          "type": "string"
+        },
+        "applicationNumber": {
+          "type": "string"
+        },
+        "brochuers": {
+          "type": "string"
+        },
+        "prePostTax": {
+          "type": "string"
+        },
+        "eligibilityAndParticipationRequirments": {
+          "$ref": "#/definitions/eligibilityAndParticipationRequirments"
+        },
+        "eligibilityStatements": {
+          "$ref": "#/definitions/eligibilityStatements"
+        },
+        "healthQuestions": {
+          "$ref": "#/definitions/healthQuestions"
+        }
+      }
+    },
+    "eligibilityAndParticipationRequirments": {
+      "type": "object",
+      "properties": {
+        "hoursWorkedPerWeek": {
+          "type": "integer"
+        },
+        "eligibilityWaitingPeriod": {
+          "type": "string"
+        },
+        "employeeIssueAge": {
+          "type": "string"
+        },
+        "spouseIssueAge": {
+          "type": "string"
+        },
+        "childIssueAge": {
+          "type": "string"
+        },
+        "participationRequirement": {
+          "type": "string"
+        },
+        "newHire": {
+          "type": "string"
+        }
+      }
+    },
+    "eligibilityStatements": {
+      "type": "object",
+      "properties": {
+        "affirmationOrQuestions": {
+          "type": "string"
+        },
+        "complianceLanguage": {
+          "type": "string"
+        },
+        "affirmations": {
+          "$ref": "#/definitions/affirmations"
+        }
+      }
+    },
+    "affirmations": {
+      "type": "object"
+    },
+    "healthQuestions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

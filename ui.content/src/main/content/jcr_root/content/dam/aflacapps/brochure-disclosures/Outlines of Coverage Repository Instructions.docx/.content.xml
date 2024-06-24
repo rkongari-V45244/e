@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="ec735442-bb94-4fe4-9716-ddf5f60a0964">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:59:22.779+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}46"
+            dam:CharactersWithSpaces="{Long}53"
+            dam:Company="Aflac"
+            dam:created="{Date}2017-09-21T15:11:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:59:22.283+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Terrance Davis"
+            dam:Lines="{Long}1"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2017-09-21T15:15:00.000Z"
+            dam:Pages="{Long}1"
+            dam:Paragraphs="{Long}1"
+            dam:revision="{Long}1"
+            dam:ScaleCrop="false"
+            dam:sha1="09e2ec834867b89a808e23b8df191236fa3498be"
+            dam:SharedDoc="false"
+            dam:size="{Long}26213"
+            dam:Template="Normal.dotm"
+            dam:TotalTime="{Long}4"
+            dam:variant="{Long}1"
+            dam:Words="{Long}8"
+            dc:creator="[Terrance Davis]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

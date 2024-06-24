@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.aflac.com/BrochureGenerationTool" elementFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.aflac.com/BrochureGenerationTool">
+
+    <complexType name="brochureData">
+    	<sequence>
+    		<element name="planId" type="string"></element>
+    		<element name="language">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="English"></enumeration>
+    					<enumeration value="Spanish"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="productPlanId" type="string"></element>
+    		<element name="planName">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    					<maxLength value="25"></maxLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+			<element name="productCoverages"
+    			type="tns:productCoverages">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <element name="brochureData"
+    	type="tns:brochureData">
+    </element>
+	
+	<complexType name="productCoverage">
+    	<sequence>
+			<element name="brochureNumber" type="string"></element>
+    		<element name="productCoverageName" type="string"></element>
+    		<element name="productCoverageLevel" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="productCoverages">
+    	<sequence>
+    		<element name="productCoverage" type="tns:productCoverage" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+</schema>

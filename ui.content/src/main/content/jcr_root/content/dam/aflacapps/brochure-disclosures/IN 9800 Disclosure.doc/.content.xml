@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3260f248-b13d-4252-8e01-7ba4dd70e4e7">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:55:50.058+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:CodePage="{Long}1252"
+            dam:Company="Carolina Continental Ins. Co."
+            dam:extracted="{Date}2023-09-18T19:55:49.962+05:30"
+            dam:LineCount="{Long}13"
+            dam:LinksDirty="False"
+            dam:ParCount="{Long}3"
+            dam:Scale="False"
+            dam:sha1="caa6b6b325627d66348bd8408ab810b34bf9a11e"
+            dam:size="{Long}45056"
+            dc:format="application/msword"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

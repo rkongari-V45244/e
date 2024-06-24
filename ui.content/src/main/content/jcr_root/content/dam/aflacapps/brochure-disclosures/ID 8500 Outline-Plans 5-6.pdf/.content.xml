@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="00e727ad-43c1-4aa8-b40f-293741dbf4c5">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:55:13.301+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="Marsha Tate"
+            dam:extracted="{Date}2023-09-18T19:55:12.295+05:30"
+            dam:numPages="{Long}4"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Microsoft® Word 2010"
+            dam:sha1="c7ecb956ff1a85c631eb00a8c7c22296c22b5540"
+            dam:size="{Long}157804"
+            dc:creator="[Marsha Tate]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Microsoft® Word 2010"
+            xmp:CreateDate="{Date}2016-06-24T22:12:06.000+05:30"
+            xmp:CreatorTool="Microsoft® Word 2010"
+            xmp:MetadataDate="{Date}2016-06-24T12:42:06.000-04:00"
+            xmp:ModifyDate="{Date}2016-06-24T22:12:06.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

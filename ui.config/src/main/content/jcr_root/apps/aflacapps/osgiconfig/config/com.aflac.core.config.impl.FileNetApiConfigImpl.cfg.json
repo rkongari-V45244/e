@@ -1,0 +1,15 @@
+{
+	"filenetCertPdk": "Afl@cDocExFileNet1",
+	"filenetKeyStorePass": "",
+	"filenetTokenProviderURL": "https://testenterpriseapi.aflac.com/ViewPointIDPSAMLTokenRequestorAPI1Test/intg/saml",
+	"filenetTokenUser": "aemforms-i-user@nt.lab.com",
+	"filenetDocumentsURL": "https://testenterpriseapi.aflac.com/DocumentAPI1Test/intg/v1/documents",
+	"filenetDocumentsRetrieveURL": "https://testenterpriseapi.aflac.com/DocumentAPI1Test/intg/v1/documents/",
+	"filenetCredsUser" : "aemforms-i-user",
+	"filenetCredsUserPass" : "GtC#@f9I",
+	"filenetCredsPFXPath": "certificates/ic_aem_forms_app.nt.lab.com.pfx",
+	"objectStore": "ACC",
+	"version": "1",
+	"insertData": "insert",
+	"asmNotification": "not send"
+}

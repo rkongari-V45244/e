@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="b45e29df-49f2-4341-9a64-b891b7193831">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:59:30.211+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}3774"
+            dam:CharactersWithSpaces="{Long}4428"
+            dam:Company="CAIC"
+            dam:created="{Date}2011-06-30T21:11:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:59:30.111+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Sara McCormick"
+            dam:lastPrinted="{Date}2012-02-02T21:51:00.000Z"
+            dam:Lines="{Long}31"
+            dam:LinksUpToDate="false"
+            dam:lpstr="CAROLINA CONTINENTAL LIFE INSURANCE COMPANY"
+            dam:modified="{Date}2012-08-10T12:12:00.000Z"
+            dam:Pages="{Long}3"
+            dam:Paragraphs="{Long}8"
+            dam:revision="{Long}22"
+            dam:ScaleCrop="false"
+            dam:sha1="aa2939bef057cdf1e00e25bb9ca2820d31ba83a1"
+            dam:SharedDoc="false"
+            dam:size="{Long}41164"
+            dam:Template="Normal.dotm"
+            dam:TitlesOfParts="CAROLINA CONTINENTAL LIFE INSURANCE COMPANY"
+            dam:TotalTime="{Long}27"
+            dam:variant="{Long}1"
+            dam:vector="CAROLINA CONTINENTAL LIFE INSURANCE COMPANY"
+            dam:Words="{Long}662"
+            dc:creator="[Continental American Ins. Co.]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="VT 7800 Outline of Coverage"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="VT 7800 Outline of Coverage"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

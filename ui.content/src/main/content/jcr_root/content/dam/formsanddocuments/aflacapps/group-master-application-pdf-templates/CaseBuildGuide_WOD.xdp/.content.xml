@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="cd560e47-ac12-4b07-bea1-69489e92d5db">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2024-03-26T14:34:45.798+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        sling:resourceType="fd/fm/xfaforms/render"
+        type="xfaForm"
+        xfaForm="{Long}1">
+        <metadata
+            dam:extracted="{Date}2024-03-26T14:34:45.389+05:30"
+            dam:sha1="d570afe6f063f4266246bd3d8a65dcba709a2413"
+            dam:size="{Long}409162"
+            dc:format="application/vnd.adobe.xdp+xml"
+            jcr:lastModified="{Date}2023-10-20T14:54:23.124+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[mix:created,mix:lastModified]"
+            jcr:primaryType="nt:unstructured"
+            allowedRenderFormat="BOTH"
+            availableInMobileApp="false"
+            name="CaseBuildGuide_WOD.xdp"
+            profile="/libs/xfaforms/profiles/default"/>
+    </jcr:content>
+</jcr:root>

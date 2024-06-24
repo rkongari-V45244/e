@@ -1,0 +1,10 @@
+{
+   "refreshUrl": "$[env:ADOBESIGN_refreshUrl;default=https://api.na2.documents.adobe.com/oauth/v2/refresh]",
+   "refreshToken": "$[secret:ADOBESIGN_refreshToken]",
+   "grantType": "$[env:ADOBESIGN_grantType;default=refresh_token]",
+   "clientId": "$[secret:ADOBESIGN_clientId]",
+   "clientSecret": "$[secret:ADOBESIGN_clientSecret]",
+   "baseUrl": "$[env:ADOBESIGN_baseUrl;default=https://api.na2.echosign.com:443/api/rest/v2]",
+   "waitTime": "$[env:ADOBESIGN_waitTime;default=120000]",
+   "server": "$[env:ADOBESIGN_server;default=author-p60469-e738775.adobeaemcloud.com]"
+}

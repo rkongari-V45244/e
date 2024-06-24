@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="a0d4f718-43e1-433a-9c20-81386b421cd2">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-21T10:19:21.028+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}16.0000"
+            dam:Characters="{Long}17408"
+            dam:CharactersWithSpaces="{Long}20422"
+            dam:created="{Date}2023-01-23T20:00:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-21T10:19:17.310+05:30"
+            dam:HeadingPairs="Title1Headings31"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}31"
+            dam:lastModifiedBy="Randy Daugherty"
+            dam:Lines="{Long}145"
+            dam:LinksUpToDate="false"
+            dam:lpstr="Appendix A: Document Revision History"
+            dam:modified="{Date}2023-01-23T20:00:00.000Z"
+            dam:Pages="{Long}14"
+            dam:Paragraphs="{Long}40"
+            dam:revision="{Long}2"
+            dam:ScaleCrop="false"
+            dam:sha1="266b4ad402948529364c6ec8f84b398a162c088d"
+            dam:SharedDoc="false"
+            dam:size="{Long}17939954"
+            dam:Template="Template for Technical Content (5)"
+            dam:TitlesOfParts="Template for Technical Content    Carrier PlaybookPinnacle Partner Carrier Client Account SpecificsProduct Descriptions    Accident         Plan Design    Hospital Indemnity        Plan Design    Critical Illness         Plan Design    Network Dental     Network Vision         Plan Design        Plans below are available via SSO Connection    Whole Life    Other PlansProduct PlacementImplementation/Enrollment Rules    Life Event Enrollment     Site TestingBenefit Configuration MatrixEDI FilesFTP TransferError Reporting EOI ProcessSSO/APIBillingAE &amp; Year End Process    EDI Files    Sync FilesQuestions?Appendix A: Document Revision History"
+            dam:TotalTime="{Long}1"
+            dam:variant="{Long}31"
+            dam:vector="Template for Technical Content    Carrier PlaybookPinnacle Partner Carrier Client Account SpecificsProduct Descriptions    Accident         Plan Design    Hospital Indemnity        Plan Design    Critical Illness         Plan Design    Network Dental     Network Vision         Plan Design        Plans below are available via SSO Connection    Whole Life    Other PlansProduct PlacementImplementation/Enrollment Rules    Life Event Enrollment     Site TestingBenefit Configuration MatrixEDI FilesFTP TransferError Reporting EOI ProcessSSO/APIBillingAE &amp; Year End Process    EDI Files    Sync FilesQuestions?Appendix A: Document Revision History"
+            dam:Words="{Long}3054"
+            dc:creator="[Gaymeil Homer-Mesina]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:subject="Technical Content Template"
+            dc:title="Pinnacle Partner Playbook - Aflac Voluntary Benefits"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Pinnacle Partner Playbook - Aflac Voluntary Benefits"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

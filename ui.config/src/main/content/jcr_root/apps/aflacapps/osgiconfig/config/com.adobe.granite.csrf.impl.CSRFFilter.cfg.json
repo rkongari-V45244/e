@@ -1,0 +1,16 @@
+{
+  "filter.excluded.paths":[
+    "/libs/dam/gui/content/assets/assetlinkshare",
+    "/content/communities/scorm/RecordResults",
+    "/content/cq:graphql/global/endpoint",
+    "/graphql",
+    "/libs/dam/cfm/headless/endpoints/content/graphql",
+    "/bin/unifiedshell/discovery",
+    "/content/graphql/endpoint",
+    "/content/graphql/endpoint"
+  ],
+  "filter.methods":[
+    "PUT",
+    "DELETE"
+  ]
+}

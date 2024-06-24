@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="bb125a58-b47d-4965-9769-d542c802a058">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:56:29.658+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="Elizabeth Goodall"
+            dam:extracted="{Date}2023-09-18T19:56:03.750+05:30"
+            dam:numPages="{Long}3"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Microsoft® Word 2010"
+            dam:sha1="57d47c14e29f74697de91e4a9be9fb30d9ed2edd"
+            dam:size="{Long}324008"
+            dc:creator="[Elizabeth Goodall]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Microsoft® Word 2010"
+            xmp:CreateDate="{Date}2016-07-15T01:40:58.000+05:30"
+            xmp:CreatorTool="Microsoft® Word 2010"
+            xmp:MetadataDate="{Date}2016-07-14T16:10:58.000-04:00"
+            xmp:ModifyDate="{Date}2016-07-15T01:40:58.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

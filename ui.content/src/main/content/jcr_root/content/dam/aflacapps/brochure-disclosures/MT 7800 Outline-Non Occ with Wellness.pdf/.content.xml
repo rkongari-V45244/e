@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3952a0ae-e06d-4c83-868e-707bc9354d29">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:57:15.182+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="rhack"
+            dam:extracted="{Date}2023-09-18T19:57:12.563+05:30"
+            dam:numPages="{Long}4"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Adobe PDF Library 15.0"
+            dam:sha1="6d0b0f7b42bbf35c26b5343fb64f3eb67e88f39b"
+            dam:size="{Long}95537"
+            dc:creator="[rhack]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:description="\0"
+            dc:format="application/pdf"
+            dc:title="CONTINENTAL"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="CONTINENTAL"
+            pdf:Producer="Adobe PDF Library 15.0"
+            pdfx:Company="CAIC"
+            pdfx:SourceModified="D:20160713190056"
+            xmp:CreateDate="{Date}2016-07-14T00:32:25.000+05:30"
+            xmp:CreatorTool="Acrobat PDFMaker 15 for Word"
+            xmp:MetadataDate="{Date}2016-07-13T15:02:25.000-04:00"
+            xmpMM:DocumentID="uuid:086aa9fc-93ac-4538-81ea-566793e8cd3a"
+            xmpMM:InstanceID="uuid:4c4b490d-b4e6-4a2b-b182-7e11d5325fd9"
+            xmpMM:subject="{Long}[99]"
+            xmpMM:subject_xmpArrayType="rdf:Seq"
+            xmp:ModifyDate="{Date}2016-07-14T00:32:25.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

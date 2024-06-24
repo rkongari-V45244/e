@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3bf31895-9e04-435a-b4e8-9dd1ec721538">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:59:02.988+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="E11950"
+            dam:extracted="{Date}2023-09-18T19:58:58.161+05:30"
+            dam:numPages="{Long}2"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Acrobat Distiller 15.0 (Windows)"
+            dam:sha1="e25004702bd7370cc9c4a2eed3a4e0bd94684249"
+            dam:size="{Long}21320"
+            dc:creator="[E11950]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="Microsoft Word - CAI5002NH Outline of Coverage-24-Hour Coverage-FINAL 062116"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Microsoft Word - CAI5002NH Outline of Coverage-24-Hour Coverage-FINAL 062116"
+            pdf:Producer="Acrobat Distiller 15.0 (Windows)"
+            xmp:CreateDate="{Date}2016-06-22T00:56:14.000+05:30"
+            xmp:CreatorTool="PScript5.dll Version 5.2.2"
+            xmpMM:DocumentID="uuid:fc1554e4-a12c-4359-bc31-d76e253ecca6"
+            xmpMM:InstanceID="uuid:eba5791f-883a-4bc1-aefc-c6621b0e6ca1"
+            xmp:ModifyDate="{Date}2016-06-22T00:56:14.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

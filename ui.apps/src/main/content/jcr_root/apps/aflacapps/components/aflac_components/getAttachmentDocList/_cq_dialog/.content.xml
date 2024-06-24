@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="MASTERAPP - Get Attachments Pdfs"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <processcommon
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Common"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <basic
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        disabled="false"
+                                        fieldLabel="Title"
+                                        name="./jcr:title"/>
+                                    <description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        disabled="false"
+                                        fieldLabel="Description"
+                                        name="./jcr:description"/>
+                                </items>
+                            </basic>
+                            <advanced
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Advanced Settings"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <advance
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check if your handler will advance to the next step."
+                                        fieldLabel="Handler Advance"
+                                        name="./metaData/PROCESS_AUTO_ADVANCE"
+                                        text="Handler Advance"
+                                        value="true"/>
+                                </items>
+                            </advanced>
+                        </items>
+                    </column>
+                </items>
+            </processcommon>
+            <processargs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Arguments"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <arguments
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Please set the INPUT and OUTPUT variables - Mandatory (*)."
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <att1VarName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel=" INPUT - Please mention the name of the variable which contains first attachment selected by user."
+                                        name="./metaData/att1VarName"
+                                        required="{Boolean}true"/>
+                                    <att2VarName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel=" INPUT - Please mention the name of the variable which contains second attachment selected by user."
+                                        name="./metaData/att2VarName"
+                                        required="{Boolean}true"/>
+                                    <selectedAttVarName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel=" OUTPUT - Please mention the name of the variable to store attachment names."
+                                        name="./metaData/selectedAttVarName"
+                                        required="{Boolean}true"/>
+                                    <attPdfsVarName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel=" OUTPUT - Enter the name of the variable to store list of documents."
+                                        name="./metaData/attPdfsVarName"
+                                        required="{Boolean}true"/>
+                                </items>
+                            </arguments>
+                        </items>
+                    </column>
+                </items>
+            </processargs>
+            <common
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"/>
+            <process
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"/>
+        </items>
+    </content>
+</jcr:root>

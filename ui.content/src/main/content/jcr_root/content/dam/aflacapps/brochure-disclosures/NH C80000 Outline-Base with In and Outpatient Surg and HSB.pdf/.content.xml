@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="e6ac4394-c313-41aa-89b2-952d993a1c3a">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:58:47.681+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="E11950"
+            dam:extracted="{Date}2023-09-18T19:58:45.164+05:30"
+            dam:numPages="{Long}2"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Acrobat Distiller 15.0 (Windows)"
+            dam:sha1="e3658da84f31dcc858fe909a6b5da9ef9dc64356"
+            dam:size="{Long}512647"
+            dc:creator="[E11950]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="Microsoft Word - NH C80000 Outline-Base with In &amp; Outpatient Surg &amp; HSB 81716"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Microsoft Word - NH C80000 Outline-Base with In &amp; Outpatient Surg &amp; HSB 81716"
+            pdf:Producer="Acrobat Distiller 15.0 (Windows)"
+            xmp:CreateDate="{Date}2016-08-18T20:53:03.000+05:30"
+            xmp:CreatorTool="PScript5.dll Version 5.2.2"
+            xmp:MetadataDate="{Date}2016-08-18T11:23:25.000-04:00"
+            xmpMM:DocumentID="uuid:6071aa6c-aabe-4ede-8794-316eeb398e4e"
+            xmpMM:InstanceID="uuid:9ad3249f-eb11-4c94-bc10-866f10044b72"
+            xmp:ModifyDate="{Date}2016-08-18T20:53:25.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

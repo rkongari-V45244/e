@@ -1,0 +1,236 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is Group Master Application Api",
+    "version": "1.0.0",
+    "title": "Group Master Application Apis",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:4502",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Group Master Application",
+      "description": "Everything about your Aem Forms Group Master Application pages"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/bin/geh": {
+      "get": {
+        "tags": [
+          "groupMasterApp"
+        ],
+        "summary": "Find Group Master Application by group proposal number",
+        "description": "Returns a Details about group proposal",
+        "operationId": "getGroupMasterApp",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "groupProposalNo",
+            "in": "body",
+            "description": "No for Group Master Application to return",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/GroupProposalNumber"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/GroupMasterApp"
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Data not found"
+          }
+        }
+      },
+	  "post" : {
+        "summary" : "getGroupMaster",
+        "operationId" : "GetGroupMaster",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "groupProposalNo",
+          "in" : "body",
+          "description" : "No for Group Master Application to return",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/GroupProposalNumber"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/GroupMasterApp"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Data not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+	"GroupProposalNumber": {
+		"type": "object",
+		"properties": {
+			"groupProposalNo": {
+				"type": "string"
+			}
+		}
+	},
+    "GroupMasterApp": {
+      "type": "object",
+      "properties": {
+        "groupProposalNo": {
+          "type": "string"
+        },
+        "coverageEffectiveDate": {
+          "type": "string"
+        },
+        "situsState": {
+          "type": "string"
+        },
+        "organizationName": {
+          "type": "string"
+        },
+        "eligibleEesCount": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "products": {
+          "type": "array",
+          "xml": {
+            "name": "product",
+            "wrapped": true
+          },
+          "items": {
+            "$ref": "#/definitions/Product"
+          }
+        }
+      },
+      "xml": {
+        "name": "GroupMasterApp"
+      }
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "rateGuaranteeLength": {
+          "type": "string"
+        },
+        "percentageByEmployee": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "percentageByEmployer": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "applicationType": {
+          "type": "string"
+        },
+		"productProvisionCoverageType": {
+          "type": "string"
+        },
+		"productSeries": {
+          "type": "string"
+        },
+		"productProvisionPortabilityType": {
+          "type": "string"
+        },
+		"plan": {
+          "type": "string"
+        },
+		"productCoverage": {
+          "type": "array",
+          "xml": {
+            "name": "productCoverage",
+            "wrapped": true
+          },
+          "items": {
+            "$ref": "#/definitions/ProductCoverage"
+          }
+        },
+        "eligibilityReq": {
+          "$ref": "#/definitions/EligibilityRequirement"
+        }
+      },
+      "xml": {
+        "name": "Product"
+      }
+    },
+	"ProductCoverage": {
+		"type": "object",
+      "properties": {
+        "productCoverageName": {
+          "type": "string"
+        },
+		"productCoverageLevel": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "ProductCoverage"
+      }
+	},
+    "EligibilityRequirement": {
+      "type": "object",
+      "properties": {
+        "empType": {
+          "type": "string"
+        },
+        "empAgeRange": {
+          "$ref": "#/definitions/EmpAgeRange"
+        }
+      },
+      "xml": {
+        "name": "EligibilityRequirement"
+      }
+    },
+    "EmpAgeRange": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "type": "string"
+        },
+        "minAge": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "maxAge": {
+          "type": "integer",
+          "format": "int64"
+        }
+      },
+      "xml": {
+        "name": "EmpAgeRange"
+      }
+    }
+  }
+}

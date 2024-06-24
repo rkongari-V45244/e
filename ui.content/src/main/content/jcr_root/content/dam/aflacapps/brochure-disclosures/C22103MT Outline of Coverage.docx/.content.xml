@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="306fb340-159e-4a99-87ee-636f0f1ae4f5">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:53:44.926+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}16.0000"
+            dam:Characters="{Long}20457"
+            dam:CharactersWithSpaces="{Long}23998"
+            dam:created="{Date}2021-09-23T13:06:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:53:44.585+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Kathleen Lynch"
+            dam:Lines="{Long}170"
+            dam:LinksUpToDate="false"
+            dam:lpstr="Microsoft Word - C21103.1MT Outline of Coverage.doc"
+            dam:modified="{Date}2021-12-07T18:47:00.000Z"
+            dam:Pages="{Long}9"
+            dam:Paragraphs="{Long}47"
+            dam:revision="{Long}4"
+            dam:ScaleCrop="false"
+            dam:sha1="2d0f018ab5bd741f6eaf8d923fe15a2f5a9a9261"
+            dam:SharedDoc="false"
+            dam:size="{Long}59433"
+            dam:Template="Normal.dotm"
+            dam:TitlesOfParts="Microsoft Word - C21103.1MT Outline of Coverage.doc"
+            dam:TotalTime="{Long}9"
+            dam:variant="{Long}1"
+            dam:vector="Microsoft Word - C21103.1MT Outline of Coverage.doc"
+            dam:Words="{Long}3588"
+            dc:creator="[e13062]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

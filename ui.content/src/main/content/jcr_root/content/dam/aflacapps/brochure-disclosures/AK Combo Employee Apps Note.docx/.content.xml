@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="13916c9d-9b86-4984-be10-269a57831a01">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:52:16.266+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}332"
+            dam:CharactersWithSpaces="{Long}389"
+            dam:Company="Aflac"
+            dam:created="{Date}2015-09-14T17:34:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:52:16.070+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Andrea Brown"
+            dam:Lines="{Long}2"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2016-05-04T15:24:00.000Z"
+            dam:Pages="{Long}1"
+            dam:Paragraphs="{Long}1"
+            dam:revision="{Long}10"
+            dam:ScaleCrop="false"
+            dam:sha1="b96716c066ff78f85ce9d30667c3fc86de44077c"
+            dam:SharedDoc="false"
+            dam:size="{Long}25919"
+            dam:Template="Normal.dotm"
+            dam:TotalTime="{Long}11"
+            dam:variant="{Long}1"
+            dam:Words="{Long}58"
+            dc:creator="[Andrea Brown]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="AK Combo Employee Apps Note "
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="AK Combo Employee Apps Note "/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

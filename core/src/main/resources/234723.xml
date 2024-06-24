@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<afData>
+	<afUnboundData>
+		<data>
+		</data>
+	</afUnboundData>
+	<afBoundData>
+		<brochureData
+			xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<planId>PLAN-234723</planId>
+			<language>English</language>
+			<productPlanId>PLAN-234723</productPlanId>
+			<planName>Group Critical Illness 22000</planName>
+			<productCoverages>
+				<productCoverage>
+					<brochureNumber>AG210846R1</brochureNumber>
+					<productCoverageName>Building Benefit</productCoverageName>
+					<productCoverageLevel></productCoverageLevel>
+				</productCoverage>
+				<productCoverage>
+					<brochureNumber>AG210845R2</brochureNumber>
+					<productCoverageName>Progressive Diseases</productCoverageName>
+					<productCoverageLevel></productCoverageLevel>
+				</productCoverage>
+				<productCoverage>
+					<brochureNumber>AG210842R2</brochureNumber>
+					<productCoverageName>Heart Event Rider</productCoverageName>
+					<productCoverageLevel></productCoverageLevel>
+				</productCoverage>
+			</productCoverages>
+		</brochureData>
+	</afBoundData>
+	<afSubmissionInfo>
+		<lastFocusItem></lastFocusItem>
+		<stateOverrides/>
+		<signers/>
+	</afSubmissionInfo>
+</afData>

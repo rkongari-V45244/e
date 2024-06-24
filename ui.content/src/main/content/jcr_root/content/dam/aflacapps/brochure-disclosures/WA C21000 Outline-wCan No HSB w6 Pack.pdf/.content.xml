@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="41c3da5d-7f46-4752-b1ca-feb490e27ea6">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T20:00:25.270+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="E11950"
+            dam:extracted="{Date}2023-09-18T20:00:24.725+05:30"
+            dam:numPages="{Long}6"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Acrobat Distiller 15.0 (Windows)"
+            dam:sha1="5e757cf36c6fca051e4e2906919924b992c8c51a"
+            dam:size="{Long}677209"
+            dc:creator="[E11950]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="Microsoft Word - WA-C21000 wCan No HSB w6 Pack Outline CR02.doc"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Microsoft Word - WA-C21000 wCan No HSB w6 Pack Outline CR02.doc"
+            pdf:Producer="Acrobat Distiller 15.0 (Windows)"
+            xmp:CreateDate="{Date}2016-03-02T20:58:20.000+05:30"
+            xmp:CreatorTool="PScript5.dll Version 5.2.2"
+            xmp:MetadataDate="{Date}2016-03-02T10:28:56.000-05:00"
+            xmpMM:DocumentID="uuid:f48811cb-e538-41a5-bde8-3e9237bcb413"
+            xmpMM:InstanceID="uuid:f93cf5cf-f2fb-4460-b7d8-167c6d174ed7"
+            xmp:ModifyDate="{Date}2016-03-02T20:58:56.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

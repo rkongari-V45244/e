@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="4c2951ec-53ac-41b7-9a99-6ae9cc34a0a1">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-12-12T13:10:59.060+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:extracted="{Date}2022-12-12T13:10:48.859+05:30"
+            dam:numPages="{Long}1"
+            dam:Physicalheightininches="{Decimal}11.25"
+            dam:Physicalwidthininches="{Decimal}8.75"
+            dam:Producer="Adobe PDF Library 15.0"
+            dam:sha1="b814c2bc587dab11f515ff1c010de9fbb5201c34"
+            dam:size="{Long}164559"
+            dam:Trapped="False"
+            dc:format="application/pdf"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Adobe PDF Library 15.0"
+            pdf:Trapped="{Boolean}false"
+            xmp:CreateDate="{Date}2016-01-16T01:58:42.000+05:30"
+            xmp:CreatorTool="Adobe InDesign CC 2015 (Macintosh)"
+            xmp:MetadataDate="{Date}2016-01-15T15:28:45.000-05:00"
+            xmp:ModifyDate="{Date}2016-01-16T01:58:45.000+05:30"
+            xmpMM:DocumentID="xmp.id:f7bc1fa5-1121-4582-b1f0-7994ed3b65a2"
+            xmpMM:InstanceID="uuid:8d59a76e-e58d-7d45-9146-7f521062712b"
+            xmpMM:OriginalDocumentID="xmp.did:01801174072068118DBB93AD842AC28A"
+            xmpMM:RenditionClass="proof:pdf">
+            <xmpMM:DerivedFrom
+                jcr:primaryType="nt:unstructured"
+                stRef:documentID="xmp.did:FC0D080820206811822AB807E328B713"
+                stRef:instanceID="xmp.iid:cd80bf24-4c06-4d1b-a554-1fbd39f0b930"
+                stRef:originalDocumentID="xmp.did:01801174072068118DBB93AD842AC28A"
+                stRef:renditionClass="default"
+                xmpNodeType="xmpStruct"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

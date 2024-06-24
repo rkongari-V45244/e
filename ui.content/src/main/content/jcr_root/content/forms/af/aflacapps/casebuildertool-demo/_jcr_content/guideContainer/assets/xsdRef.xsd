@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+	targetNamespace="http://www.aflac.com/GroupMasterApplication"
+	elementFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.aflac.com/CaseBuilderTool" xmlns:Q1="http://www.aflac.com/GroupMasterApplication">
+
+	<complexType name="caseBuilderForm">
+		<sequence>
+			<element name="groupNo" type="string"></element>
+			<element name="coverageEffectiveDate" type="date"></element>
+			<element name="enrollmentRecord" type="string">
+
+			</element>
+			<element name="enrollmentPlatform">
+
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Ease"></enumeration>
+						<enumeration value="Benetrac"></enumeration>
+						<enumeration value="Selerix"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="accountInformation" type="Q1:accountInformation"></element>
+            <element name="accident" type="Q1:accident" minOccurs="0"
+				maxOccurs="1">
+			</element>
+			<element name="hospitalIndemnity"
+				type="Q1:hospitalIndemnity" minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="criticalIllness" type="Q1:criticalIllness"
+				minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="benExtend" type="Q1:benExtend" minOccurs="0"
+				maxOccurs="1">
+			</element>
+			<element name="workSiteDisability"
+				type="Q1:workSiteDisability" minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="wholeLife" type="Q1:wholeLife" minOccurs="0"
+				maxOccurs="1">
+			</element>
+			<element name="termLife" type="Q1:termLife" minOccurs="0"
+				maxOccurs="1">
+			</element>
+
+		</sequence>
+	</complexType>
+
+	<complexType name="case">
+		<sequence>
+			<element name="planName" type="string">
+
+			</element>
+			<element name="planLevel" type="string">
+
+			</element>
+			<element name="series" type="string"></element>
+			<element name="coverageLevel" type="string"></element>
+			<element name="applicationNumber" minOccurs="0"
+				maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="brochuresType" type="string"></element>
+			<element name="taxType" type="string"></element>
+            <element name="hoursWorkedPerWeek" type="string"></element>
+            <element name="eligibilityWaitingPeriod" type="string"></element>
+            <element name="employeeIssueAge" type="string"></element>
+            <element name="spouseIssueAge" type="string"></element>
+            <element name="childIssueAge" type="string"></element>
+
+
+
+
+
+
+            <element name="participationRequirement">
+				<simpleType>
+					<restriction base="string"></restriction>
+				</simpleType>
+			</element>
+            <element name="hireDate" type="date"></element>
+            <element name="productRecord" type="string">
+
+			</element>
+            <element name="healthQueReq" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Yes"></enumeration>
+						<enumeration value="No"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+        </sequence>
+	</complexType>
+
+	<complexType name="accident">
+		<sequence>
+			<element name="case" type="Q1:case"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="criticalIllness">
+		<sequence>
+			<element name="case" type="Q1:case"></element>
+		</sequence>
+	</complexType>
+
+
+	<complexType name="hospitalIndemnity">
+		<sequence>
+			<element name="case" type="Q1:case"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="benExtend">
+		<sequence>
+			<element name="case" type="Q1:case"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="workSiteDisability">
+		<sequence>
+			<element name="case" type="Q1:case"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="termLife">
+		<sequence>
+			<element name="case" type="Q1:case"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="wholeLife">
+		<sequence>
+			<element name="case" type="Q1:case"></element>
+		</sequence>
+	</complexType>
+
+	<element name="caseBuilderForm" type="Q1:caseBuilderForm"></element>
+
+
+
+	<complexType name="accountInformation">
+		<sequence>
+			<element name="groupNumber" type="string"></element>
+			<element name="accountName" type="string"></element>
+			<element name="situsState" type="string"></element>
+			<element name="eligibleEmployees" type="int"></element>
+			<element name="ssn" type="string"></element>
+			<element name="aflacEase" type="string">
+
+			</element>
+			<element name="deductionFrequency" type="string"></element>
+			<element name="partnerEligible" type="string">
+
+			</element>
+			<element name="locations" type="string"></element>
+			<element name="platform" type="string"></element>
+			<element name="productSold" type="string"></element>
+			<element name="coverageBillingEffDate" type="string"></element>
+			<element name="openEnrollmentStartDate" type="string"></element>
+			<element name="openEnrollmentEndDate" type="string"></element>
+			<element name="siteTestInfoDueDate" type="string"></element>
+			<element name="openEnrollmentSelfService" type="string"></element>
+			<element name="openEnrollmentOneToOne" type="string"></element>
+			<element name="openEnrollmentCallCenter" type="string"></element>
+			<element name="newHireSelfService" type="string"></element>
+			<element name="newHireOneToOne" type="string"></element>
+			<element name="newHireOECallCenter" type="string"></element>
+			<element name="clientManager" type="string"></element>
+			<element name="clientManagerEmail" type="string"></element>
+		</sequence>
+	</complexType>
+</schema>

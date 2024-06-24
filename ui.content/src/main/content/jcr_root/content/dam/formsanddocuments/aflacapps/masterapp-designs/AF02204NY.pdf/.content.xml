@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3c3789a5-e6fb-4cb7-833d-0b7d1ae5c2a0">
+    <jcr:content
+        dam:assetState="unProcessed"
+        jcr:lastModified="{Date}2024-04-17T19:29:05.332+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        sling:resourceType="fd/fm/xfaforms/render"
+        pdfForm="{Long}1"
+        type="pdfForm">
+        <metadata
+            dam:extracted="{Date}2024-02-10T14:01:06.567+05:30"
+            dam:numPages="{Long}1"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Designer 6.5"
+            dam:sha1="35726405f40f2908f1efe7a695aacc0668b4b360"
+            dam:size="{Long}2509807"
+            dc:format="application/pdf"
+            jcr:lastModified="{Date}2024-01-09T19:10:50.077+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[mix:created,mix:lastModified]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Designer 6.5"
+            pdfuaid:part="{Long}1"
+            xmp:CreateDate="{Date}2024-02-09T16:24:59.000+05:30"
+            xmp:CreatorTool="Designer 6.5"
+            xmp:MetadataDate="{Date}2024-02-09T16:24:59.000+05:30"
+            xmp:ModifyDate="{Date}2024-02-09T16:24:59.000+05:30"
+            xmpMM:DocumentID="uuid:2acd7335-4a86-4d6a-9ae6-7ded48947ad9"
+            xmpMM:InstanceID="uuid:b7007a6b-2b79-430e-85ec-83c145cb0b8c"
+            acroForm="false"
+            allowedRenderFormat="PDF"
+            assetType="pdfForm"
+            metadataUpdateAllowed="true"
+            name="AF02204NY.pdf">
+            <desc:version
+                desc:version="6.5.0.20190320.2.935878.932721"
+                jcr:primaryType="nt:unstructured"
+                xmpNodeType="xmpSimple">
+                <__Q
+                    desc:ref="/template/subform[1]"
+                    jcr:primaryType="nt:unstructured"
+                    xmpNodeType="xmpQualifier"/>
+            </desc:version>
+        </metadata>
+    </jcr:content>
+</jcr:root>

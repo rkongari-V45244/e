@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="24d4c77b-f365-48bb-bfd0-4b14dd6ece82">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:54:07.005+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:CodePage="{Long}1252"
+            dam:Company="CAIC"
+            dam:extracted="{Date}2023-09-18T19:54:05.369+05:30"
+            dam:LineCount="{Long}145"
+            dam:LinksDirty="False"
+            dam:ParCount="{Long}40"
+            dam:Scale="False"
+            dam:sha1="700a2d2bdbd9d7afd1a123217aa9a3382d9adcd0"
+            dam:size="{Long}126976"
+            dc:format="application/msword"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

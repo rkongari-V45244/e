@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="180b33ef-9175-4273-b010-2ba23dbb312d">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:59:17.983+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}554"
+            dam:CharactersWithSpaces="{Long}643"
+            dam:Company="Aflac"
+            dam:created="{Date}2018-02-22T16:57:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:59:17.749+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Administrator"
+            dam:lastPrinted="{Date}2014-09-17T20:04:00.000Z"
+            dam:Lines="{Long}4"
+            dam:LinksUpToDate="false"
+            dam:lpstr="NY Disclosure - Master App"
+            dam:modified="{Date}2018-02-22T16:59:00.000Z"
+            dam:Pages="{Long}1"
+            dam:Paragraphs="{Long}1"
+            dam:revision="{Long}3"
+            dam:ScaleCrop="false"
+            dam:sha1="95bbd0497a945e7beeba80ae93b8a8e6fe6db591"
+            dam:SharedDoc="false"
+            dam:size="{Long}29400"
+            dam:Template="Normal"
+            dam:TitlesOfParts="NY Disclosure - Master App"
+            dam:TotalTime="{Long}2"
+            dam:variant="{Long}1"
+            dam:vector="NY Disclosure - Master App"
+            dam:Words="{Long}90"
+            dc:creator="[A]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:description="This endorsement form deletes the reference to carcinoma in situ in all A-58000 series policies."
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:subject="Endorsement form"
+            dc:title="NY Disclosure - Master App - Census Enrollment"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="NY Disclosure - Master App - Census Enrollment"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

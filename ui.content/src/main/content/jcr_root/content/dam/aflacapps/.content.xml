@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:conf="/conf/aflacapps"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Aflac Apps">
+        <folderThumbnail/>
+    </jcr:content>
+    <_x0033_Color_x002b_Pantone_x002b_pos_x002b_Aflac_x002b_Logo.png/>
+    <MasterApp.png/>
+    <Brochuer.png/>
+    <AflacLogo.jpg/>
+    <group-accident-7000/>
+    <group-critical-illness-22000/>
+    <case-build/>
+    <brochure-disclosures/>
+</jcr:root>

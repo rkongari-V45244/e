@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="c2ba5c65-fb6b-4ed2-8dae-d10fb8421656">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:58:53.618+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="E11950"
+            dam:extracted="{Date}2023-09-18T19:58:51.668+05:30"
+            dam:numPages="{Long}2"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Acrobat Distiller 15.0 (Windows)"
+            dam:sha1="55daa3baf938cc78d0572cc68c3f81537c1318ed"
+            dam:size="{Long}512543"
+            dc:creator="[E11950]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="Microsoft Word - NH C80000 Outline with Outpatient Surgery 81716"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Microsoft Word - NH C80000 Outline with Outpatient Surgery 81716"
+            pdf:Producer="Acrobat Distiller 15.0 (Windows)"
+            xmp:CreateDate="{Date}2016-08-18T20:45:38.000+05:30"
+            xmp:CreatorTool="PScript5.dll Version 5.2.2"
+            xmp:MetadataDate="{Date}2016-08-18T11:16:01.000-04:00"
+            xmpMM:DocumentID="uuid:81faa837-9f7c-4084-ac60-47550f0cfad0"
+            xmpMM:InstanceID="uuid:d5da3252-2a9a-4d81-b848-e966b3dd0910"
+            xmp:ModifyDate="{Date}2016-08-18T20:46:01.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

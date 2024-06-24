@@ -1,0 +1,7 @@
+{
+   "authUrl": "$[env:authUrl]",
+   "apiUrl": "$[env:apiUrl]",
+   "env": "$[env:envName]",
+   "clientId": "$[secret:ApiClientId]",
+   "clientSecret": "$[secret:ApiClientSecret]"
+}

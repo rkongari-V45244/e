@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="c7b54676-7e98-427c-bd84-8abdb337e3d6">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:58:54.957+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="E11950"
+            dam:extracted="{Date}2023-09-18T19:58:53.779+05:30"
+            dam:numPages="{Long}2"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Acrobat Distiller 15.0 (Windows)"
+            dam:sha1="8d1ca4546f54aa8ce7255d8f661b05b75455357d"
+            dam:size="{Long}513030"
+            dc:creator="[E11950]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="Microsoft Word - NH C80000 Outline-Base with Treatment &amp; In &amp; Out Surg 81716"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Microsoft Word - NH C80000 Outline-Base with Treatment &amp; In &amp; Out Surg 81716"
+            pdf:Producer="Acrobat Distiller 15.0 (Windows)"
+            xmp:CreateDate="{Date}2016-08-18T20:56:37.000+05:30"
+            xmp:CreatorTool="PScript5.dll Version 5.2.2"
+            xmp:MetadataDate="{Date}2016-08-18T11:27:03.000-04:00"
+            xmpMM:DocumentID="uuid:d977e8d6-eea1-4992-ac78-21608b30ea18"
+            xmpMM:InstanceID="uuid:e7340560-74d5-48e0-a5fd-be68d38f7fe0"
+            xmp:ModifyDate="{Date}2016-08-18T20:57:03.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

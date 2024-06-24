@@ -1,0 +1,9 @@
+{
+   "schedulerName": "AdobeSign",
+   "cronExpression": "$[env:SCHEDULER_cronExpression;default=0 0/2 * 1/1 * ? *]",
+   "isConcurrent": false,
+   "enable": true,
+   "userName": "$[env:SCHEDULER_UserName;default=admin]",
+   "password": "$[secret:SCHEDULER_password;default=admin]",
+   "runMode": "author"
+}

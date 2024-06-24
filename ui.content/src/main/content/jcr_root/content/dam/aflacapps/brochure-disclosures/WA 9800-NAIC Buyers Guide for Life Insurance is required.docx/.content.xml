@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="516ddff4-b215-4862-9513-aa1111672025">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T20:00:09.975+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}264"
+            dam:CharactersWithSpaces="{Long}309"
+            dam:Company="Aflac"
+            dam:created="{Date}2016-06-20T20:13:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T20:00:09.894+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="LAdmin"
+            dam:Lines="{Long}2"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2016-06-21T19:43:00.000Z"
+            dam:Pages="{Long}1"
+            dam:Paragraphs="{Long}1"
+            dam:revision="{Long}3"
+            dam:ScaleCrop="false"
+            dam:sha1="864b8d208f649be297298a08dd0f7edb3a2adab7"
+            dam:SharedDoc="false"
+            dam:size="{Long}25736"
+            dam:Template="Normal"
+            dam:TotalTime="{Long}8"
+            dam:variant="{Long}1"
+            dam:Words="{Long}46"
+            dc:creator="[LAdmin]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="WA 9800-NAIC Buyer’s Guide for Life Insurance is required"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="WA 9800-NAIC Buyer’s Guide for Life Insurance is required"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:tns="http://www.aflac.com/CaseBuilderTool" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:complexType name="caseBuilderForm">
+		<xsd:sequence>
+			<xsd:element name="groupNo" type="xsd:string"></xsd:element>
+			<xsd:element name="coverageEffectiveDate"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element name="enrollmentRecord" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element name="enrollmentPlatform">
+
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="Ease"></xsd:enumeration>
+						<xsd:enumeration value="Benetrac"></xsd:enumeration>
+						<xsd:enumeration value="Selerix"></xsd:enumeration>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+
+			<xsd:element name="accountInformation"
+				type="accountInformation">
+			</xsd:element>
+
+
+
+
+
+
+
+			<xsd:element name="fileSubmission" type="fileSubmission"></xsd:element>
+			<xsd:element name="locations" type="locations"></xsd:element>
+			<xsd:element name="products" type="products"></xsd:element>
+
+			<xsd:element name="isCi22kEnabled" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="version" type="xsd:int"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="product">
+		<xsd:sequence>
+			<xsd:element name="productName" type="xsd:string"></xsd:element>
+			<xsd:element name="productId" type="xsd:string"></xsd:element>
+			<xsd:element name="planName" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element name="planLevel" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element name="series" type="xsd:string"></xsd:element>
+			<xsd:element name="coverageLevel" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="applicationNumber" minOccurs="0"
+				maxOccurs="1">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="brochuresType" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="taxType" type="xsd:string"></xsd:element>
+
+
+			<xsd:element name="diHoursWorkedPerWeek" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="employeeIssueAge" type="xsd:string"></xsd:element>
+			<xsd:element name="spouseIssueAge" type="xsd:string"></xsd:element>
+			<xsd:element name="childIssueAge" type="xsd:string"></xsd:element>
+			<xsd:element name="employeeTerminationAge" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="spouseTerminationAge" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="childTerminationAge" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="participationRequirement" minOccurs="0"
+				maxOccurs="1">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string"></xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+
+			<xsd:element name="acceleratedDeathBenefitOffered"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="hireDate" type="xsd:string"></xsd:element>
+			<xsd:element name="productDescription" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+
+			</xsd:element>
+
+
+			<xsd:element name="healthQueReq" minOccurs="0"
+				maxOccurs="1">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="Yes"></xsd:enumeration>
+						<xsd:enumeration value="No"></xsd:enumeration>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+
+
+
+
+			<xsd:element name="platformDriven" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="ageCalculated" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="ageCalculation" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+
+
+
+
+			<xsd:element name="issueAgeType" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="employeeAmountOffered"
+				type="employeeAmountOffered" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="spouseAmountOffered"
+				type="spouseAmountOffered" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="childAmountOffered"
+				type="childAmountOffered" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="TdiStateAmountOffered"
+				type="TdiStateAmountOffered" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="childIndividualAmountOffered"
+				type="childIndividualAmountOffered" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="childTermAmountOffered"
+				type="childTermAmountOffered" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+
+			<xsd:element name="eeBenefitAmounts" type="eeBenefitAmounts"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="spBenefitAmounts" type="spBenefitAmounts"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="tdiStatesBenefitAmounts"
+				type="tdiStatesBenefitAmounts" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="chIndividualPolicyBenefitAmounts"
+				type="chIndividualPolicyBenefitAmounts" minOccurs="0"
+				maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="chBenefitAmounts" type="chBenefitAmounts"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="benefitAmountPercentage"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="hundredPercentGuranteed"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+            <xsd:element name="eligibleEmployeeGuaranteedIssue" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+            <xsd:element name="initialEnrollment"
+				type="initialEnrollment" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="benefitType" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="benefitPeriod" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="eliminationPeriod" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="term" type="xsd:string" minOccurs="0"
+				maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="optionalRider" minOccurs="0"
+				maxOccurs="1" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element name="progressiveRider" minOccurs="0"
+				maxOccurs="1" type="xsd:string">
+
+			</xsd:element>
+
+
+
+			<xsd:element name="tobacco" type="tobacco" minOccurs="0"
+				maxOccurs="1">
+			</xsd:element>
+
+			<xsd:element name="questions" type="questions" minOccurs="0"
+				maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="affirmations" type="affirmations"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="disclosures" type="disclosures"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="healthQuestions" type="healthQuestions"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+
+			<xsd:element name="otherInstructions" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="isChildCoverageOffered" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="isChildTermlifeRiderOffered"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="isUniqueIncrementsUtilized"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+
+
+			<xsd:element name="childCoverageOffered" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="benefitAmountDescription"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="isProductAro" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+
+
+
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+
+
+
+
+
+
+
+	<xsd:element name="caseBuilderForm" type="caseBuilderForm"></xsd:element>
+
+
+
+	<xsd:complexType name="accountInformation">
+		<xsd:sequence>
+			<xsd:element name="groupNumber" type="xsd:string"></xsd:element>
+			<xsd:element name="groupType" type="xsd:string"></xsd:element>
+			<xsd:element name="accountName" type="xsd:string"></xsd:element>
+			<xsd:element name="situsState" type="xsd:string"></xsd:element>
+			<xsd:element name="eligibleEmployees" type="xsd:int"></xsd:element>
+			<xsd:element name="hoursWorkedPerWeek" type="xsd:string"></xsd:element>
+			<xsd:element name="eligibilityWaitingPeriod"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element name="ssn" type="xsd:string"></xsd:element>
+			<xsd:element name="aflacEase" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+
+			</xsd:element>
+			<xsd:element name="deductionFrequency" type="xsd:string"></xsd:element>
+			<xsd:element name="partnerEligible" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+
+			</xsd:element>
+			<xsd:element name="locations" type="xsd:string"></xsd:element>
+			<xsd:element name="platform" type="xsd:string"></xsd:element>
+			<xsd:element name="platformSplitValue" type="xsd:string"></xsd:element>
+			<xsd:element name="productSold" type="xsd:string"></xsd:element>
+			<xsd:element name="coverageBillingEffDate"
+				type="xsd:string">
+			</xsd:element>
+            <xsd:element name="isCoverageEffDateChanged" type="xsd:string"></xsd:element>
+            <xsd:element name="openEnrollmentStartDate"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element name="openEnrollmentEndDate"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element name="siteTestInfoDueDate" type="xsd:string"></xsd:element>
+			<xsd:element name="enrollmentConditionOptions"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element name="newHire" type="xsd:string"></xsd:element>
+			<xsd:element name="openEnrollmentSelfService"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="openEnrollmentOneToOne" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="openEnrollmentCallCenter"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="newHireSelfService" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="newHireOneToOne" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="newHireOECallCenter" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="clientManager" type="xsd:string"></xsd:element>
+			<xsd:element name="clientManagerEmail" type="xsd:string"></xsd:element>
+			<xsd:element name="implementationManager"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element name="implementationManagerEmail"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element name="partnerPlatformManager" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="partnerPlatformManagerEmail"
+				type="xsd:string" minOccurs="0" maxOccurs="1">
+			</xsd:element>
+
+			<xsd:element name="pdfDirections" type="xsd:string"
+				minOccurs="0" maxOccurs="1">
+			</xsd:element>
+
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="products">
+		<xsd:sequence>
+			<xsd:element name="product" type="product" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="amountOffered">
+		<xsd:sequence>
+
+			<xsd:element name="increments" type="xsd:int"></xsd:element>
+			<xsd:element name="maximumAmtElect" type="xsd:int"></xsd:element>
+			<xsd:element name="minimumAmtElect" type="xsd:int"></xsd:element>
+			<xsd:element name="guaranteedIssueMaximum" type="xsd:int"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="employeeAmountOffered">
+		<xsd:sequence>
+			<xsd:element name="amountOffered" type="amountOffered"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="spouseAmountOffered">
+		<xsd:sequence>
+			<xsd:element name="amountOffered" type="amountOffered"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="childAmountOffered">
+		<xsd:sequence>
+			<xsd:element name="amountOffered" type="amountOffered"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="tobacco">
+		<xsd:sequence>
+			<xsd:element name="tobaccoStatus" type="xsd:string"></xsd:element>
+			<xsd:element name="tobaccoStatusDetermined" type="xsd:string"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="TdiStateAmountOffered">
+		<xsd:sequence>
+			<xsd:element name="amountOffered" type="amountOffered"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="childTermAmountOffered">
+		<xsd:sequence>
+			<xsd:element name="amountOffered" type="amountOffered"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="childIndividualAmountOffered">
+		<xsd:sequence>
+			<xsd:element name="amountOffered" type="amountOffered"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="initialEnrollment">
+		<xsd:sequence>
+			<xsd:element name="employee" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+			<xsd:element name="spouse" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+			<xsd:element name="spouseCoverage" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="questions">
+		<xsd:sequence>
+			<xsd:element name="complianceText" type="xsd:string" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+
+    <xsd:complexType name="affirmations">
+    	<xsd:sequence>
+    		<xsd:element name="complianceText" type="xsd:string" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="disclosures">
+    	<xsd:sequence>
+    		<xsd:element name="complianceText" type="xsd:string" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="healthQuestions">
+    	<xsd:sequence>
+    		<xsd:element name="complianceText" type="xsd:string" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="fileSubmission">
+    	<xsd:sequence>
+    		<xsd:element name="productionFileNaming"
+    			type="xsd:string">
+    		</xsd:element>
+    		<xsd:element name="testFileNaming" type="xsd:string"></xsd:element>
+    		<xsd:element name="productionFileDueDate"
+    			type="xsd:string" minOccurs="0" maxOccurs="1">
+    		</xsd:element>
+    		<xsd:element name="testFileDueDate" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="location">
+    	<xsd:sequence>
+    		<xsd:element name="locationName" type="xsd:string"></xsd:element>
+    		<xsd:element name="locationState" type="xsd:string"></xsd:element>
+    		<xsd:element name="locationCode" type="xsd:string"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="locations">
+    	<xsd:sequence>
+            <xsd:element name="locationSpecified" type="xsd:string"></xsd:element>
+            <xsd:element name="location" type="location"
+    			maxOccurs="unbounded" minOccurs="1">
+    		</xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="eeBenefitAmounts">
+    	<xsd:sequence>
+    		<xsd:element name="benefitAmount" type="benefitAmount" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="spBenefitAmounts">
+    	<xsd:sequence>
+    		<xsd:element name="benefitAmount" type="benefitAmount" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tdiStatesBenefitAmounts">
+    	<xsd:sequence>
+    		<xsd:element name="benefitAmount" type="benefitAmount" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="chIndividualPolicyBenefitAmounts">
+    	<xsd:sequence>
+    		<xsd:element name="benefitAmount" type="benefitAmount" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="chBenefitAmounts">
+    	<xsd:sequence>
+    		<xsd:element name="benefitAmount" type="benefitAmount" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="benefitAmount">
+    	<xsd:sequence>
+    		<xsd:element name="amount" type="xsd:int"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

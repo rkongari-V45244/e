@@ -1,0 +1,7 @@
+{
+   "authUrl": "https://fimt.aflac.com:443/as/token.oauth2",
+   "apiUrl": "https://enterprise-connect.aflacqa.com/e-doc-ex-1/v1",
+   "env": "AEM Cloud",
+   "clientId": "ccdocexaws",
+   "clientSecret": "ZycTUhf5TFkN3nV519KuryMjLMNtpFnboaNyOaNNec4NN0d6YmyL080YKiNg4BEC"
+}

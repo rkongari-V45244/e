@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.5.0.20190320.3.935878" APIVersion="3.6.19011.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2022-10-17T08:18:22Z" uuid="3e9d28b9-1a1c-4544-9a86-387d5f9148d9">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.6/">
+   <?formServer defaultPDFRenderFormat acrobat11.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="afData" layout="tb" locale="en_US" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="0.25in" y="0.25in" w="576pt" h="756pt"/>
+            <medium stock="default" short="612pt" long="792pt"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="576pt" layout="tb">
+         <subform name="Subform1" w="203.2mm" h="266.7mm">
+            <bind match="none"/>
+            <draw name="Image1" w="82.55mm" h="31.75mm">
+               <value>
+                  <image href="C:\Users\Shubhra.1.S\Downloads\aflacLogo.png" contentType="image/png"/>
+               </value>
+               <ui>
+                  <imageEdit/>
+               </ui>
+            </draw>
+            <subform y="41.275mm" w="203.2mm" minH="140.707mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <subform w="203.2mm" minH="140.707mm">
+                  <bind match="none"/>
+                  <keep intact="none"/>
+                  <draw name="Text1" h="9.525mm" w="72.665mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Account Information</text>
+                     </value>
+                     <font typeface="Myriad Pro" weight="bold" size="16pt" baselineShift="0pt" posture="italic"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 203146 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 19 Account Information 0 1417 13417 0 0 0 "Myriad Pro" 1 1 16000 ISO-8859-1?></draw>
+                  <draw name="Text7" y="12.7mm" w="28.575mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Group Number:</text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 78166 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 13 Group Number: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <field name="groupNumber" w="73.025mm" h="9.525mm" y="12.7mm" access="readOnly" x="44.45mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.groupNumber"/>
+                     <border>
+                        <edge/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                  </field>
+                  <field name="situsState" w="57.15mm" h="9.525mm" y="25.4mm" x="146.05mm" access="readOnly">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.situsState"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <field name="accountName" w="73.025mm" h="10.377mm" y="25.4mm" access="readOnly" x="44.45mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.accountName"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text8" y="25.4mm" w="29.2864mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Account Name:</text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 80183 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 13 Account Name: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <draw name="Text9" y="25.4mm" x="123.825mm" w="22.225mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Situs State:</text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 60166 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 12 Situs State: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <field name="eligibleEmployees" w="32.929mm" h="9.42mm" y="38.1mm" access="readOnly" x="44.45mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <integer/>
+                     </value>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.eligibleEmployees"/>
+                     <validate>
+                        <script contentType="application/x-javascript">this.isNull || (this.rawValue &gt;= -2147483648 &amp;&amp; this.rawValue &lt;= 2147483647);&#xD;
+</script>
+                     </validate>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text10" y="38.1mm" w="42.448mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text># of Eligible Employees:</text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 117491 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 24 # of Eligible Employees: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <field name="Ssn" w="28.575mm" h="9.663mm" y="38.1mm" x="92.075mm" access="readOnly">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.ssn"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text11" y="38.1mm" x="79.375mm" w="12.7mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="color:#000080;text-decoration:none;letter-spacing:0in">SSN<span style="color:#000000">:</span></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                  </draw>
+                  <field name="aflacEase" w="56.937mm" h="9.42mm" y="38.1mm" x="146.05mm" access="readOnly">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.aflacEase"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text12" y="38.1mm" x="123.825mm" w="22.225mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Aflac Ease: </text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 60166 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 12 Aflac Ease:  0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <field name="DeductionFrequency" w="76.893mm" h="8.949mm" y="50.8mm" access="readOnly" x="44.45mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.deductionFrequency"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text13" y="50.8mm" w="44.45mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-size:12pt;color:#000080">Deduction Frequency<span style="font-size:10pt;color:#000000">:</span></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Myriad Pro" baselineShift="0pt"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 123166 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 19 Deduction Frequency 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?>
+                     <?renderCache.textRun 1 : 0 109596 16500 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+                  <field name="partnerEligible" w="32.929mm" h="9.191mm" y="63.5mm" access="readOnly" x="44.45mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.partnerEligible"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text14" y="63.5mm" w="38.1mm" h="8.408mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Partner Eligible:</text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 105166 21000 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 17 Partner Eligible: 0 1417 14917 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <field name="locations" w="98.425mm" h="9.525mm" y="63.5mm" x="104.775mm" access="readOnly">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.locations"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text15" y="63.5mm" x="79.375mm" w="25.4mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-size:12pt;color:#000080;text-decoration:none;letter-spacing:0in">Locations<span style="font-size:10pt;color:#000000">:<span style="xfa-spacerun:yes"> </span></span></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                  </draw>
+                  <field name="platform" w="159.443mm" h="9mm" y="76.2mm" access="readOnly" x="43.757mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.platform"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text16" y="76.2mm" w="41.275mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Platform: </text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 114166 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 10 Platform:  0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <field name="productSold" w="76.664mm" h="9mm" y="88.9mm" access="readOnly" x="44.45mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.productSold"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                  </field>
+                  <draw name="Text17" y="88.9mm" w="41.275mm" h="9.525mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Product Sold:</text>
+                     </value>
+                     <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                        <fill>
+                           <color value="0,0,128"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <?renderCache.bounds 114166 24166 0 0 1417 1417 0 0?>
+                     <?renderCache.textRun 13 Product Sold: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <draw name="Text2" minW="53.975mm" minH="12.7mm" y="19.05mm" x="101.6mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Case Builder Form</text>
+               </value>
+               <font typeface="Myriad Pro" size="16pt" weight="bold" baselineShift="0pt"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para hAlign="center" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            </draw>
+            <keep intact="none"/>
+            <subform y="155.574mm" w="203.2mm" h="73.026mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <draw name="Text4" y="0.097mm" w="42.221mm" h="6.644mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Important Dates</text>
+                  </value>
+                  <font typeface="Myriad Pro" weight="bold" baselineShift="0pt" size="16pt" posture="italic"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <?renderCache.bounds 116848 15999 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 15 Important Dates 0 1417 13417 0 0 0 "Myriad Pro" 1 1 16000 ISO-8859-1?></draw>
+               <field name="TextField6" y="9.525mm" w="69.85mm" h="9mm" access="readOnly" x="53.975mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.coverageBillingEffDate"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <fill>
+                        <color value="192,192,192"/>
+                     </fill>
+                  </border>
+               </field>
+               <draw name="Text18" y="9.525mm" w="44.45mm" h="9.525mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Coverage Effective Bill:</text>
+                  </value>
+                  <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                     <fill>
+                        <color value="0,0,128"/>
+                     </fill>
+                  </font>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <?renderCache.bounds 123166 24166 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 24 Coverage Effective Bill: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+               <draw name="Text19" y="22.225mm" w="50.8mm" h="9.525mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Open Enrollment Start Date:</text>
+                  </value>
+                  <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                     <fill>
+                        <color value="0,0,128"/>
+                     </fill>
+                  </font>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <?renderCache.bounds 141166 24166 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 27 Open Enrollment Start Date: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+               <field name="DateField1" y="22.225mm" w="69.85mm" h="9mm" access="readOnly" x="53.975mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.openEnrollmentStartDate"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <fill>
+                        <color value="192,192,192"/>
+                     </fill>
+                  </border>
+               </field>
+               <field name="TimeField2" y="34.926mm" w="69.85mm" h="8.949mm" access="readOnly" x="53.975mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <time/>
+                  </value>
+                  <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.openEnrollmentEndDate"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <fill>
+                        <color value="192,192,192"/>
+                     </fill>
+                  </border>
+               </field>
+               <draw name="Text20" y="34.926mm" w="50.8mm" h="9.525mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Open Enrollment End Date:</text>
+                  </value>
+                  <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                     <fill>
+                        <color value="0,0,128"/>
+                     </fill>
+                  </font>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <?renderCache.bounds 141166 24166 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 25 Open Enrollment End Date: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+               <draw name="Text21" y="47.626mm" w="50.8mm" h="9.525mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Site Test Info Due Date:</text>
+                  </value>
+                  <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                     <fill>
+                        <color value="0,0,128"/>
+                     </fill>
+                  </font>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <?renderCache.bounds 141166 24166 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 24 Site Test Info Due Date: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+               <field name="TimeField3" y="47.626mm" w="69.85mm" h="9mm" access="readOnly" x="53.975mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <time/>
+                  </value>
+                  <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.siteTestInfoDueDate"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <fill>
+                        <color value="192,192,192"/>
+                     </fill>
+                  </border>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <subform w="203.2mm" h="105.52mm">
+         <bind match="none"/>
+         <keep intact="none"/>
+         <subform w="203.2mm" minH="23.232mm" y="66.675mm">
+            <bind match="none"/>
+            <keep intact="none"/>
+            <draw name="Text6" w="104.775mm" h="6.644mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Aflac Group Contacts</text>
+               </value>
+               <font typeface="Myriad Pro" weight="bold" baselineShift="0pt" size="16pt" posture="italic"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 294166 15999 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 20 Aflac Group Contacts 0 1417 13417 0 0 0 "Myriad Pro" 1 1 16000 ISO-8859-1?></draw>
+            <margin bottomInset="10.16mm" topInset="10.16mm"/>
+            <field name="TextField13" y="8.89mm" w="57.843mm" h="9mm" access="readOnly" x="44.45mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.clientManager"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <draw name="Text28" y="8.89mm" w="44.45mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Client Manager: </text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 123166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 16 Client Manager:  0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <field name="TextField14" y="8.89mm" x="151.147mm" w="52.053mm" h="9mm" access="readOnly">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.clientManagerEmail"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <draw name="Text29" y="8.89mm" x="104.775mm" w="44.45mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Client Manager Email :</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 123166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 22 Client Manager Email : 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <?templateDesigner expand 1?></subform>
+         <subform w="203.2mm" h="72.958mm" y="0.067mm">
+            <bind match="none"/>
+            <keep intact="none"/>
+            <margin bottomInset="10.16mm"/>
+            <draw name="Text5" w="57.647mm" h="6.644mm" y="0mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Enrollment Conditions</text>
+               </value>
+               <font typeface="Myriad Pro" weight="bold" baselineShift="0pt" size="16pt" posture="italic"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 160575 15999 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 21 Enrollment Conditions 0 1417 13417 0 0 0 "Myriad Pro" 1 1 16000 ISO-8859-1?></draw>
+            <draw name="Text22" y="9.458mm" w="53.975mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Open Enrollment Self Service:</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 29 Open Enrollment Self Service: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <draw name="Text23" y="9.458mm" x="104.775mm" w="53.975mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Open Enrollment Call Center:</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 28 Open Enrollment Call Center: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <field name="TextField9" y="9.458mm" w="44.45mm" h="9.191mm" access="readOnly" x="158.75mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.openEnrollmentCallCenter"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <field name="TextField7" y="9.458mm" w="47.625mm" h="8.949mm" access="readOnly" x="53.975mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.openEnrollmentSelfService"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <draw name="Text24" y="22.158mm" w="53.975mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>New Hire One To One</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 19 New Hire One To One 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <field name="TextField11" y="22.158mm" w="47.625mm" h="9mm" access="readOnly" x="53.975mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.newHireOneToOne"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <draw name="Text25" y="22.158mm" x="104.775mm" w="54.005mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Open Enrollment One To One:</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 150251 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 27 Open Enrollment One To One: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <field name="TextField8" y="22.158mm" x="158.75mm" w="44.45mm" h="9mm" access="readOnly">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.openEnrollmentOneToOne"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <draw name="Text26" y="34.858mm" w="53.975mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>New Hire OE Call Center</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 23 New Hire OE Call Center 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <field name="TextField12" y="34.858mm" x="53.975mm" w="48.649mm" h="9mm" access="readOnly">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.newHireOECallCenter"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <draw name="Text27" y="34.858mm" x="104.775mm" w="53.975mm" h="9.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>New Hire Self Service:</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+                  <fill>
+                     <color value="0,0,128"/>
+                  </fill>
+               </font>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 22 New Hire Self Service: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <field name="TextField10" y="34.858mm" x="158.75mm" w="44.45mm" h="9mm" access="readOnly">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.accountInformation.newHireSelfService"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <subform w="200.025mm" minH="61.332mm" layout="lr-tb">
+         <bind match="dataRef" ref="$.afBoundData.caseBuilderForm.products.product[*]"/>
+         <draw name="Text3" w="196.85mm" h="6.644mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField021251"/></p></body>
+               </exData>
+            </value>
+            <font typeface="Myriad Pro" size="16pt" weight="bold" baselineShift="0pt" posture="italic"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <field name="TextField" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField021251" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.planName"/>
+         </field>
+         <draw name="Text30" w="53.975mm" h="11.026mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Plan Name: </text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle"/>
+            <?renderCache.bounds 150166 28421 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 11 Plan Name:  0 1417 18627 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="plan" h="10.764mm" access="readOnly" minW="142.875mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.planName"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text31" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Series: </text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 8 Series:  0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="productRecord" w="142.875mm" h="8.949mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.series"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text33" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Plan Level:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 11 Plan Level: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="productName" w="142.875mm" h="9mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.planLevel"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text34" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Application No. :</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 17 Application No. : 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="applicationNo" w="142.875mm" h="9mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.applicationNumber"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text35" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Coverage Level:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 15 Coverage Level: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="coverageLevel" w="142.875mm" h="9.191mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.coverageLevel"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text36" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Brochures: </text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 11 Brochures:  0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="brochures" w="142.875mm" h="9.525mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.brochuresType"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text37" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Tax Type: </text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 10 Tax Type:  0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="tax" w="142.875mm" h="9.467mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.taxType"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text38" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Hours Worked Per Week:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 22 Hours Worked Per Week: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="hoursWorkedPerWeek" w="142.875mm" h="9mm" access="readOnly" y="2.420125in">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.hoursWorkedPerWeek"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text39" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Eligibility Waiting Period:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 27 Eligibility Waiting Period: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="eligibilityWait" w="142.875mm" h="9mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.eligibilityWaitingPeriod"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text40" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Employee Issue Age:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 19 Employee Issue Age: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="TextField2" h="9.191mm" access="readOnly" minW="142.875mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.employeeIssueAge"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text41" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Spouse Issue Age:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 17 Spouse Issue Age: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="TextField3" h="9mm" minW="142.875mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.spouseIssueAge"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text32" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Child Issue Age:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 16 Child Issue Age: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="TextField4" w="142.875mm" h="9mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.childIssueAge"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <occur max="-1"/>
+         <draw name="Text42" w="53.975mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Participation Requirement:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 150166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 26 Participation Requirement: 0 1417 16500 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="TextField5" w="142.875mm" h="9mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.participationRequirement"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <draw name="Text43" w="65.079mm" h="8.89mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>New Hire is anyone hired on or after:</text>
+            </value>
+            <font size="12pt" typeface="Myriad Pro" baselineShift="0pt">
+               <fill>
+                  <color value="0,0,128"/>
+               </fill>
+            </font>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 181642 22366 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 37 New Hire is anyone hired on or after: 0 1417 15600 0 0 128 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+         <field name="TimeField1" w="131.771mm" h="7.993mm" access="readOnly">
+            <ui>
+               <dateTimeEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </dateTimeEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1.27mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <time/>
+            </value>
+            <bind match="dataRef" ref="$.hireDate"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="192,192,192"/>
+               </fill>
+            </border>
+         </field>
+         <margin bottomInset="10.16mm" topInset="10.16mm"/>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">6.5.0.20190320.2.935878.932721</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Myriad Pro" 0 0 ISO-8859-1 4 184 46 00010004000F001B00220023002400250026002700280029002A002D002E002F00300031003300340035003800420043004400450046004700480049004A004C004D004E004F0050005100520053005400550056005700580059005A #.:ABCDEFGHILMNOPRSTWabcdefghiklmnopqrstuvwxy?>
+      <?renderCache.subset "Myriad Pro" 1 0 ISO-8859-1 4 56 14 0001002300240027004200450046004A004D004E0050005300540056 BCFadeilmorsu?>
+      <?renderCache.subset "Myriad Pro" 1 1 ISO-8859-1 4 108 27 0001002200240025002600270028002A003500420044004500460047004A004D004E004F0050005100530054005500560059005C005E ACDEFGITacdefilmnoprstux{}?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.6/?>
+   <?templateDesigner Zoom 74?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner FormTargetVersion 36?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?templateDesigner DefaultPreviewDataFileName C:\Users\Shubhra.1.S\Downloads\caseBuilder.xml?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <tagged>0</tagged>
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <version>1.7</version>
+         <adobeExtensionLevel>11</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <script>
+         <runScripts>server</runScripts>
+      </script>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xmlConnection name="DataConnection" dataDescription="afData">
+      <uri>C:\Users\Shubhra.1.S\Downloads\caseBuilderSubmittedData (1).xml</uri>
+      <?templateDesigner fileDigest shaHash="NoXELQ75la5FtV1EBdtWE18vvFY="?></xmlConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="afData">
+      <afData>
+         <afUnboundData>
+            <data>
+               <R_groupNumber/>
+               <R_AccountName/>
+               <R_SitusState/>
+               <R_PlatformSoftware/>
+            </data>
+         </afUnboundData>
+         <afBoundData>
+            <caseBuilderForm>
+               <groupNo/>
+               <coverageEffectiveDate/>
+               <enrollmentRecord/>
+               <enrollmentPlatform/>
+               <accountInformation>
+                  <groupNumber/>
+                  <accountName/>
+                  <situsState/>
+                  <eligibleEmployees/>
+                  <ssn/>
+                  <aflacEase/>
+                  <deductionFrequency/>
+                  <partnerEligible/>
+                  <locations/>
+                  <platform/>
+                  <productSold/>
+                  <coverageBillingEffDate/>
+                  <openEnrollmentStartDate/>
+                  <openEnrollmentEndDate/>
+                  <siteTestInfoDueDate/>
+                  <openEnrollmentSelfService/>
+                  <openEnrollmentOneToOne/>
+                  <openEnrollmentCallCenter/>
+                  <newHireSelfService/>
+                  <newHireOneToOne/>
+                  <newHireOECallCenter/>
+                  <clientManager/>
+                  <clientManagerEmail/>
+               </accountInformation>
+               <products>
+                  <product dd:maxOccur="-1">
+                     <planName/>
+                     <planLevel/>
+                     <series/>
+                     <coverageLevel/>
+                     <applicationNumber/>
+                     <brochuresType/>
+                     <taxType/>
+                     <hoursWorkedPerWeek/>
+                     <eligibilityWaitingPeriod/>
+                     <employeeIssueAge/>
+                     <spouseIssueAge/>
+                     <childIssueAge/>
+                     <participationRequirement/>
+                     <hireDate/>
+                     <productRecord/>
+                  </product>
+               </products>
+            </caseBuilderForm>
+         </afBoundData>
+         <afSubmissionInfo>
+            <lastFocusItem/>
+            <stateOverrides>
+               <element>
+                  <somExpr/>
+                  <options>
+                     <option dd:maxOccur="-1">
+                        <saveValue/>
+                        <displayValue/>
+                     </option>
+                  </options>
+               </element>
+            </stateOverrides>
+            <signers/>
+         </afSubmissionInfo>
+      </afData>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_US" desc="English (United States)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.159809, 2016/09/10-01:42:48        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2022-10-17T08:18:22Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.5</xmp:CreatorTool>
+         <pdfuaid:part>1</pdfuaid:part>
+         <pdf:Producer>Designer 6.5</pdf:Producer>
+         <xmpMM:DocumentID>uuid:3e9d28b9-1a1c-4544-9a86-387d5f9148d9</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:b93083c2-a8ed-4743-a44c-ae1c3e5a2850</xmpMM:InstanceID>
+         <dc:format>application/pdf</dc:format>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>6.5.0.20190320.2.935878.932721</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+   <annots/>
+</xfdf></xdp:xdp>

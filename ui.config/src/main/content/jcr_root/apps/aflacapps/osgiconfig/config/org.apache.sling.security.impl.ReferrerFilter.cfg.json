@@ -1,0 +1,15 @@
+{
+    "allow.empty":true,
+    "allow.hosts":["ndd-i.nt.lab.com","ndd-d.nt.lab.com:","$[env:SAML_IDP_REFERRER;default=fimd.nt.lab.com]"],
+    "allow.hosts.regexp":[""],
+    "filter.methods":[
+      "PUT",
+      "POST",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}

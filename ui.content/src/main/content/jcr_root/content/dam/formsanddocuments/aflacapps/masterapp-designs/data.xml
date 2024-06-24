@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<afData>
+	<afUnboundData>
+		<data>
+			<GroupNoRadioButton>GP-ID</GroupNoRadioButton>
+			<masterAppGroupNo>GP-444</masterAppGroupNo>
+			<coverageEffDateMasterApp>2023-12-20</coverageEffDateMasterApp>
+			<masterAppFormCase>Add</masterAppFormCase>
+			<employeeType>part-time</employeeType>
+			<exceptionRadio>No</exceptionRadio>
+		</data>
+	</afUnboundData>
+	<afBoundData>
+		<masterApp
+			xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance\">
+			<MetaData>
+				<title/>
+				<masterAppId/>
+			</MetaData>
+			<masterAppEntityId/>
+			<version/>
+			<situsState>AL</situsState>
+			<groupType>Employer Group</groupType>
+			<censusEnrollment/>
+			<eligible-series>7700</eligible-series>
+			<formIds>C03204AL,ICC22 93201</formIds>
+			<AccountAndEligiblity>
+				<groupNumberOrGpId>GP-444</groupNumberOrGpId>
+				<effectiveDate>2023-12-20</effectiveDate>
+				<organizationName>saas</organizationName>
+				<certHolders>Associate</certHolders>
+				<hourPerWeekFullTime>12</hourPerWeekFullTime>
+				<hourPerWeekpartTime>12</hourPerWeekpartTime>
+				<eligibleCoverageMonth>12-months</eligibleCoverageMonth>
+				<cityOfHq>CA</cityOfHq>
+				<subsidiariesAffiliates>ssa</subsidiariesAffiliates>
+				<enrollEmployeeCount>25</enrollEmployeeCount>
+				<eligibleEmployeeCount>12</eligibleEmployeeCount>
+				<otherRequirement>NA</otherRequirement>
+				<erisaPlan>No</erisaPlan>
+				<churchPlan>No</churchPlan>
+			</AccountAndEligiblity>
+			<Product>
+				<productName>AC7700</productName>
+				<series>7700</series>
+				<benefitType>24 Hours</benefitType>
+				<applicationReason>New Policy</applicationReason>
+				<eligibleEmployee>Regular part-time Associate Between Age 18 and 69</eligibleEmployee>
+				<eligibleSpouse>Spouses of Eligible Associate Between Age 18 And 64</eligibleSpouse>
+				<eligibleEmployeeOther>NA</eligibleEmployeeOther>
+				<ActivelyAtWork>
+					<ActiveAtWorkData>
+						<className/>
+						<activelyAtWorkHours/>
+					</ActiveAtWorkData>
+				</ActivelyAtWork>
+				<WaitingPeriodEligibility>
+					<WaitingPeriodEligibilityData>
+						<className/>
+						<waitingPeriod/>
+						<numberOfDays/>
+					</WaitingPeriodEligibilityData>
+				</WaitingPeriodEligibility>
+				<optionalFeatures>Initial Accident Treatment Category: High,Initial Accident Treatment Category: Mid</optionalFeatures>
+				<plan>1</plan>
+				<effectiveDate>2023-12-20</effectiveDate>
+				<rates>12</rates>
+				<employeePremium>12</employeePremium>
+				<employerPremium>12</employerPremium>
+				<proposedEffectiveDate>2023-12-20</proposedEffectiveDate>
+				<onDate>2023-12-20</onDate>
+			</Product>
+			<eSignatureRequired>Yes</eSignatureRequired>
+			<signerEmailId>sunil.4.gupta@coforge.com</signerEmailId>
+			<formFolderLocation>/content/dam/formsanddocuments/aflacapps/masterapp-designs</formFolderLocation>
+			<formId>C03204AL</formId>
+            <contractTitle>Custom Contract Local</contractTitle>
+		</masterApp>
+	</afBoundData>
+	<afSubmissionInfo>
+		<lastFocusItem>guide[0].guide1[0].guideRootPanel[0].masterAppOuterPanel[0].MasterAppDetails[0].reviewSection[0]</lastFocusItem>
+		<stateOverrides/>
+		<signers/>
+	</afSubmissionInfo>
+</afData>

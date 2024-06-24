@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="95ab208b-e7cc-4a50-9ec7-8617b69cd5d9">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:57:47.880+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="Elizabeth Goodall"
+            dam:extracted="{Date}2023-09-18T19:57:46.851+05:30"
+            dam:numPages="{Long}8"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Adobe PDF Library 15.0"
+            dam:sha1="9c5fccd5a6a4d2f2100299607614089e9f277547"
+            dam:size="{Long}145191"
+            dc:creator="[Elizabeth Goodall]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Adobe PDF Library 15.0"
+            pdfx:Company="Aflac"
+            pdfx:SourceModified="D:20160706165813"
+            xmp:CreateDate="{Date}2016-07-13T21:58:52.000+05:30"
+            xmp:CreatorTool="Acrobat PDFMaker 15 for Word"
+            xmp:MetadataDate="{Date}2016-07-13T12:28:53.000-04:00"
+            xmpMM:DocumentID="uuid:36e5c409-b5a4-4a9f-b805-1e123576ef4c"
+            xmpMM:InstanceID="uuid:276c0c64-b5ff-4cb8-af7e-449cc8a236cc"
+            xmpMM:subject="{Long}[7]"
+            xmpMM:subject_xmpArrayType="rdf:Seq"
+            xmp:ModifyDate="{Date}2016-07-13T21:58:53.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

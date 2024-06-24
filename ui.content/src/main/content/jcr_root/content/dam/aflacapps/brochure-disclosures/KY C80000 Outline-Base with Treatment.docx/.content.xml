@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="89ac7fc0-39e6-41d9-ab72-83af3a4bd694">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:55:59.318+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}6413"
+            dam:CharactersWithSpaces="{Long}7522"
+            dam:Company="Aflac"
+            dam:created="{Date}2015-06-10T15:14:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:55:59.202+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Jessica Sinkler"
+            dam:Lines="{Long}53"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2019-02-13T15:34:00.000Z"
+            dam:Pages="{Long}4"
+            dam:Paragraphs="{Long}15"
+            dam:revision="{Long}9"
+            dam:ScaleCrop="false"
+            dam:sha1="43818e6c31454791200bac66d46e227dae25d744"
+            dam:SharedDoc="false"
+            dam:size="{Long}49524"
+            dam:Template="Normal.dotm"
+            dam:TotalTime="{Long}26"
+            dam:variant="{Long}1"
+            dam:Words="{Long}1124"
+            dc:creator="[Elizabeth Goodall]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="KY C80000 Outline-Base with Treatment"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="KY C80000 Outline-Base with Treatment"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

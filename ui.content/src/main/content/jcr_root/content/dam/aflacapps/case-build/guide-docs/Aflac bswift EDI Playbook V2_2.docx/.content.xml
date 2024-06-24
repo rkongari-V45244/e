@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="42eafc9c-cb4c-4fbf-888b-e5c4af84c724">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-21T10:18:49.991+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}16.0000"
+            dam:Characters="{Long}35594"
+            dam:CharactersWithSpaces="{Long}41755"
+            dam:Company="Aetna"
+            dam:created="{Date}2022-12-07T23:31:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-21T10:18:49.559+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Dygert, Lori"
+            dam:lastPrinted="{Date}2018-09-24T14:30:00.000Z"
+            dam:Lines="{Long}296"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2022-12-07T23:31:00.000Z"
+            dam:Pages="{Long}1"
+            dam:Paragraphs="{Long}83"
+            dam:revision="{Long}2"
+            dam:ScaleCrop="false"
+            dam:sha1="bf635547542bdad7287c0fcdc43eda0a0ea0c1ef"
+            dam:SharedDoc="false"
+            dam:size="{Long}900097"
+            dam:Template="Normal"
+            dam:TotalTime="{Long}1"
+            dam:variant="{Long}1"
+            dam:Words="{Long}6244"
+            dc:creator="[Alexia Vanek]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

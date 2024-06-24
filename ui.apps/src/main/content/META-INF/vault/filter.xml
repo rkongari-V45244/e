@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aflacapps/clientlibs" mode="replace"/>
+    <filter root="/apps/aflacapps/components" mode="replace"/>
+    <filter root="/apps/aflacapps/i18n" mode="replace"/>
+</workspaceFilter>

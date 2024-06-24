@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-12-07T17:34:47.018-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/adobesign/cloudservices/adobesign/template"
+        jcr:lastModified="{Date}2023-12-07T17:34:47.009-05:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="AdobeSignDocEx"
+        sling:resourceType="adobesign/cloudservices/adobesign/page"
+        access_token_uri="https://api.na2.documents.adobe.com/oauth/v2/refresh"
+        api_access_point="https://api.na2.documents.adobe.com/"
+        authorization_scope="agreement_read:self agreement_send:self workflow_read:self agreement_write:self widget_write:self"
+        client_id="CBJCHBCAABAASQKvA9O3zz-OqmTmtnVBGFoW7t-75zN8"
+        client_secret="\{fc7636aed7d8c9ef4e3f4b854981e40f6ad098925bc0b9e0f2c4b3e0b6bdb13f89cbbe7850eb1798733d03bad46528bc6a89ccb4940a2c243375f26a977c64c7}"
+        grant_type="refresh_token"
+        name="adobesigndocex"
+        oAuthUrl="https://na2.documents.adobe.com/public/oauth/v2"
+        redirect_uri="https://localhost:8443/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/aflacapps/adobeSignProd"
+        refresh_token="\{70f45b311fa7c8ea7f013086cca4a26828165a6750b9f9bc2438a209136c3726886a1c0b6d6791b05ad204736dbb12df43df8de07fe9a2ce135916b531b09ba645bf89b000dea8184d467289e919715e374e4b853deb73aa0f40937d73ce53f7}"
+        refresh_token_uri="https://api.na2.documents.adobe.com/oauth/v2/token"
+        signattachments="true"
+        signCloudType="comCloud"
+        web_access_point="https://na2.documents.adobe.com/"/>
+</jcr:root>

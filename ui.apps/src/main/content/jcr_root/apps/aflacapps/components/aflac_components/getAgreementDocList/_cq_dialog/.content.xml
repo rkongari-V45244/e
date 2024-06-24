@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Retrieve Documents of an agreement"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <processargs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Arguments"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <arguments
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Please specify your requirements"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <agreementIdVarName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="INPUT - Enter the name of the variable &lt;type = string> which contains agreement Id."
+                                        name="./metaData/agreementIdVarName"
+                                        required="{Boolean}true"/>
+                                    <formIdVariableName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="INPUT - Please mention the name of the variable which stores applicable list of master app form ids."
+                                        name="./metaData/formIdVariableName"
+                                        required="{Boolean}true"/>
+                                    <docIdListVariable
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel=" Enter the name of the variable (type = string) which will store document Ids."
+                                        name="./metaData/docIdListVariableName"
+                                        required="{Boolean}true"/>
+                                    <docListVariable
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel=" Enter the name of the variable (type = List&lt;document>) which will store list of documents retrieved from agreement."
+                                        name="./metaData/docListVariableName"
+                                        required="{Boolean}true"/>
+                                </items>
+                            </arguments>
+                        </items>
+                    </column>
+                </items>
+            </processargs>
+            <common
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"/>
+            <process
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"/>
+        </items>
+    </content>
+</jcr:root>

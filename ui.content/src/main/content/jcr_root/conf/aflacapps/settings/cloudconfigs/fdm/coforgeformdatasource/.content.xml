@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-06-24T18:55:33.517+05:30"
+        cq:lastModifiedBy="admin"
+        jcr:lastModified="{Date}2022-06-24T18:55:33.342+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="CoforgeFormDataSource"
+        sling:resourceType="fd/fdm/gui/components/admin/fdmcloudservice/rest"
+        authenticationType="Basic Authentication"
+        dataSourceType="REST"
+        filename="swagger.json"
+        location="header"
+        name="coforgeformdatasource"
+        password="\{004b312321d32b9e4e98fd4d03e4ec88afe39e56ad0278ac7fdf4e4e306b2a85}"
+        selectAuthentication="Basic Authentication"
+        selectHeader="Authorization Bearer"
+        serviceEndPoint="http://localhost:8080"
+        swaggerSource="swaggerFile"
+        userName="admin">
+        <swaggerFile/>
+    </jcr:content>
+</jcr:root>

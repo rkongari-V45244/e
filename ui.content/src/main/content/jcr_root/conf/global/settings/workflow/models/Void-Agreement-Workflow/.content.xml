@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2024-03-29T11:28:15.236+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Void Agreement Workflow"
+        sling:resourceType="cq/workflow/components/pages/model"
+        lastSynced="{Date}2024-03-29T11:28:16.699+05:30">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <voidagreement
+                jcr:description="An AEM workflow component to create an Agreement."
+                jcr:lastModified="{Date}2024-03-20T11:55:22.741+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Void an Agreement"
+                sling:resourceType="aflacapps/components/aflac_components/voidAgreement">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    agreementId="agreementId"
+                    PROCESS="com.aflac.core.services.VoidAgreementWorkflowStep"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </voidagreement>
+            <pdfstatusupdate
+                jcr:description="An AEM workflow process component to update pdf status."
+                jcr:lastModified="{Date}2024-03-29T11:28:15.234+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="STATUS update - MasterApp"
+                sling:resourceType="aflacapps/components/aflac_components/pdfStatusUpdate">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    formIdVariableName="formId"
+                    masterAppIdVariable="masterAppId"
+                    masterAppVersionVariable="masterAppVersion"
+                    PROCESS="com.aflac.core.services.PDFStatusUpdateWorkflowStep"
+                    PROCESS_AUTO_ADVANCE="true"
+                    statusVariableName="voidStatus"/>
+            </pdfstatusupdate>
+        </flow>
+        <variables jcr:primaryType="nt:unstructured">
+            <agreementId
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="agreementId"
+                type="java.lang.String"/>
+            <masterAppId
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                description="Please specify the master app id."
+                name="masterAppId"
+                type="java.lang.String"/>
+            <coverageEffectiveDate
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                description="Please specify the coverage effective date of master app"
+                name="coverageEffectiveDate"
+                type="java.lang.String"/>
+            <formId
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                description="Please specify the form id of the master app"
+                name="formId"
+                type="java.lang.String"/>
+            <masterAppVersion
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="masterAppVersion"
+                type="java.lang.String"/>
+            <voidStatus
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="voidStatus"
+                type="java.lang.String"/>
+        </variables>
+    </jcr:content>
+</jcr:root>

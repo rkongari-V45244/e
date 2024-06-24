@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="63b2f77a-e07c-4d80-bd98-16e1c4070aea">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-10-14T15:40:26.120+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        sling:resourceType="fd/fm/xfaforms/render"
+        type="xfaForm"
+        xfaForm="{Long}1">
+        <metadata
+            dam:extracted="{Date}2022-10-14T15:36:54.928+05:30"
+            dam:sha1="e4e7cc8e23fca199fd75bdaeb082109303c72c2e"
+            dam:size="{Long}655267"
+            dc:format="application/vnd.adobe.xdp+xml"
+            jcr:lastModified="{Date}2022-08-18T17:29:39.271+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[mix:created,mix:lastModified]"
+            jcr:primaryType="nt:unstructured"
+            allowedRenderFormat="BOTH"
+            availableInMobileApp="false"
+            name="C02204CO.xdp"
+            profile="/libs/xfaforms/profiles/default"/>
+    </jcr:content>
+</jcr:root>

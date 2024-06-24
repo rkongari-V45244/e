@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-20T14:58:25.480+05:30"
+        cq:lastModifiedBy="admin"
+        jcr:lastModified="{Date}2022-07-20T14:58:25.336+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="aflac"
+        sling:resourceType="fd/fdm/gui/components/admin/fdmcloudservice/rest"
+        authenticationType="Basic Authentication"
+        dataSourceType="REST"
+        filename="swagger (2).json"
+        location="header"
+        name="aflac"
+        password="\{5a996ab1c78e449253b5f9bd1d97f2f76070c08177a05f47e2b98589d7b05a62}"
+        selectAuthentication="Basic Authentication"
+        selectHeader="Authorization Bearer"
+        serviceEndPoint="http://localhost:4502/"
+        swaggerSource="swaggerFile"
+        userName="admin">
+        <swaggerFile/>
+    </jcr:content>
+</jcr:root>

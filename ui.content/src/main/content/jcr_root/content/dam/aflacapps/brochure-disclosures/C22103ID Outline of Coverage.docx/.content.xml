@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="47116e8c-71e2-4c96-82a2-8110e56a0258">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:52:33.316+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}16.0000"
+            dam:Characters="{Long}10325"
+            dam:CharactersWithSpaces="{Long}12112"
+            dam:created="{Date}2021-04-28T17:57:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:52:33.066+05:30"
+            dam:HyperlinksChanged="false"
+            dam:lastModifiedBy="Kathy Lynch"
+            dam:lastPrinted="{Date}2022-02-03T16:33:00.000Z"
+            dam:Lines="{Long}86"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2022-02-10T21:25:00.000Z"
+            dam:Pages="{Long}5"
+            dam:Paragraphs="{Long}24"
+            dam:revision="{Long}12"
+            dam:ScaleCrop="false"
+            dam:sha1="663a2788358bab809bc8a6db950774d165f38514"
+            dam:SharedDoc="false"
+            dam:size="{Long}51134"
+            dam:Template="Normal.dotm"
+            dam:TotalTime="{Long}128"
+            dam:Words="{Long}1811"
+            dc:creator="[Shreya Patel]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="C22103ID Outline of Coverage"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="C22103ID Outline of Coverage"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

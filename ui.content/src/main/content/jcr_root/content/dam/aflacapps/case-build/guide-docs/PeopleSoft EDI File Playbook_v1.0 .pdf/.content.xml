@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="f6d26b01-09d7-461b-ac87-de84d4f88e7f">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-21T10:19:21.791+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="Shyam Sundar Kannaian"
+            dam:extracted="{Date}2023-09-21T10:19:21.212+05:30"
+            dam:numPages="{Long}16"
+            dam:Physicalheightininches="{Decimal}11.693333333333333"
+            dam:Physicalwidthininches="{Decimal}8.268333333333334"
+            dam:Producer="Microsoft® Word 2016"
+            dam:sha1="fc89583659ebdbec6a83108da0c24489639a5941"
+            dam:size="{Long}1125281"
+            dc:creator="[Shyam Sundar Kannaian]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="Aflac Group – PeopleSoft File Extract Guideline"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Aflac Group – PeopleSoft File Extract Guideline"
+            pdf:Producer="Microsoft® Word 2016"
+            xmp:CreateDate="{Date}2021-01-15T04:27:25.000+05:30"
+            xmp:CreatorTool="Microsoft® Word 2016"
+            xmp:MetadataDate="{Date}2021-09-24T09:12:46.000-04:00"
+            xmpMM:DocumentID="uuid:72aaf901-375d-4d9f-a785-0c3b5d412a4e"
+            xmpMM:InstanceID="uuid:888e2c7a-cf92-4af5-8ed6-430cedf8cf6a"
+            xmp:ModifyDate="{Date}2021-09-24T18:42:46.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="9ef7fa67-77fc-43dd-955b-769adb6ab668">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:57:06.619+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:extracted="{Date}2023-09-18T19:57:04.991+05:30"
+            dam:numPages="{Long}4"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Adobe PDF Library 15.0"
+            dam:sha1="70e02ecf37522af5b841d3b9fa15f352be29cab6"
+            dam:size="{Long}47456"
+            dc:creator="[\0]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:description="\0"
+            dc:format="application/pdf"
+            dc:title="\0"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Adobe PDF Library 15.0"
+            pdfx:SourceModified="D:20160727135302"
+            xmp:CreateDate="{Date}2016-07-27T19:23:45.000+05:30"
+            xmp:CreatorTool="Acrobat PDFMaker 15 for Word"
+            xmp:MetadataDate="{Date}2016-07-27T09:53:46.000-04:00"
+            xmpMM:DocumentID="uuid:00d6ae9e-b6e7-4530-94d1-ca845698c55b"
+            xmpMM:InstanceID="uuid:5555d758-345f-4b35-9290-7c8a42570190"
+            xmpMM:subject="{Long}[19]"
+            xmpMM:subject_xmpArrayType="rdf:Seq"
+            xmp:ModifyDate="{Date}2016-07-27T19:23:46.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

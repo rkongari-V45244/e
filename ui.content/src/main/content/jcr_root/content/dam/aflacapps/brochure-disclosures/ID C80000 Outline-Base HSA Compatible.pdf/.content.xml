@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="ac936375-ed3e-442b-89de-2b599e6bb4e0">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:55:22.817+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="rhack"
+            dam:extracted="{Date}2023-09-18T19:55:20.730+05:30"
+            dam:numPages="{Long}4"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Microsoft® Word 2010"
+            dam:sha1="648dee8141d2b79c15de1ec63557bb967ecaa805"
+            dam:size="{Long}188942"
+            dc:creator="[rhack]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="CONTINENTAL"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="CONTINENTAL"
+            pdf:Producer="Microsoft® Word 2010"
+            xmp:CreateDate="{Date}2016-06-22T22:56:01.000+05:30"
+            xmp:CreatorTool="Microsoft® Word 2010"
+            xmp:MetadataDate="{Date}2016-06-22T13:26:01.000-04:00"
+            xmp:ModifyDate="{Date}2016-06-22T22:56:01.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

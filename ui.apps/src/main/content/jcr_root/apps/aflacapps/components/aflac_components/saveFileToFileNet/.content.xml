@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Component to save a pdf file &lt;type Doc> to the FILENET and RETURN the document ID to variable &lt;type String>."
+    jcr:primaryType="cq:Component"
+    jcr:title="MASTERAPP - FILENET - Save a File to FILENET - NEW"
+    sling:resourceSuperType="cq/workflow/components/model/process"
+    abbreviation="SA"
+    allowedParents="[*/parsys]"
+    componentGroup="Forms Workflow"/>

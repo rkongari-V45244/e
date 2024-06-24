@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="6a8047b0-48a2-4b15-8ea3-7fe9a1037087">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-21T10:18:58.421+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}16.0000"
+            dam:Characters="{Long}28345"
+            dam:CharactersWithSpaces="{Long}33251"
+            dam:Company="Aetna"
+            dam:created="{Date}2022-10-14T21:06:00.000Z"
+            dam:DocSecurity="{Long}4"
+            dam:extracted="{Date}2023-09-21T10:18:57.942+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Rao, Ravali S"
+            dam:lastPrinted="{Date}2018-09-24T14:30:00.000Z"
+            dam:Lines="{Long}236"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2022-10-14T21:06:00.000Z"
+            dam:Pages="{Long}19"
+            dam:Paragraphs="{Long}66"
+            dam:revision="{Long}2"
+            dam:ScaleCrop="false"
+            dam:sha1="72c4435fa899e024636b012da747c8c20a73a319"
+            dam:SharedDoc="false"
+            dam:size="{Long}7515101"
+            dam:Template="Normal.dotm"
+            dam:TotalTime="{Long}1"
+            dam:variant="{Long}1"
+            dam:Words="{Long}4972"
+            dc:creator="[Alexia Vanek]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

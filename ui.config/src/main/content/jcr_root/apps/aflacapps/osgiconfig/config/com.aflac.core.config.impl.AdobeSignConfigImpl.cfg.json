@@ -1,0 +1,10 @@
+{
+   "refreshUrl": "https://api.na2.documents.adobe.com/oauth/v2/refresh",
+   "refreshToken": "3AAABLblqZhCmbPPiMNit1bFYQoKLHZXb7Ye-t0OLfOAauuXkHZeQ5b5DvfuhKyuUTFWwqOVBAJE*",
+   "grantType": "refresh_token",
+   "clientId": "CBJCHBCAABAABlsMobvhAJVlYKL_vYyibR_mEpzzn9Ky",
+   "clientSecret": "akBooi2d5otMUY0qB9FlO2XMAj9_VCL0",
+   "baseUrl": "https://api.na2.echosign.com:443/api/rest/v2",
+   "waitTime": "120000",
+   "server": "localhost"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="2b479757-9091-4bb0-9d5d-a3fd27445aa6">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-21T10:19:34.331+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:extracted="{Date}2023-09-21T10:19:33.812+05:30"
+            dam:numPages="{Long}69"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:sha1="258a564976a650af082d46bf172030b1c81f8d5e"
+            dam:size="{Long}2920739"
+            dc:format="application/pdf"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            xmp:CreateDate="{Date}2021-11-12T22:17:11.000+05:30"
+            xmp:MetadataDate="{Date}2021-11-12T11:47:11.000-05:00"
+            xmpMM:DocumentID="uuid:199ccfcf-79bf-486b-8773-bb45afda1a4b"
+            xmpMM:InstanceID="uuid:479152f7-0ef4-4baa-b02c-f37cec9fcd37"
+            xmp:ModifyDate="{Date}2021-11-12T22:17:11.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

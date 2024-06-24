@@ -1,0 +1,5 @@
+{
+  "user.mapping": [
+    "aflacapps.core:aflac-service-user=[aflac-service-user-service]"
+  ]
+}

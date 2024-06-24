@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="c5735974-bf09-4796-b2f5-9db47d06d25a">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:59:29.769+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="Sara McCormick"
+            dam:extracted="{Date}2023-09-18T19:59:29.028+05:30"
+            dam:numPages="{Long}5"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Adobe PDF Library 10.0"
+            dam:sha1="4934c736c51e14c673747d11720cbb56fd9939a7"
+            dam:size="{Long}83440"
+            dc:creator="[Sara McCormick]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            pdf:Producer="Adobe PDF Library 10.0"
+            pdfx:Company="Aflac"
+            pdfx:SourceModified="D:20160519180550"
+            xmp:CreateDate="{Date}2016-05-19T23:35:55.000+05:30"
+            xmp:CreatorTool="Acrobat PDFMaker 10.0 for Word"
+            xmp:MetadataDate="{Date}2016-05-19T14:05:56.000-04:00"
+            xmpMM:DocumentID="uuid:1b2cea39-4549-40e2-bdcf-eb3380b5ea7e"
+            xmpMM:InstanceID="uuid:4ca67a73-3dd9-4da8-a178-50d411da3305"
+            xmpMM:subject="{Long}[12]"
+            xmpMM:subject_xmpArrayType="rdf:Seq"
+            xmp:ModifyDate="{Date}2016-05-19T23:35:56.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

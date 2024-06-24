@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+
+    <filter root="/conf/forms" mode="replace"/>
+    <filter root="/conf/global" mode="replace"/>
+    <filter root="/conf/aflacapps/settings" mode="replace"/>
+    <filter root="/content/aflacapps" mode="replace"/>
+    <filter root="/content/aflacappservice" mode="replace"/>
+    <filter root="/content/dam/formsanddocuments/aflacapps" mode="replace"/>
+    <filter root="/content/dam/formsanddocuments-fdm/aflacapps" mode="replace"/>
+    <filter root="/content/dam/formsanddocuments-themes/aflacapps" mode="replace"/>        
+    <filter root="/content/experience-fragments/aflacapps" mode="replace"/>    
+    <filter root="/content/forms/af/aflacapps" mode="replace"/>
+	<filter root="/conf/global/settings/dam/adminui-extension/metadataschema/default/application" mode="replace"/>
+</workspaceFilter>

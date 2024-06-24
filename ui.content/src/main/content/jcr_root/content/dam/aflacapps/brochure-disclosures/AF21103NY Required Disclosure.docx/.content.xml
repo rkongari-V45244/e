@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="6e0128fe-f41f-4689-858b-d134f8771226">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:52:15.362+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}6128"
+            dam:CharactersWithSpaces="{Long}7246"
+            dam:Company="Aflac"
+            dam:created="{Date}2013-09-19T01:12:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:52:14.972+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Sara McCormick"
+            dam:Lines="{Long}51"
+            dam:LinksUpToDate="false"
+            dam:lpstr="C21101 Certificate"
+            dam:modified="{Date}2017-09-06T14:50:00.000Z"
+            dam:Pages="{Long}3"
+            dam:Paragraphs="{Long}14"
+            dam:revision="{Long}833"
+            dam:ScaleCrop="false"
+            dam:sha1="3e76a7d759fd172b4dc38454945587e26ed6d9a6"
+            dam:SharedDoc="false"
+            dam:size="{Long}64094"
+            dam:Template="Normal.dotm"
+            dam:TitlesOfParts="C21101 Certificate"
+            dam:TotalTime="{Long}2624"
+            dam:variant="{Long}1"
+            dam:vector="C21101 Certificate"
+            dam:Words="{Long}1132"
+            dc:creator="[Jennifer Bartow]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="AF21103NY Required Disclosure"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="AF21103NY Required Disclosure"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="dff2a2d2-1253-438f-8dcf-693ef24dcfcf">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-20T18:27:42.689+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Excel"
+            dam:AppVersion="{Decimal}16.0300"
+            dam:created="{Date}2022-12-22T10:18:16.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-20T18:27:42.544+05:30"
+            dam:HeadingPairs="Worksheets1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Premsagar Subhash Mahajan"
+            dam:LinksUpToDate="false"
+            dam:lpstr="Instructions"
+            dam:modified="{Date}2022-12-22T11:48:44.000Z"
+            dam:ScaleCrop="false"
+            dam:sha1="559b98ebd9fcca025af357c890d4d34a828e4559"
+            dam:SharedDoc="false"
+            dam:size="{Long}39076"
+            dam:TitlesOfParts="Instructions"
+            dam:variant="{Long}1"
+            dam:vector="Instructions"
+            dc:creator="[Premsagar Subhash Mahajan]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

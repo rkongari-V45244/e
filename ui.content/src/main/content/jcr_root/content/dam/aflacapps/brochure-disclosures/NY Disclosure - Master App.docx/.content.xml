@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="2934e5bd-a592-4306-8a6a-81ed8e553797">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:59:19.032+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}548"
+            dam:CharactersWithSpaces="{Long}635"
+            dam:Company="Aflac"
+            dam:created="{Date}2015-08-05T20:43:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:59:18.493+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Sara McCormick"
+            dam:lastPrinted="{Date}2014-09-17T20:04:00.000Z"
+            dam:Lines="{Long}4"
+            dam:LinksUpToDate="false"
+            dam:lpstr="NY - Disclosure Notice NYMECDIS"
+            dam:modified="{Date}2015-08-24T13:00:00.000Z"
+            dam:Pages="{Long}1"
+            dam:Paragraphs="{Long}1"
+            dam:revision="{Long}10"
+            dam:ScaleCrop="false"
+            dam:sha1="ad1aadf0c1e3366bd5ae876707f5c2a033b820b2"
+            dam:SharedDoc="false"
+            dam:size="{Long}30000"
+            dam:Template="Normal.dotm"
+            dam:TitlesOfParts="NY - Disclosure Notice NYMECDIS"
+            dam:TotalTime="{Long}12"
+            dam:variant="{Long}1"
+            dam:vector="NY - Disclosure Notice NYMECDIS"
+            dam:Words="{Long}88"
+            dc:creator="[A]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:description="This endorsement form deletes the reference to carcinoma in situ in all A-58000 series policies."
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:subject="Endorsement form"
+            dc:title="NY Disclosure - Master App"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="NY Disclosure - Master App"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

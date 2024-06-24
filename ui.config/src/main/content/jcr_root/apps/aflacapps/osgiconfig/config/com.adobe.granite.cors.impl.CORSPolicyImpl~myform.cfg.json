@@ -1,0 +1,15 @@
+{
+  "alloworigin": ["http://localhost:3000","https://ndd-i.nt.lab.com","$[env:SAML_IDP_ORIGIN;default=https://fimd.nt.lab.com:9031]"],
+  "allowedpaths": [".*"],
+  "supportedheaders": [
+    "Authorization",
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "supportedmethods": ["GET","HEAD","POST"],
+  "alloworiginregexp": []
+}

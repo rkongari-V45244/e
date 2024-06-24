@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:adhocwf="http://ns.adobe.com/AcrobatAdhocWorkflow/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="79b3447b-209d-4eeb-aeac-972bc7e81c0c">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:54:22.571+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            adhocwf:state="{Long}1"
+            adhocwf:version="{Decimal}1.1"
+            dam:Author="claytonj"
+            dam:extracted="{Date}2023-09-18T19:54:16.816+05:30"
+            dam:numPages="{Long}1"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:Producer="Adobe PDF Library 15.0"
+            dam:sha1="c07d329b990f8aa87c9ae8a8998cd994e747acce"
+            dam:size="{Long}1078492"
+            dc:creator="[claytonj]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:description="\0"
+            dc:format="application/pdf"
+            dc:title=" "
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title=" "
+            pdf:Producer="Adobe PDF Library 15.0"
+            pdfx:Company="CAIC"
+            pdfx:SourceModified="D:20180209165529"
+            xmp:CreateDate="{Date}2018-02-09T22:26:08.000+05:30"
+            xmp:CreatorTool="Acrobat PDFMaker 15 for Word"
+            xmp:MetadataDate="{Date}2018-03-07T10:11:31.000-05:00"
+            xmpMM:DocumentID="uuid:6692981c-1a8a-40f9-b0f0-6b229fe85bb1"
+            xmpMM:InstanceID="uuid:def83db2-7b2e-4e87-b840-54fe5391df18"
+            xmpMM:subject="{Long}[5]"
+            xmpMM:subject_xmpArrayType="rdf:Seq"
+            xmp:ModifyDate="{Date}2018-03-07T20:41:31.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

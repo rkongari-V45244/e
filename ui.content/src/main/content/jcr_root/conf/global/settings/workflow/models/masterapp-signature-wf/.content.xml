@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2024-01-12T10:47:46.365-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="masterapp-signature-wf"
+        sling:resourceType="cq/workflow/components/pages/model"
+        lastSynced="{Date}2024-01-12T10:47:48.170-05:00">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <xmltransform
+                jcr:created="{Date}2023-12-28T08:20:32.282-05:00"
+                jcr:createdBy="admin"
+                jcr:description="An AEM workflow process component to transform xml as per form ID.."
+                jcr:lastModified="{Date}2023-12-28T14:33:20.790-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Aflac xml transformation"
+                sling:resourceType="aflacapps/components/aflac_components/xml-transform-workflow-component/XmlTransform">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    fileName="data.xml"
+                    PROCESS="com.aflac.core.services.XmlTransformationWorkflowStep"
+                    PROCESS_AUTO_ADVANCE="true"
+                    xmlVariableName="masterAppXml"/>
+            </xmltransform>
+            <xmltransformation
+                jcr:created="{Date}2023-12-28T14:38:23.377-05:00"
+                jcr:createdBy="admin"
+                jcr:description="An AEM workflow process component to transform xml as per form ID."
+                jcr:lastModified="{Date}2023-12-28T14:38:40.431-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Aflac xml transformation"
+                sling:resourceType="aflacapps/components/aflac_components/XmlTransformation">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    fileName="data.xml"
+                    PROCESS="com.aflac.core.services.XmlTransformationWorkflowStep"
+                    PROCESS_AUTO_ADVANCE="true"
+                    xmlVariableName="masterAppXml"/>
+            </xmltransformation>
+            <xmltransformation_1143917678
+                jcr:created="{Date}2023-12-28T14:42:26.230-05:00"
+                jcr:createdBy="admin"
+                jcr:description="An AEM workflow process component to transform xml as per form ID."
+                jcr:lastModified="{Date}2023-12-28T14:42:44.350-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Aflac xml transformation"
+                sling:resourceType="aflacapps/components/aflac_components/xmlTransformation">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    fileName="data.xml"
+                    PROCESS="com.aflac.core.services.XmlTransformationWorkflowStep"
+                    PROCESS_AUTO_ADVANCE="true"
+                    xmlVariableName="masterAppXml"/>
+            </xmltransformation_1143917678>
+            <set_variable_copy
+                jcr:created="{Date}2023-12-12T11:03:30.719-05:00"
+                jcr:createdBy="admin"
+                jcr:description="Set value of variables"
+                jcr:lastModified="{Date}2023-12-28T13:25:51.633-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="For Transformation - variable Set"
+                sling:resourceType="cq/workflow/components/model/set_variable"
+                defaultValue="[,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,]">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                    PROCESS_AUTO_ADVANCE="true"
+                    variableMappings="[{&quot;variableName&quot;:&quot;strSender1EmailId&quot;\,&quot;mappingType&quot;:&quot;XPATH&quot;\,&quot;mappingValue&quot;:&quot;masterAppXml:masterApp/signerEmailId&quot;},{&quot;variableName&quot;:&quot;strAbsolutePathOfFormIdFolder&quot;\,&quot;mappingType&quot;:&quot;XPATH&quot;\,&quot;mappingValue&quot;:&quot;masterAppXml:masterApp/formFolderLocation&quot;},{&quot;variableName&quot;:&quot;strFormId&quot;\,&quot;mappingType&quot;:&quot;XPATH&quot;\,&quot;mappingValue&quot;:&quot;masterAppXml:masterApp/formId&quot;},{&quot;variableName&quot;:&quot;strAbsoluteFormIdPath&quot;\,&quot;mappingType&quot;:&quot;EXPRESSION&quot;\,&quot;mappingValue&quot;:&quot;{\\&quot;nodeName\\&quot;:\\&quot;ROOT\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;STATEMENT\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;CALC_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;VALUE_FIELD\\&quot;\,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;strAbsoluteFormIdPath\\&quot;\,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;\,\\&quot;name\\&quot;:\\&quot;strAbsoluteFormIdPath\\&quot;}}\,{\\&quot;nodeName\\&quot;:\\&quot;to\\&quot;\,\\&quot;value\\&quot;:null}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;BINARY_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;BINARY_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;BINARY_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;\,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;strAbsolutePathOfFormIdFolder\\&quot;\,\\&quot;displayName\\&quot;:\\&quot;strAbsolutePathOfFormIdFolder\\&quot;\,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;\,\\&quot;displayPath\\&quot;:\\&quot;workflow_variables/strAbsolutePathOfFormIdFolder/\\&quot;\,\\&quot;name\\&quot;:\\&quot;strAbsolutePathOfFormIdFolder\\&quot;\,\\&quot;parent\\&quot;:\\&quot;workflow_variables\\&quot;}}}\,{\\&quot;nodeName\\&quot;:\\&quot;OPERATOR\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;PLUS\\&quot;\,\\&quot;value\\&quot;:null}}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;STRING_LITERAL\\&quot;\,\\&quot;value\\&quot;:\\&quot;/\\&quot;}}]}}\,{\\&quot;nodeName\\&quot;:\\&quot;OPERATOR\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;PLUS\\&quot;\,\\&quot;value\\&quot;:null}}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;\,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;strFormId\\&quot;\,\\&quot;displayName\\&quot;:\\&quot;strFormId\\&quot;\,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;\,\\&quot;displayPath\\&quot;:\\&quot;workflow_variables/strFormId/\\&quot;\,\\&quot;name\\&quot;:\\&quot;strFormId\\&quot;\,\\&quot;parent\\&quot;:\\&quot;workflow_variables\\&quot;}}}]}}\,{\\&quot;nodeName\\&quot;:\\&quot;OPERATOR\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;PLUS\\&quot;\,\\&quot;value\\&quot;:null}}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;STRING_LITERAL\\&quot;\,\\&quot;value\\&quot;:\\&quot;.pdf\\&quot;}}]}}\,{\\&quot;nodeName\\&quot;:\\&quot;When\\&quot;\,\\&quot;value\\&quot;:null}\,{\\&quot;nodeName\\&quot;:\\&quot;CONDITIONORALWAYS\\&quot;\,\\&quot;choice\\&quot;:null}]}}]\,\\&quot;isValid\\&quot;:true\,\\&quot;enabled\\&quot;:true\,\\&quot;version\\&quot;:1}&quot;},{&quot;variableName&quot;:&quot;strEsignature&quot;\,&quot;mappingType&quot;:&quot;XPATH&quot;\,&quot;mappingValue&quot;:&quot;masterAppXml:masterApp/eSignatureRequired&quot;},{&quot;variableName&quot;:&quot;strEsignature&quot;\,&quot;mappingType&quot;:&quot;EXPRESSION&quot;\,&quot;mappingValue&quot;:&quot;{\\&quot;nodeName\\&quot;:\\&quot;ROOT\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;STATEMENT\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;CALC_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;VALUE_FIELD\\&quot;\,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;strEsignature\\&quot;\,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;\,\\&quot;name\\&quot;:\\&quot;strEsignature\\&quot;}}\,{\\&quot;nodeName\\&quot;:\\&quot;to\\&quot;\,\\&quot;value\\&quot;:null}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;STRING_LITERAL\\&quot;\,\\&quot;value\\&quot;:\\&quot;YES\\&quot;}}\,{\\&quot;nodeName\\&quot;:\\&quot;When\\&quot;\,\\&quot;value\\&quot;:null}\,{\\&quot;nodeName\\&quot;:\\&quot;CONDITIONORALWAYS\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPARISON_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;\,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;strEsignature\\&quot;\,\\&quot;displayName\\&quot;:\\&quot;strEsignature\\&quot;\,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;\,\\&quot;displayPath\\&quot;:\\&quot;workflow_variables/strEsignature/\\&quot;\,\\&quot;name\\&quot;:\\&quot;strEsignature\\&quot;\,\\&quot;parent\\&quot;:\\&quot;workflow_variables\\&quot;}}}\,{\\&quot;nodeName\\&quot;:\\&quot;OPERATOR\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;IS_EMPTY\\&quot;\,\\&quot;value\\&quot;:null}}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;\,\\&quot;value\\&quot;:null}}]}}]}}]\,\\&quot;isValid\\&quot;:true\,\\&quot;enabled\\&quot;:true\,\\&quot;version\\&quot;:1}&quot;},{&quot;variableName&quot;:&quot;strContractTitle&quot;\,&quot;mappingType&quot;:&quot;XPATH&quot;\,&quot;mappingValue&quot;:&quot;masterAppXml:masterApp/contractTitle&quot;},{&quot;variableName&quot;:&quot;strContractTitle&quot;\,&quot;mappingType&quot;:&quot;EXPRESSION&quot;\,&quot;mappingValue&quot;:&quot;{\\&quot;nodeName\\&quot;:\\&quot;ROOT\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;STATEMENT\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;CALC_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;VALUE_FIELD\\&quot;\,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;strContractTitle\\&quot;\,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;\,\\&quot;name\\&quot;:\\&quot;strContractTitle\\&quot;}}\,{\\&quot;nodeName\\&quot;:\\&quot;to\\&quot;\,\\&quot;value\\&quot;:null}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;STRING_LITERAL\\&quot;\,\\&quot;value\\&quot;:\\&quot;Not Defined\\&quot;}}\,{\\&quot;nodeName\\&quot;:\\&quot;When\\&quot;\,\\&quot;value\\&quot;:null}\,{\\&quot;nodeName\\&quot;:\\&quot;CONDITIONORALWAYS\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPARISON_EXPRESSION\\&quot;\,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;\,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;strContractTitle\\&quot;\,\\&quot;displayName\\&quot;:\\&quot;strContractTitle\\&quot;\,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;\,\\&quot;displayPath\\&quot;:\\&quot;workflow_variables/strContractTitle/\\&quot;\,\\&quot;name\\&quot;:\\&quot;strContractTitle\\&quot;\,\\&quot;parent\\&quot;:\\&quot;workflow_variables\\&quot;}}}\,{\\&quot;nodeName\\&quot;:\\&quot;OPERATOR\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;IS_EMPTY\\&quot;\,\\&quot;value\\&quot;:null}}\,{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;\,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;\,\\&quot;value\\&quot;:null}}]}}]}}]\,\\&quot;isValid\\&quot;:true\,\\&quot;enabled\\&quot;:true\,\\&quot;version\\&quot;:1}&quot;}]"/>
+            </set_variable_copy>
+            <generatepdfoutput
+                jcr:created="{Date}2023-12-07T16:26:32.143-05:00"
+                jcr:createdBy="admin"
+                jcr:description="Generate Non Interactive PDF"
+                jcr:lastModified="{Date}2023-12-28T13:26:10.017-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Generate Non Interactive PDF"
+                sling:resourceType="fd/workflow/components/output/generatePDFOutput">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    acrobatversion="Acrobat_10"
+                    data="VARIABLE:masterAppXml"
+                    embed="true"
+                    outputpdf="VARIABLE:unsignedPDF"
+                    PROCESS="com.adobe.fd.workflow.output.impl.GeneratePDFOutputProcess"
+                    PROCESS_AUTO_ADVANCE="true"
+                    urlOrFileName="VARIABLE:strAbsoluteFormIdPath"/>
+            </generatepdfoutput>
+            <set_variable
+                jcr:created="{Date}2024-01-10T10:45:28.680-05:00"
+                jcr:createdBy="admin"
+                jcr:description="Set value of variables"
+                jcr:lastModified="{Date}2024-01-10T10:46:10.645-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Set Variable - Title of the document"
+                sling:resourceType="cq/workflow/components/model/set_variable"
+                defaultValue="UnsignedDoc Title.pdf">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                    PROCESS_AUTO_ADVANCE="true"
+                    variableMappings="\{&quot;variableName&quot;:&quot;fileNetDocTitle&quot;,&quot;mappingType&quot;:&quot;LITERAL&quot;,&quot;mappingValue&quot;:&quot;UnsignedDoc Title.pdf&quot;}"/>
+            </set_variable>
+            <savefiletofilenet
+                jcr:created="{Date}2024-01-09T16:36:11.928-05:00"
+                jcr:createdBy="admin"
+                jcr:description="An AEM workflow process component to save pdf file on FileNet"
+                jcr:lastModified="{Date}2024-01-10T10:43:47.195-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Save a File to filenet"
+                sling:resourceType="aflacapps/components/aflac_components/saveFileToFileNet">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    fileNetDocIDName="fileNetDocID"
+                    fileNetDocSaveStatus="fileNetDocSavedStatus"
+                    fileNetDocTitle="fileNetDocTitle"
+                    inDocName="unsignedPDF"
+                    PROCESS="com.aflac.core.services.FileNetWorkflowProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </savefiletofilenet>
+            <or_1787378562
+                jcr:created="{Date}2023-12-14T16:02:01.300-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-12-19T09:29:32.158-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="E-Signature Requested?"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Branch 1"
+                branchName2="Branch 2"
+                branchOrder="[0,1]"
+                default1="true"
+                expression1="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BOOLEAN_BINARY_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;strEsignature&quot;,&quot;displayName&quot;:&quot;strEsignature&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/strEsignature/&quot;,&quot;name&quot;:&quot;strEsignature&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;YES&quot;}}]},&quot;nested&quot;:false},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;OR&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;strEsignature&quot;,&quot;displayName&quot;:&quot;strEsignature&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/strEsignature/&quot;,&quot;name&quot;:&quot;strEsignature&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;Yes&quot;}}]},&quot;nested&quot;:false}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+                expression2="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;strEsignature&quot;,&quot;displayName&quot;:&quot;strEsignature&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/strEsignature/&quot;,&quot;name&quot;:&quot;strEsignature&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NOT_EQUALS_TO&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;YES&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+                orSplit="true">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <set_variable_1193584
+                        jcr:created="{Date}2024-01-11T12:23:21.759-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Set value of variables"
+                        jcr:lastModified="{Date}2024-01-12T10:47:46.349-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Variable - signatureStatus Update"
+                        sling:resourceType="cq/workflow/components/model/set_variable"
+                        defaultValue="[,true,,]">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                            PROCESS_AUTO_ADVANCE="true"
+                            variableMappings="\{&quot;variableName&quot;:&quot;signatureStatus&quot;,&quot;mappingType&quot;:&quot;EXPRESSION&quot;,&quot;mappingValue&quot;:&quot;{\\&quot;nodeName\\&quot;:\\&quot;ROOT\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;STATEMENT\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;CALC_EXPRESSION\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;VALUE_FIELD\\&quot;,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;,\\&quot;name\\&quot;:\\&quot;signatureStatus\\&quot;}},{\\&quot;nodeName\\&quot;:\\&quot;to\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;STRING_LITERAL\\&quot;,\\&quot;value\\&quot;:\\&quot;OUT_FOR_SIGNATURE\\&quot;}},{\\&quot;nodeName\\&quot;:\\&quot;When\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;CONDITIONORALWAYS\\&quot;,\\&quot;choice\\&quot;:null}]}}],\\&quot;isValid\\&quot;:true,\\&quot;enabled\\&quot;:true,\\&quot;version\\&quot;:1}&quot;}"/>
+                    </set_variable_1193584>
+                    <pdfstatusupdate
+                        jcr:created="{Date}2024-01-11T12:19:52.237-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="An AEM workflow process component to update pdf status."
+                        jcr:lastModified="{Date}2024-01-11T12:20:48.333-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="STATUS update - MasterApp"
+                        sling:resourceType="aflacapps/components/aflac_components/pdfStatusUpdate">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.aflac.core.services.PDFStatusUpdateWorkflowStep"
+                            PROCESS_AUTO_ADVANCE="true"
+                            statusVariableName="signatureStatus"
+                            xmlVariable="masterAppXml"/>
+                    </pdfstatusupdate>
+                    <agreement
+                        jcr:created="{Date}2023-12-07T10:28:43.585-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Sign Document"
+                        jcr:lastModified="{Date}2024-01-10T10:01:45.406-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sign Document"
+                        sling:resourceType="fd/workflow/components/forms/Agreement">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            FORM_WORK_ITEM_TYPE="ADOBESIGN_STEP"
+                            includeAuditReport="true"
+                            inputpath="VARIABLE:unsignedPDF"
+                            locale="en_US"
+                            name="VARIABLE:strContractTitle"
+                            output="VARIABLE:signedPDF"
+                            PROCESS="com.adobe.fd.workflow.adobesign.impl.AgreementCreation"
+                            PROCESS_AUTO_ADVANCE="false"
+                            PROCESS_PERSIST_ANONYMOUS_WORKITEM="true"
+                            reminderFrequency="DAILY_UNTIL_SIGNED"
+                            signatureFlow="SEQUENTIAL"
+                            signConfig="/conf/aflacapps/adobeSignProd/settings/cloudconfigs/echosign/adobesigndocex"
+                            signerDetails="Static"
+                            staticSigners="\{&quot;email&quot;:&quot;VARIABLE:strSender1EmailId&quot;,&quot;role&quot;:&quot;SIGNER&quot;,&quot;authenticationType&quot;:&quot;None&quot;,&quot;countryCode&quot;:&quot;+1&quot;,&quot;phoneNumber&quot;:&quot;3109380535&quot;}"
+                            statusVariableField="signatureStatus"
+                            variableForStatus="VARIABLE:signatureStatus"/>
+                    </agreement>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <set_variable_1193584
+                        jcr:created="{Date}2024-01-11T12:23:21.759-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Set value of variables"
+                        jcr:lastModified="{Date}2024-01-11T17:23:33.302-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Variable - Wet Signature Update"
+                        sling:resourceType="cq/workflow/components/model/set_variable"
+                        defaultValue="[,true,,]">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                            PROCESS_AUTO_ADVANCE="true"
+                            variableMappings="\{&quot;variableName&quot;:&quot;signatureStatus&quot;,&quot;mappingType&quot;:&quot;EXPRESSION&quot;,&quot;mappingValue&quot;:&quot;{\\&quot;nodeName\\&quot;:\\&quot;ROOT\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;STATEMENT\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;CALC_EXPRESSION\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;VALUE_FIELD\\&quot;,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;,\\&quot;name\\&quot;:\\&quot;signatureStatus\\&quot;}},{\\&quot;nodeName\\&quot;:\\&quot;to\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;STRING_LITERAL\\&quot;,\\&quot;value\\&quot;:\\&quot;DOC GENERATED FOR WET SIGN\\&quot;}},{\\&quot;nodeName\\&quot;:\\&quot;When\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;CONDITIONORALWAYS\\&quot;,\\&quot;choice\\&quot;:null}]}}],\\&quot;isValid\\&quot;:true,\\&quot;enabled\\&quot;:true,\\&quot;version\\&quot;:1}&quot;}"/>
+                    </set_variable_1193584>
+                </_x0032_>
+            </or_1787378562>
+            <pdfstatusupdate
+                jcr:created="{Date}2024-01-11T12:22:17.098-05:00"
+                jcr:createdBy="admin"
+                jcr:description="An AEM workflow process component to update pdf status."
+                jcr:lastModified="{Date}2024-01-11T12:22:38.403-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="STATUS update - MasterApp"
+                sling:resourceType="aflacapps/components/aflac_components/pdfStatusUpdate">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.aflac.core.services.PDFStatusUpdateWorkflowStep"
+                    PROCESS_AUTO_ADVANCE="true"
+                    statusVariableName="signatureStatus"
+                    xmlVariable="masterAppXml"/>
+            </pdfstatusupdate>
+            <or
+                jcr:created="{Date}2023-12-14T15:46:01.856-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-01-11T17:27:46.257-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Check if &quot;signed&quot;"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="3"
+                branchName1="Branch 1"
+                branchName2="Branch 2"
+                branchName3="Branch 3"
+                branchOrder="[0,1,2]"
+                default3="true"
+                expression1="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;signatureStatus&quot;,&quot;displayName&quot;:&quot;signatureStatus&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/signatureStatus/&quot;,&quot;name&quot;:&quot;signatureStatus&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;SIGNED&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+                expression2="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;signatureStatus&quot;,&quot;displayName&quot;:&quot;signatureStatus&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/signatureStatus/&quot;,&quot;name&quot;:&quot;signatureStatus&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;ABORTED&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+                orSplit="true">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <set_variable
+                        jcr:created="{Date}2023-12-14T15:48:48.385-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Set value of variables"
+                        jcr:lastModified="{Date}2023-12-14T15:51:02.025-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Variable -Signed Status"
+                        sling:resourceType="cq/workflow/components/model/set_variable">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </set_variable>
+                    <set_variable_1053333
+                        jcr:created="{Date}2024-01-10T10:46:18.747-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Set value of variables"
+                        jcr:lastModified="{Date}2024-01-10T10:46:43.600-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Variable - PDF title"
+                        sling:resourceType="cq/workflow/components/model/set_variable"
+                        defaultValue="Signed Doc Title.pdf">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                            PROCESS_AUTO_ADVANCE="true"
+                            variableMappings="\{&quot;variableName&quot;:&quot;fileNetDocTitle&quot;,&quot;mappingType&quot;:&quot;LITERAL&quot;,&quot;mappingValue&quot;:&quot;Signed Doc Title.pdf&quot;}"/>
+                    </set_variable_1053333>
+                    <savefiletofilenet_co
+                        jcr:created="{Date}2024-01-09T16:36:11.928-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="An AEM workflow process component to save pdf file on FileNet"
+                        jcr:lastModified="{Date}2024-01-11T14:53:46.222-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Save a File to filenet"
+                        sling:resourceType="aflacapps/components/aflac_components/saveFileToFileNet">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            fileNetDocIDName="fileNetDocID_Signed"
+                            fileNetDocSaveStatus="fileNetDocSavedStatus_Signed"
+                            fileNetDocTitle="fileNetDocTitle_Signed"
+                            inDocName="signedPDF"
+                            PROCESS="com.aflac.core.services.FileNetWorkflowProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </savefiletofilenet_co>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <set_variable
+                        jcr:created="{Date}2023-12-14T15:51:12.025-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Set value of variables"
+                        jcr:lastModified="{Date}2024-01-11T17:28:38.592-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Variable- Aborted"
+                        sling:resourceType="cq/workflow/components/model/set_variable"
+                        defaultValue="[,true,,]">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                            PROCESS_AUTO_ADVANCE="true"
+                            variableMappings="\{&quot;variableName&quot;:&quot;signatureStatus&quot;,&quot;mappingType&quot;:&quot;EXPRESSION&quot;,&quot;mappingValue&quot;:&quot;{\\&quot;nodeName\\&quot;:\\&quot;ROOT\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;STATEMENT\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;CALC_EXPRESSION\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;VALUE_FIELD\\&quot;,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;,\\&quot;name\\&quot;:\\&quot;signatureStatus\\&quot;}},{\\&quot;nodeName\\&quot;:\\&quot;to\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;displayName\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;,\\&quot;displayPath\\&quot;:\\&quot;workflow_variables/signatureStatus/\\&quot;,\\&quot;name\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;parent\\&quot;:\\&quot;workflow_variables\\&quot;}}},{\\&quot;nodeName\\&quot;:\\&quot;When\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;CONDITIONORALWAYS\\&quot;,\\&quot;choice\\&quot;:null}]}}],\\&quot;isValid\\&quot;:true,\\&quot;enabled\\&quot;:true,\\&quot;version\\&quot;:1}&quot;}"/>
+                    </set_variable>
+                </_x0032_>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <set_variable_copy
+                        jcr:created="{Date}2023-12-14T15:51:12.025-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Set value of variables"
+                        jcr:lastModified="{Date}2024-01-11T17:28:23.062-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Variable- For Wet Sign"
+                        sling:resourceType="cq/workflow/components/model/set_variable"
+                        defaultValue="[,true,,]">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                            PROCESS_AUTO_ADVANCE="true"
+                            variableMappings="\{&quot;variableName&quot;:&quot;signatureStatus&quot;,&quot;mappingType&quot;:&quot;EXPRESSION&quot;,&quot;mappingValue&quot;:&quot;{\\&quot;nodeName\\&quot;:\\&quot;ROOT\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;STATEMENT\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;CALC_EXPRESSION\\&quot;,\\&quot;items\\&quot;:[{\\&quot;nodeName\\&quot;:\\&quot;VALUE_FIELD\\&quot;,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;,\\&quot;name\\&quot;:\\&quot;signatureStatus\\&quot;}},{\\&quot;nodeName\\&quot;:\\&quot;to\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;EXPRESSION\\&quot;,\\&quot;choice\\&quot;:{\\&quot;nodeName\\&quot;:\\&quot;COMPONENT\\&quot;,\\&quot;value\\&quot;:{\\&quot;id\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;displayName\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;type\\&quot;:\\&quot;STRING\\&quot;,\\&quot;displayPath\\&quot;:\\&quot;workflow_variables/signatureStatus/\\&quot;,\\&quot;name\\&quot;:\\&quot;signatureStatus\\&quot;,\\&quot;parent\\&quot;:\\&quot;workflow_variables\\&quot;}}},{\\&quot;nodeName\\&quot;:\\&quot;When\\&quot;,\\&quot;value\\&quot;:null},{\\&quot;nodeName\\&quot;:\\&quot;CONDITIONORALWAYS\\&quot;,\\&quot;choice\\&quot;:null}]}}],\\&quot;isValid\\&quot;:true,\\&quot;enabled\\&quot;:true,\\&quot;version\\&quot;:1}&quot;}"/>
+                    </set_variable_copy>
+                </_x0033_>
+            </or>
+        </flow>
+        <variables jcr:primaryType="nt:unstructured">
+            <unsignedPDF
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="unsignedPDF"
+                type="com.adobe.aemfd.docmanager.Document"/>
+            <signatureStatus
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="Not Set"
+                name="signatureStatus"
+                type="java.lang.String"/>
+            <signedPDF
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="signedPDF"
+                type="com.adobe.aemfd.docmanager.Document"/>
+            <strFormId
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="C03204_Dynamic XML Form.pdf"
+                description="This is the form Id that is to be picked up from CRX repository. Default value is kept as C03204_Dynamic XML Form.pdf"
+                name="strFormId"
+                type="java.lang.String"/>
+            <strAbsolutePathOfFormIdFolder
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="/content/dam/formsanddocuments/xdp"
+                description="This is the path of the folder where all forms are kept."
+                name="strAbsolutePathOfFormIdFolder"
+                type="java.lang.String"/>
+            <strAbsoluteFormIdPath
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="/var/fd/dashboard/payload/server0/2023-12-07_6/Y6VA3CCEWC4GFNZFYFVVHKZZLY_4/C03204_Dynamic XML Form.pdf"
+                name="strAbsoluteFormIdPath"
+                type="java.lang.String"/>
+            <inputXML
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="inputXML"
+                type="org.w3c.dom.Document"/>
+            <strSender1EmailId
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="mrsunilg@gmail.com"
+                name="strSender1EmailId"
+                type="java.lang.String"/>
+            <strContractTitle
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="Test Contract &lt;Not Valid>"
+                description="This title will appear as title when document is sent in email for signature."
+                name="strContractTitle"
+                type="java.lang.String"/>
+            <strSignedPDFName
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="SignedPDF.pdf"
+                description="This is the name of the document will be used and saved with"
+                name="strSignedPDFName"
+                type="java.lang.String"/>
+            <strEsignature
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="YES"
+                name="strEsignature"
+                type="java.lang.String"/>
+            <inputXML1
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="inputXML1"
+                type="org.w3c.dom.Document"/>
+            <masterAppXml
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                description="This variable will be set by xml transform component for master xml data"
+                name="masterAppXml"
+                type="org.w3c.dom.Document"/>
+            <fileNetDocID
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="Not Set"
+                name="fileNetDocID"
+                type="java.lang.String"/>
+            <fileNetDocSavedStatus
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="Not Set"
+                name="fileNetDocSavedStatus"
+                type="java.lang.String"/>
+            <fileNetDocTitle
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                defaultValue="title is to be set"
+                name="fileNetDocTitle"
+                type="java.lang.String"/>
+        </variables>
+    </jcr:content>
+</jcr:root>

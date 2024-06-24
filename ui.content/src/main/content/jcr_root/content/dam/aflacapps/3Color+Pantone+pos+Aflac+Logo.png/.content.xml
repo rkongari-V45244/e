@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="28d9e303-cce7-4264-9c87-734544453898">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-12-12T13:10:59.717+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}32"
+            dam:extracted="{Date}2022-12-12T13:10:57.025+05:30"
+            dam:Fileformat="PNG"
+            dam:MIMEtype="image/png"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}25"
+            dam:Physicalheightininches="{Decimal}25.78740119934082"
+            dam:Physicalwidthindpi="{Long}25"
+            dam:Physicalwidthininches="{Decimal}80.62992095947266"
+            dam:Progressive="no"
+            dam:sha1="8378e49c4d165be75f946b6780d980eda7b85ac3"
+            dam:size="{Long}408004"
+            dc:format="image/png"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}655"
+            tiff:ImageWidth="{Long}2048"/>
+        <related jcr:primaryType="nt:unstructured"/>
+        <usages
+            dam:score="{Long}1"
+            jcr:primaryType="nt:unstructured"
+            usedBy="[aem]">
+            <aem
+                jcr:primaryType="nt:unstructured"
+                count="{Long}1"
+                lastUsed="{Date}2022-07-30T19:03:09.501+05:30"/>
+        </usages>
+    </jcr:content>
+</jcr:root>

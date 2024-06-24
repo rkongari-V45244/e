@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="5cd90253-6b0f-455a-9dc0-7663b4f274a7">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:52:23.686+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Author="Cindy Lama"
+            dam:extracted="{Date}2023-09-18T19:52:19.782+05:30"
+            dam:numPages="{Long}1"
+            dam:Physicalheightininches="{Decimal}11.0"
+            dam:Physicalwidthininches="{Decimal}8.5"
+            dam:sha1="7ef8fef032730e44d2f61014225386d9fd88dfd1"
+            dam:size="{Long}46213"
+            dc:creator="[Cindy Lama]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:format="application/pdf"
+            dc:title="C00502MN LHGA"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="C00502MN LHGA"
+            xmp:CreateDate="{Date}2023-09-07T23:27:09.000+05:30"
+            xmp:CreatorTool="Microsoft Word"
+            xmpMM:DocumentID="uuid:E2537A81-4D54-4D8C-9EAD-D367475430E9"
+            xmpMM:InstanceID="uuid:E2537A81-4D54-4D8C-9EAD-D367475430E9"
+            xmp:ModifyDate="{Date}2023-09-07T23:27:09.000+05:30"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

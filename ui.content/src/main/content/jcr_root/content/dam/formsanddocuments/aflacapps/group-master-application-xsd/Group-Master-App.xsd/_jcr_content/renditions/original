@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+	targetNamespace="http://www.aflac.com/GroupMasterApplication"
+	elementFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.aflac.com/GroupMasterApplication">
+
+	<complexType name="empAgeRange">
+		<sequence>
+			<element name="range">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Under Age"></enumeration>
+						<enumeration value="Between Age"></enumeration>
+						<enumeration value="Atleast Age"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="age" minOccurs="0" maxOccurs="1" type="int">
+			</element>
+			<element name="minAge" type="int" minOccurs="0" maxOccurs="1"></element>
+			<element name="maxAge" type="int" minOccurs="0" maxOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="eligibilityReq">
+		<sequence>
+			<element name="empType">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Full Time"></enumeration>
+						<enumeration value="Part Time"></enumeration>
+						<enumeration value="Full and Part Time"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="empAgeRange" type="tns:empAgeRange"></element>
+			<element name="exception" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="100"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="spouse" type="tns:spouse"></element>
+			<element name="other">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="200"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="class" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="P"></enumeration>
+						<enumeration value="A"></enumeration>
+						<enumeration value="B"></enumeration>
+						<enumeration value="C"></enumeration>
+						<enumeration value="E"></enumeration>
+						<enumeration value="F"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+
+
+	<complexType name="groupMasterData">
+		<sequence>
+			<element name="groupProposalNo" type="string"></element>
+			<element name="coverageEffectiveDate" type="date"></element>
+			<!--<element name="situsState" type="string"></element>-->
+			<element name="organizationName">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="50"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="certificateHolder">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Employee"></enumeration>
+						<enumeration value="Associate"></enumeration>
+						<enumeration value="Member"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="policyHolders">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Employee"></enumeration>
+						<enumeration value="Union"></enumeration>
+						<enumeration value="Association"></enumeration>
+						<enumeration value="PEO"></enumeration>
+						<enumeration value="Trust"></enumeration>
+						<enumeration value="MEWA"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="employmentPeriod" type="string"></element>
+			<element name="state">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="25"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="city">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="25"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="formID">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="25"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="eligibleEesCount">
+				<simpleType>
+					<restriction base="int"></restriction>
+				</simpleType>
+			</element>
+            <element name="productOfferedList" type="tns:productOfferedList"></element>
+            <element name="generalRequirement"
+				type="tns:generalRequirement">
+			</element>
+			<element name="groupAccident" type="tns:groupAccident"
+				minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="groupCriticalIllness"
+				type="tns:groupCriticalIllness" minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="groupHospitalIndemnity"
+				type="tns:groupHospitalIndemnity" minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="groupDental" type="tns:groupDental"
+				minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="groupDisabilityIncome"
+				type="tns:groupDisabilityIncome" minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="groupTermLife" type="tns:groupTermLife"
+				minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="groupWholeLife" type="tns:groupWholeLife"
+				minOccurs="0" maxOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+
+
+
+
+
+	<complexType name="product">
+		<sequence>
+			<element name="productId">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="35"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="productName">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="35"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="rateGuaranteeLength">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="25"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="percentageByEmployee">
+				<simpleType>
+					<restriction base="int"></restriction>
+				</simpleType>
+			</element>
+			<element name="percentageByEmployer">
+				<simpleType>
+					<restriction base="int"></restriction>
+				</simpleType>
+			</element>
+			<element name="applicationType">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="New Application"></enumeration>
+						<enumeration
+							value="Change to Existing Aflac Policy">
+						</enumeration>
+						<enumeration value="Other"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="plan" type="string" minOccurs="0"
+				maxOccurs="1">
+			</element>
+			<element name="planOptions" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="1"></enumeration>
+						<enumeration value="2"></enumeration>
+						<enumeration value="3"></enumeration>
+						<enumeration value="4"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="class" type="string" minOccurs="0"
+				maxOccurs="1">
+			</element>
+			<element name="classOptions" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="P"></enumeration>
+						<enumeration value="A"></enumeration>
+						<enumeration value="B"></enumeration>
+						<enumeration value="C"></enumeration>
+						<enumeration value="E"></enumeration>
+						<enumeration value="F"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="nfo" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Automatic Premium Loan"></enumeration>
+						<enumeration value="Extended Term Insurance"></enumeration>
+						<enumeration
+							value="Reduced-Paid Up Insurance">
+						</enumeration>
+						<enumeration
+							value="Cash Surrender Value (CSV)">
+						</enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="eliminationPeriod" type="string"
+				minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="benefitPeriod" type="string" minOccurs="0"
+				maxOccurs="1">
+			</element>
+			<element name="policyInforce" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Yes"></enumeration>
+						<enumeration value="No"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="minNoEmpInforcePolicy" type="int"></element>
+			<element name="incomeReplacementPercentage" type="int"
+				minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="other" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="200"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="aflacGroupNumber" minOccurs="0"
+				maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="50"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="productProvisionCoverageType">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="35"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="productSeries">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="35"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="productProvisionPortabilityType">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="35"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="productCoverages"
+				type="tns:productCoverages">
+			</element>
+            <element name="eligibilityReq" type="tns:eligibilityReq"></element>
+			<element name="existingPolicy" type="tns:existingPolicy"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="productCoverage">
+		<sequence>
+			<element name="productCoverageName" type="string"></element>
+			<element name="productCoverageLevel" type="string"></element>
+		</sequence>
+	</complexType>
+
+
+	<complexType name="productCoverages">
+		<sequence>
+			<element name="productCoverage" type="tns:productCoverage"
+				maxOccurs="unbounded" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="generalRequirement">
+		<sequence>
+			<element name="workingHoursPerWeek">
+				<simpleType>
+					<restriction base="int"></restriction>
+				</simpleType>
+			</element>
+			<element name="startDate">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="1st of the Month following">
+						</enumeration>
+						<enumeration value="None"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="numberOfPerUnit">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="25"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="periodBasis">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Days"></enumeration>
+						<enumeration value="Weeks"></enumeration>
+						<enumeration value="Months"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="minimumEnrolledEmployee">
+				<simpleType>
+					<restriction base="int"></restriction>
+				</simpleType>
+			</element>
+			<element name="numberOfEligibleEmployee">
+				<simpleType>
+					<restriction base="int"></restriction>
+				</simpleType>
+			</element>
+			<element name="otherRequirements">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="200"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="spouse">
+		<sequence>
+			<element name="isEligible">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Yes"></enumeration>
+						<enumeration value="No"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="empAgeRange" type="tns:empAgeRange"
+				minOccurs="0" maxOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="existingPolicy">
+		<sequence>
+			<element name="policyExist">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Yes"></enumeration>
+						<enumeration value="No"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="policyNumber" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="25"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="policyCarrier" minOccurs="0" maxOccurs="1">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1"></minLength>
+						<maxLength value="25"></maxLength>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="groupAccident">
+		<sequence>
+			<element name="product" type="tns:product"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="groupCriticalIllness">
+		<sequence>
+			<element name="product" type="tns:product"></element>
+		</sequence>
+	</complexType>
+
+
+	<complexType name="groupHospitalIndemnity">
+		<sequence>
+			<element name="product" type="tns:product"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="groupDental">
+		<sequence>
+			<element name="product" type="tns:product"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="groupDisabilityIncome">
+		<sequence>
+			<element name="product" type="tns:product"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="groupTermLife">
+		<sequence>
+			<element name="product" type="tns:product"></element>
+			<element name="exemptEmployee">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Yes"></enumeration>
+						<enumeration value="No"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="activelyAtWork" type="tns:activelyAtWork"
+				minOccurs="0" maxOccurs="1">
+			</element>
+			<element name="waitingPeriod" type="tns:waitingPeriod"
+				minOccurs="0" maxOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="groupWholeLife">
+		<sequence>
+			<element name="product" type="tns:product"></element>
+			<element name="planFeatures" type="tns:planFeatures"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="activelyAtWork">
+		<sequence>
+			<element name="activelyAtWorkHours" type="int"></element>
+			<element name="activelyAtWorkPeriod">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="day"></enumeration>
+						<enumeration value="week"></enumeration>
+						<enumeration value="month"></enumeration>
+						<enumeration value="year"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="activeAtWorkTable"
+				type="tns:activeAtWorkTable" maxOccurs="unbounded" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="activeAtWorkTable">
+		<sequence>
+			<element name="activeAtWorkTableData"
+				type="tns:activeAtWorkTableData" maxOccurs="unbounded" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="activeAtWorkTableData">
+		<sequence>
+			<element name="className" type="string"></element>
+			<element name="activeWorkHours" type="string"></element>
+			<element name="period">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="day"></enumeration>
+						<enumeration value="week"></enumeration>
+						<enumeration value="month"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="activeEmployement">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="30"></enumeration>
+						<enumeration value="60"></enumeration>
+						<enumeration value="90"></enumeration>
+						<enumeration value="120"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="waitingPeriod">
+		<sequence>
+			<element name="exemptEmployee">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="Yes"></enumeration>
+						<enumeration value="No"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="waitingPeriodTable"
+				type="tns:waitingPeriodTable" minOccurs="0" maxOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+
+	<complexType name="waitingPeriodTable">
+		<sequence>
+			<element name="waitingPeriodTableData"
+				type="tns:waitingPeriodTableData" maxOccurs="unbounded"
+				minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="waitingPeriodTableData">
+		<sequence>
+			<element name="className" type="string"></element>
+			<element name="exemption" type="string"></element>
+			<element name="period">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="day"></enumeration>
+						<enumeration value="week"></enumeration>
+						<enumeration value="month"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+	<element name="groupMasterData" type="tns:groupMasterData"></element>
+
+	<complexType name="planFeature">
+		<sequence>
+			<element name="planFeatureName" type="string"></element>
+		</sequence>
+	</complexType>
+	
+    <complexType name="planFeatures">
+    	<sequence>
+    		<element name="planFeature" type="tns:planFeature" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="productOffered">
+    	<sequence>
+    		<element name="productNames" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="productOfferedList">
+    	<sequence>
+    		<element name="productOffered" type="tns:productOffered" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

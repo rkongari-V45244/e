@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="155da85e-755f-4cf0-8265-14c59e35ec26">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:55:58.051+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}6181"
+            dam:CharactersWithSpaces="{Long}7251"
+            dam:Company="Aflac"
+            dam:created="{Date}2015-06-10T15:14:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:55:57.952+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="Jessica Sinkler"
+            dam:Lines="{Long}51"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2019-02-13T15:30:00.000Z"
+            dam:Pages="{Long}4"
+            dam:Paragraphs="{Long}14"
+            dam:revision="{Long}10"
+            dam:ScaleCrop="false"
+            dam:sha1="eeafa3169707cd7049a9ac7d4891b7b44f6658c1"
+            dam:SharedDoc="false"
+            dam:size="{Long}49089"
+            dam:Template="Normal.dotm"
+            dam:TotalTime="{Long}27"
+            dam:variant="{Long}1"
+            dam:Words="{Long}1084"
+            dc:creator="[Elizabeth Goodall]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="KY C80000 Outline-Base HSA with HSB"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="KY C80000 Outline-Base HSA with HSB"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

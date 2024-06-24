@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="dc4dc50f-558b-449e-9301-114bedc89880">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:56:39.299+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Office Word"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:Characters="{Long}64"
+            dam:CharactersWithSpaces="{Long}73"
+            dam:Company="Aflac"
+            dam:created="{Date}2016-07-13T18:14:00.000Z"
+            dam:DocSecurity="{Long}0"
+            dam:extracted="{Date}2023-09-18T19:56:39.042+05:30"
+            dam:HeadingPairs="Title1"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}1"
+            dam:lastModifiedBy="LAdmin"
+            dam:Lines="{Long}1"
+            dam:LinksUpToDate="false"
+            dam:modified="{Date}2016-07-13T18:15:00.000Z"
+            dam:Pages="{Long}1"
+            dam:Paragraphs="{Long}1"
+            dam:revision="{Long}1"
+            dam:ScaleCrop="false"
+            dam:sha1="1ebae905c296def7d2d436a2517995152f483bc3"
+            dam:SharedDoc="false"
+            dam:size="{Long}25421"
+            dam:Template="Normal"
+            dam:TotalTime="{Long}1"
+            dam:variant="{Long}1"
+            dam:Words="{Long}10"
+            dc:creator="[LAdmin]"
+            dc:creator_xmpArrayType="rdf:Bag"
+            dc:format="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            dc:title="MA C20000 Specified Disease Disclosure Statement PLACE HOLDER"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="MA C20000 Specified Disease Disclosure Statement PLACE HOLDER"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

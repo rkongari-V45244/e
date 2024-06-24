@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:primaryType="rep:ACL">
+    <allow
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="app-aem-brochures"
+        rep:privileges="{Name}[jcr:read]"/>
+    <deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="app-aem-master-app-support"
+        rep:privileges="{Name}[jcr:read]"/>
+	<deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="app-aem-group-master-app"
+        rep:privileges="{Name}[jcr:read]"/>
+	<allow
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="app-aem-all"
+        rep:privileges="{Name}[jcr:read]"/>
+	<deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="app-aem-case-builder"
+        rep:privileges="{Name}[jcr:read]"/>
+	<deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="app-aem-compliance-maintenance"
+        rep:privileges="{Name}[jcr:read]"/>
+	<deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="app-aem-ee-form-maintenance"
+        rep:privileges="{Name}[jcr:read]"/>      
+</jcr:root>

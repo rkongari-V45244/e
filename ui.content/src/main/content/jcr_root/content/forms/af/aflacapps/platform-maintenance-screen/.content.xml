@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2023-11-29T16:05:25.321+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aflacapps/settings/wcm/templates/blank-af"
+        jcr:language="en"
+        jcr:lastModified="{Date}2021-03-24T18:22:20.809+05:30"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Platform Maintenance Screen"
+        sling:resourceType="fd/af/components/page2/aftemplatedpage">
+        <guideContainer
+            fd:version="1.1"
+            jcr:lastModified="{Date}2023-10-06T16:37:20.182+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideContainer"
+            _invokeSubmitActionSync="true"
+            actionType="fd/af/components/guidesubmittype/restendpoint"
+            autoSaveStartExpression="true"
+            autoSaveStrategyType="fd/af/components/actions/autosave/eventbased"
+            clientLibRef="aflacapps.base, cq.jquery.ui"
+            disableSwipeGesture="{Boolean}false"
+            dorTemplateRef="/content/dam/formsanddocuments/aflacapps/platform-maintenance-screen/jcr:content/renditions/dorTemplate"
+            dorType="generate"
+            enableAsyncSubmission="true"
+            enableFocusOnFirstField="{Boolean}true"
+            enableLayoutLayer="false"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="guide1"
+            schemaType="none"
+            textIsRich="true"
+            thankYouMessage="&lt;p>Thank you for Saving the Brochure Screen for .$(GroupEnrollmentPlatform)&lt;/p>&#xd;&#xa;"
+            thankYouOption="message"
+            themeRef="/content/dam/formsanddocuments-themes/aflacapps/aflaccasebuildtheme"
+            useExistingAF="false">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                mobileLayout="fd/af/layouts/mobile/step"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                cq:cssClass="guide-1695903724134"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Root Panel"
+                sling:resourceType="fd/af/components/rootPanel"
+                cssStyle=".guide-1695903724134 .guideGridFluidLayout{&#xa;&#xa;}&#xa;"
+                dorExcludeDescription="true"
+                dorExcludeTitle="true"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="{Boolean}true"
+                    toolbarPosition="Bottom"/>
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                    <guidebutton_copy_214
+                        cq:cssClass="guide-1701248975211"
+                        jcr:lastModified="{Date}2023-06-28T11:06:47.712+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Home"
+                        sling:resourceType="fd/af/components/guidebutton"
+                        cssStyle=".guide-1701248975211 button:not(.af-icon-button):hover{&#xa;color:#FFFFFF;&#xa;background:#666666;&#xa;&#xa;}&#xa;.guide-1701248975211 button:not(.af-icon-button),.guide-1701248975211 input[type='button']{&#xa;padding-top:10px;&#xa;padding-right:0px;&#xa;padding-bottom:10px;&#xa;padding-left:0px;&#xa;margin-top:5px;&#xa;color:#FFFFFF;&#xa;&#xa;}&#xa;.guide-1701248975211.guidebutton {&#xa;width:94px;&#xa;display:inline-block;&#xa;}&#xa;.guide-1701248975211.guidebutton button {&#xa;width:100%;&#xa;}&#xa;"
+                        dorExclusion="true"
+                        guideNodeClass="guideButton"
+                        name="homeButton"
+                        shortDescription="&lt;p>Back to Landing Page&lt;/p>&#xd;&#xa;"
+                        textIsRich="[true,true]"
+                        type="Button">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="11"
+                                width="1"/>
+                        </cq:responsive>
+                        <fd:rules
+                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.homeButton&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;homeButton&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;redirectHomePage&quot;\,&quot;displayName&quot;:&quot;redirectHomePage&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nredirectHomePage();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_button
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[padding-top:10px,padding-right:0px,padding-bottom:10px,padding-left:0px,margin-top:5px,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;94px&quot;\,&quot;display&quot;:&quot;inline-block&quot;}}\,&quot;button&quot;:{&quot;cssSelector&quot;:&quot;.guidebutton button&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;100%&quot;}}}},color:#FFFFFF]"
+                                default_x0023_default_x0023_ui="[display:inline-block,paddingLock:linkOff,paddingPopover:10px\, 0px\, 10px\, 0px,marginLock:linkOff,marginPopover:5px\, —\, —\, —,width:94px]"
+                                default_x0023_hover="[color:#FFFFFF,background:#666666]"
+                                default_x0023_hover_x0023_ui="[backgroundColor:#666666]"/>
+                        </style>
+                    </guidebutton_copy_214>
+                    <guideheader_copy_cop
+                        jcr:lastModified="{Date}2022-07-11T09:56:22.274+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Adaptive Form Header"
+                        sling:resourceType="fd/af/components/guideheader"
+                        name="header1657513582696">
+                        <guideimage
+                            cq:cssClass="guide-1657618101148"
+                            jcr:lastModified="{Date}2022-07-12T14:57:50.609+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Logo"
+                            sling:resourceType="fd/af/components/guideimage"
+                            altText="Company Name"
+                            css="logoImage"
+                            cssStyle="\0"
+                            fileName="3Color+Pantone+pos+Aflac+Logo.png"
+                            guideNodeClass="guideImage"
+                            imageRotate="0"
+                            name="logoImage">
+                            <style jcr:primaryType="nt:unstructured">
+                                <af_headerlogo
+                                    jcr:primaryType="nt:unstructured"
+                                    default_x0023_default="[]"/>
+                            </style>
+                            <file/>
+                        </guideimage>
+                        <guidetextdraw
+                            jcr:lastModified="{Date}2023-11-14T12:53:48.673+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/components/guidetextdraw"
+                            _value="&lt;p>Platform Profiles Data Maintenance Screen&lt;/p>&#xd;&#xa;"
+                            css="headerText"
+                            guideNodeClass="guideTextDraw"
+                            name="headerText"
+                            textIsRich="true"/>
+                    </guideheader_copy_cop>
+                    <panel_143536313
+                        cq:cssClass="guide-1695905807950"
+                        jcr:lastModified="{Date}2023-11-24T11:44:57.341+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Platform Profiles Data Maintenance Screen"
+                        sling:resourceType="fd/af/components/panel"
+                        cssStyle=".guide-1695905807950 .guideGridFluidLayout{&#xa;display:inline;&#xa;&#xa;}&#xa;"
+                        guideNodeClass="guidePanel"
+                        name="EnrollmentDetails"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidedropdownlist_1283356152
+                                cq:cssClass="guide-1695905696656"
+                                jcr:lastModified="{Date}2023-11-14T12:54:48.124+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Group Enrollment Platform"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1695905696656 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;display:inline-block;&#xa;&#xa;}&#xa;.guide-1695905696656 .textField input[type='text']{&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTextBox"
+                                name="GroupEnrollmentPlatform"
+                                options="[Ease=Ease,Benetrac=Benetrac,Selerix=Selerix]"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_textbox
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[display:inline-block]"/>
+                                    <af_textboxwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[font-weight:bold]"/>
+                                </style>
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.GroupEnrollmentPlatform&quot;\,&quot;type&quot;:&quot;TEXT FIELD|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;GroupEnrollmentPlatform&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:null}}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;fetchMaintenancePlatforms&quot;\,&quot;displayName&quot;:&quot;fetchMaintenancePlatforms&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nfetchMaintenancePlatforms();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidedropdownlist_1283356152>
+                            <guidebutton
+                                cq:cssClass="guide-1701069223946"
+                                jcr:lastModified="{Date}2023-11-27T11:51:48.337+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Fetch for Edit"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1701069223946 button:not(.af-icon-button),.guide-1701069223946 input[type='button']{&#xa;margin-top:35px;&#xa;color:ffffff;&#xa;&#xa;}&#xa;.guide-1701069223946 button .iconButton-label{&#xa;margin-top:35px;&#xa;z-index:1;&#xa;color:rgb(255,255,255);&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                enabled="{Boolean}false"
+                                guideNodeClass="guideButton"
+                                name="fetch"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="2"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.fetch&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;fetch&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;fetchPlatformMaintenanceData&quot;\,&quot;displayName&quot;:&quot;fetchPlatformMaintenanceData&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;name&quot;:&quot;platform&quot;\,&quot;description&quot;:&quot;platform&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.GroupEnrollmentPlatform&quot;\,&quot;displayName&quot;:&quot;Group Enrollment Platform&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Platform Profiles Data Maintenance Screen 1/Group Enrollment Platform/&quot;\,&quot;name&quot;:&quot;GroupEnrollmentPlatform&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.EnrollmentDetails&quot;}}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nfetchPlatformMaintenanceData(GroupEnrollmentPlatform.value);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.fetch&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;fetch&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;DISABLE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.vendorId&quot;\,&quot;displayName&quot;:&quot;Vendor ID&quot;\,&quot;type&quot;:&quot;FIELD&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Vendor ID/&quot;\,&quot;name&quot;:&quot;vendorId&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;DISABLE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.platformName&quot;\,&quot;displayName&quot;:&quot;Platform Name&quot;\,&quot;type&quot;:&quot;FIELD&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Platform Name/&quot;\,&quot;name&quot;:&quot;platformName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;DISABLE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.companyName&quot;\,&quot;displayName&quot;:&quot;Company Name&quot;\,&quot;type&quot;:&quot;FIELD&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Company Name/&quot;\,&quot;name&quot;:&quot;companyName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nvendorId.enabled = false;\\nplatformName.enabled = false;\\ncompanyName.enabled = false;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    fd:enabled="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;ACCESS_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.fetch&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;fetch&quot;}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.GroupEnrollmentPlatform&quot;\,&quot;displayName&quot;:&quot;Group Enrollment Platform&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Platform Profiles Data Maintenance Screen/Group Enrollment Platform/&quot;\,&quot;name&quot;:&quot;GroupEnrollmentPlatform&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.EnrollmentDetails&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;IS_NOT_EMPTY&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:null}}]}}\,{&quot;nodeName&quot;:&quot;Else&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;DONOTHING_OR_DISABLE&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;Disable&quot;\,&quot;value&quot;:null}}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ([null\,\\&quot;\\&quot;].indexOf(GroupEnrollmentPlatform.value) === -1) ) {\\n    true;\\n } else {\\n    false;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Enabled&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_button
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[margin-top:35px,color:ffffff]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:35px\, —\, —\, —]"/>
+                                    <af_buttontext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[margin-top:35px,z-index:1,color:rgb(255\,255\,255)]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:35px\, —\, —\, —]"/>
+                                </style>
+                            </guidebutton>
+                            <guidebutton_1218820764
+                                cq:cssClass="guide-1701069368914"
+                                jcr:lastModified="{Date}2023-11-27T11:54:32.116+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Delete Platform"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1701069368914 button .iconButton-label{&#xa;margin-top:35px;&#xa;z-index:1;&#xa;color:rgb(255,255,255);&#xa;&#xa;}&#xa;.guide-1701069368914 button:not(.af-icon-button),.guide-1701069368914 input[type='button']{&#xa;margin-top:35px;&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                enabled="{Boolean}false"
+                                guideNodeClass="guideButton"
+                                name="delete"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="2"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.delete&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;delete&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;deletePlatform&quot;\,&quot;displayName&quot;:&quot;deletePlatform&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ndeletePlatform();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    fd:enabled="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;ACCESS_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.delete&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;delete&quot;}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.GroupEnrollmentPlatform&quot;\,&quot;displayName&quot;:&quot;Group Enrollment Platform&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Platform Profiles Data Maintenance Screen/Group Enrollment Platform/&quot;\,&quot;name&quot;:&quot;GroupEnrollmentPlatform&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.EnrollmentDetails&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;IS_NOT_EMPTY&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:null}}]}}\,{&quot;nodeName&quot;:&quot;Else&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;DONOTHING_OR_DISABLE&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;Disable&quot;\,&quot;value&quot;:null}}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ([null\,\\&quot;\\&quot;].indexOf(GroupEnrollmentPlatform.value) === -1) ) {\\n    true;\\n } else {\\n    false;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Enabled&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_buttontext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[margin-top:35px,z-index:1,color:rgb(255\,255\,255)]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:35px\, —\, —\, —]"/>
+                                    <af_button
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[margin-top:35px]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:35px\, —\, —\, —]"/>
+                                </style>
+                            </guidebutton_1218820764>
+                            <guidebutton_2028915185
+                                cq:cssClass="guide-1701069491122"
+                                jcr:lastModified="{Date}2023-11-27T11:54:55.276+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Add New Platform"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1701069491122 button:not(.af-icon-button),.guide-1701069491122 input[type='button']{&#xa;margin-top:35px;&#xa;&#xa;}&#xa;.guide-1701069491122 button .iconButton-label{&#xa;color:rgb(255,255,255);&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="add"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="2"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.add&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;add&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;addPlatform&quot;\,&quot;displayName&quot;:&quot;addPlatform&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\naddPlatform();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.add&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;add&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;ENABLE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.vendorId&quot;\,&quot;displayName&quot;:&quot;Vendor ID&quot;\,&quot;type&quot;:&quot;FIELD&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Vendor ID/&quot;\,&quot;name&quot;:&quot;vendorId&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;ENABLE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.platformName&quot;\,&quot;displayName&quot;:&quot;Platform Name&quot;\,&quot;type&quot;:&quot;FIELD&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Platform Name/&quot;\,&quot;name&quot;:&quot;platformName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;ENABLE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.companyName&quot;\,&quot;displayName&quot;:&quot;Company Name&quot;\,&quot;type&quot;:&quot;FIELD&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Company Name/&quot;\,&quot;name&quot;:&quot;companyName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails&quot;\,&quot;displayName&quot;:&quot;Platform Profiles Data Maintenance Screen&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Platform Profiles Data Maintenance Screen/&quot;\,&quot;name&quot;:&quot;EnrollmentDetails&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nvendorId.enabled = true;\\nplatformName.enabled = true;\\ncompanyName.enabled = true;\\nEnrollmentDetails.visible = false;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_button
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[margin-top:35px]"
+                                        default_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:35px\, —\, —\, —]"/>
+                                    <af_buttontext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:rgb(255\,255\,255)]"/>
+                                </style>
+                            </guidebutton_2028915185>
+                            <guidetextdraw_copy_c
+                                jcr:lastModified="{Date}2023-11-24T16:49:05.644+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>&lt;span class=&quot;greenColorText&quot;>&lt;b>Platform deleted successfully!&lt;/b>&lt;/span>&lt;/p>&#xd;&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="deleteMsg"
+                                textIsRich="true"
+                                visible="{Boolean}false"/>
+                            <guidetextdraw_copy
+                                jcr:lastModified="{Date}2023-11-24T16:58:13.292+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>&lt;span class=&quot;redColorText&quot;>&lt;b>Fail to delete Platform!&lt;/b>&lt;/span>&lt;/p>&#xd;&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="deleteFailMsg"
+                                textIsRich="true"
+                                visible="{Boolean}false"/>
+                            <guidetextdraw_copy_1136868504
+                                jcr:lastModified="{Date}2023-11-24T16:57:29.925+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>&lt;span class=&quot;redColorText&quot;>&lt;b>No data found for selected platform!&lt;/b>&lt;/span>&lt;/p>&#xd;&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="fetchFailMsg"
+                                textIsRich="true"
+                                visible="{Boolean}false"/>
+                        </items>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_responsivepanel
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[display:inline]"/>
+                        </style>
+                    </panel_143536313>
+                    <panel
+                        cq:cssClass="guide-1695903325595"
+                        jcr:lastModified="{Date}2023-11-14T16:38:12.628+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Fields Output"
+                        sling:resourceType="fd/af/components/panel"
+                        cssStyle=".guide-1695903325595 .guideTabbedPanelLayout .tab-navigators.tab-navigators-vertical{&#xa;&#xa;}&#xa;"
+                        enabled="{Boolean}true"
+                        guideNodeClass="guidePanel"
+                        name="outputFieldsPanel"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextbox
+                                cq:cssClass="guide-1701095187975"
+                                jcr:lastModified="{Date}2023-11-27T12:19:11.980+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Vendor ID"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1701095187975 [data-disabled='true'] .textField input[type='text']{&#xa;background:#cccccc;&#xa;&#xa;}&#xa;"
+                                enabled="{Boolean}true"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                name="vendorId"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_textboxwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_disabled="[background:#cccccc]"
+                                        default_x0023_disabled_x0023_ui="[backgroundColor:#cccccc]"/>
+                                </style>
+                            </guidetextbox>
+                            <guidetextbox_1911982128
+                                cq:cssClass="guide-1701095204393"
+                                jcr:lastModified="{Date}2023-11-27T12:19:21.477+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Platform Name"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1701095204393 .textField input[type='text']{&#xa;&#xa;}&#xa;.guide-1701095204393 [data-disabled='true'] .textField input[type='text']{&#xa;background:#cccccc;&#xa;&#xa;}&#xa;"
+                                enabled="{Boolean}true"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                name="platformName"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_textboxwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[]"
+                                        default_x0023_default_x0023_ui="[]"
+                                        default_x0023_disabled="[background:#cccccc]"
+                                        default_x0023_disabled_x0023_ui="[backgroundColor:#cccccc]"/>
+                                </style>
+                            </guidetextbox_1911982128>
+                            <guidetextbox_380935356
+                                cq:cssClass="guide-1701095214006"
+                                jcr:lastModified="{Date}2023-11-27T12:19:29.482+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Company Name"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1701095214006 .textField input[type='text']{&#xa;&#xa;}&#xa;.guide-1701095214006 [data-disabled='true'] .textField input[type='text']{&#xa;background:#cccccc;&#xa;&#xa;}&#xa;"
+                                enabled="{Boolean}true"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                name="companyName"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="5"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_textboxwidgetandtext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[]"
+                                        default_x0023_default_x0023_ui="[]"
+                                        default_x0023_disabled="[background:#cccccc]"
+                                        default_x0023_disabled_x0023_ui="[backgroundColor:#cccccc]"/>
+                                </style>
+                            </guidetextbox_380935356>
+                            <guidedropdownlist
+                                jcr:lastModified="{Date}2023-10-10T13:03:43.414+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Can ask health questions?"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                guideNodeClass="guideDropDownList"
+                                name="healthQues"
+                                options="[,Yes=Yes,No=No,No-Due to PHI=No-Due to PHI,Yes-with conditions=Yes-with conditions,Contact Integration=Contact Integration]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidedropdownlist>
+                            <guidetextbox_1957617813
+                                jcr:lastModified="{Date}2023-10-10T11:45:23.832+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Can capture SP separate from EE?"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                guideNodeClass="guideDropDownList"
+                                name="spSeparateFromEE"
+                                options="[,Yes=Yes,No=No,Contact Integration=Contact Integration]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidetextbox_1957617813>
+                            <guidecheckbox
+                                jcr:lastModified="{Date}2023-10-09T17:35:18.812+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Able to rate based on:"
+                                sling:resourceType="fd/af/components/guidecheckbox"
+                                alignment="guideFieldHorizontalAlignment"
+                                guideNodeClass="guideCheckBox"
+                                name="rateBased"
+                                options="[Coverage Effective Date=Coverage Effective Date,Application Sign Date=Application Sign Date,1st day of the Plan Year=1st day of the Plan Year,Contact Integration=Contact Integration]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="12"/>
+                                </cq:responsive>
+                            </guidecheckbox>
+                            <guidedropdownlist_338916893
+                                jcr:lastModified="{Date}2023-11-27T11:57:20.550+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Able to capture tobacco status?"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                alignment="guideFieldHorizontalAlignment"
+                                guideNodeClass="guideDropDownList"
+                                name="tobaccoStatus"
+                                options="[,Yes=Yes,No=No,Contact Integration=Contact Integration]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidedropdownlist_338916893>
+                            <guidedropdownlist_1781988881
+                                jcr:lastModified="{Date}2023-11-27T11:57:38.846+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Questions/Affirmation"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                alignment="guideFieldHorizontalAlignment"
+                                guideNodeClass="guideDropDownList"
+                                name="questionsAffirmation"
+                                options="[,Affirmation=Affirmation,Questions=Questions,Contact Integration=Contact Integration]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidedropdownlist_1781988881>
+                            <guidedropdownlist_1286414141
+                                jcr:lastModified="{Date}2023-11-27T11:50:33.450+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Age Rate Format"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                guideNodeClass="guideTextBox"
+                                name="ageRateFormat"
+                                options="[,Attained Age=Attained Age,Contact Integration=Contact Integration,Issue Age (Stacking/Buyup)=Issue Age (Stacking/Buyup),Issue Age (Re-rating)=Issue Age (Re-rating)]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidedropdownlist_1286414141>
+                            <guidetextbox_1387985044
+                                jcr:lastModified="{Date}2023-11-24T17:52:39.530+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Rate Per"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="ratePer"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidetextbox_1387985044>
+                            <guidedropdownlist_1610730780
+                                jcr:lastModified="{Date}2023-11-27T11:51:00.232+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Rate Calculation Method"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                guideNodeClass="guideTextBox"
+                                name="rateCalculationMethod"
+                                options="[,All - Monthly=All - Monthly,CI - Monthly=CI - Monthly,All - Pay Period=All - Pay Period,CI - Annual=CI - Annual,WL - Annual=WL - Annual,TL - Annual=TL - Annual,DI - Monthly=DI - Monthly,Else - Monthly=Else - Monthly]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidedropdownlist_1610730780>
+                            <guidedropdownlist_1681965785
+                                jcr:lastModified="{Date}2023-11-27T11:51:12.590+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="EDI File Format"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                guideNodeClass="guideDropDownList"
+                                name="ediFileFormat"
+                                options="[,CSV=CSV,XLS=XLS,TXT=TXT,XML=XML,Custom=Custom,Contact Integration=Contact Integration]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidedropdownlist_1681965785>
+                            <guidebutton_copy
+                                cq:cssClass="guide-1701071931152"
+                                jcr:lastModified="{Date}2023-11-27T11:24:39.355+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Reset"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1701071931152 button .iconButton-label{&#xa;color:rgb(255,255,255);&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="clear"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="1"/>
+                                </cq:responsive>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_buttontext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:rgb(255\,255\,255)]"/>
+                                </style>
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.clear&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;clear&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;clearAll&quot;\,&quot;displayName&quot;:&quot;clearAll&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CLEAR_VALUE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.EnrollmentDetails.GroupEnrollmentPlatform&quot;\,&quot;displayName&quot;:&quot;Group Enrollment Platform&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Platform Profiles Data Maintenance Screen/Group Enrollment Platform/&quot;\,&quot;name&quot;:&quot;GroupEnrollmentPlatform&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.EnrollmentDetails&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nclearAll();\\nGroupEnrollmentPlatform.value = null;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidebutton_copy>
+                            <guidebutton_2014057698
+                                cq:cssClass="guide-1701071951233"
+                                jcr:lastModified="{Date}2023-11-27T11:48:40.162+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Clear"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1701071951233 button .iconButton-label{&#xa;color:#FFFFFF;&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="restValues"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="1"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.restValues&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;restValues&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;clearValues&quot;\,&quot;displayName&quot;:&quot;clearValues&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nclearValues();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_buttontext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#FFFFFF]"/>
+                                </style>
+                            </guidebutton_2014057698>
+                            <guidebutton
+                                cq:cssClass="guide-1701071966834"
+                                jcr:lastModified="{Date}2023-11-27T12:16:43.892+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Save"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                cssStyle=".guide-1701071966834 button .iconButton-label{&#xa;color:#FFFFFF;&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                enabled="{Boolean}false"
+                                guideNodeClass="guideButton"
+                                name="save"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="1"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.save&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;save&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;savePlatform&quot;\,&quot;displayName&quot;:&quot;savePlatform&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsavePlatform();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    fd:enabled="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;ACCESS_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.save&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;save&quot;}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BOOLEAN_BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.vendorId&quot;\,&quot;displayName&quot;:&quot;Vendor ID&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Vendor ID/&quot;\,&quot;name&quot;:&quot;vendorId&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;IS_NOT_EMPTY&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:null}}]}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;AND&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BOOLEAN_BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.platformName&quot;\,&quot;displayName&quot;:&quot;Platform Name&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Platform Name/&quot;\,&quot;name&quot;:&quot;platformName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;IS_NOT_EMPTY&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:null}}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;AND&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.outputFieldsPanel.companyName&quot;\,&quot;displayName&quot;:&quot;Company Name&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Fields Output/Company Name/&quot;\,&quot;name&quot;:&quot;companyName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.outputFieldsPanel&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;IS_NOT_EMPTY&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:null}}]}\,&quot;nested&quot;:false}]}\,&quot;nested&quot;:false}]}}\,{&quot;nodeName&quot;:&quot;Else&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;DONOTHING_OR_DISABLE&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;Disable&quot;\,&quot;value&quot;:null}}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ([null\,\\&quot;\\&quot;].indexOf(vendorId.value) === -1)  &amp;&amp;  ([null\,\\&quot;\\&quot;].indexOf(platformName.value) === -1)  &amp;&amp;  ([null\,\\&quot;\\&quot;].indexOf(companyName.value) === -1) ) {\\n    true;\\n } else {\\n    false;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Enabled&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_buttontext
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#FFFFFF]"/>
+                                </style>
+                            </guidebutton>
+                            <guidetextdraw_copy
+                                jcr:lastModified="{Date}2023-11-24T16:49:31.502+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>&lt;span class=&quot;greenColorText&quot;>&lt;b>Data updated successfully!&lt;/b>&lt;/span>&lt;/p>&#xd;&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="updateMsg"
+                                textIsRich="true"
+                                visible="{Boolean}false"/>
+                            <guidetextdraw
+                                jcr:lastModified="{Date}2023-11-27T18:23:10.223+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>&lt;span class=&quot;redColorText&quot;>&lt;b>Fail to update data!&lt;/b>&lt;/span>&lt;/p>&#xd;&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="failMsg"
+                                textIsRich="true"
+                                visible="{Boolean}false"/>
+                        </items>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_tabsonleftnavgrp1
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[]"/>
+                        </style>
+                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                    </panel>
+                </items>
+                <style jcr:primaryType="nt:unstructured">
+                    <af_responsivepanel
+                        jcr:primaryType="nt:unstructured"
+                        default_x0023_default="[]"/>
+                </style>
+                <toolbar
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Toolbar"
+                    sling:resourceType="fd/af/components/toolbar"
+                    css="\0"
+                    guideNodeClass="guideToolbar"
+                    name="toolbar">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout"/>
+                    <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout"/>
+                </toolbar>
+            </rootPanel>
+            <signerInfo
+                jcr:primaryType="nt:unstructured"
+                firstSignerFormFiller="false"
+                workflowType="SEQUENTIAL">
+                <signer0
+                    jcr:primaryType="nt:unstructured"
+                    countryCode="undefined"
+                    countryCodeSource="undefined"
+                    delegateTo="undefined"
+                    email="undefined"
+                    emailSource="undefined"
+                    phone="undefined"
+                    phoneSource="undefined"
+                    recipientRole="undefined"
+                    securityOption="undefined"
+                    signerTitle="Signer One"/>
+            </signerInfo>
+            <view jcr:primaryType="nt:unstructured">
+                <print
+                    jcr:lastModified="{Date}2023-09-29T15:12:29.907+05:30"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/authoring/components/dor/dorProperties"
+                    metaTemplateRef="/libs/fd/af/dor/templates/defaultTemplate.xdp"/>
+            </view>
+            <autoSaveInfo jcr:primaryType="nt:unstructured"/>
+            <assets jcr:primaryType="nt:unstructured"/>
+        </guideContainer>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Save a File to FileNet - NEW"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <processcommon
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Common"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <basic
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        disabled="false"
+                                        fieldLabel="Title"
+                                        name="./jcr:title"/>
+                                    <description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        disabled="false"
+                                        fieldLabel="Description"
+                                        name="./jcr:description"/>
+                                </items>
+                            </basic>
+                            <advanced
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Advanced Settings"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <advance
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check if your handler will advance to the next step."
+                                        fieldLabel="Handler Advance"
+                                        name="./metaData/PROCESS_AUTO_ADVANCE"
+                                        text="Handler Advance"
+                                        value="true"/>
+                                </items>
+                            </advanced>
+                        </items>
+                    </column>
+                </items>
+            </processcommon>
+            <processargs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Arguments"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <arguments
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Please specify your requirements"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fileNetDocIDName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="INPUT -  Enter variable (type string) name to get the document ID returned from fileNet."
+                                        name="./metaData/fileNetDocIDName"
+                                        required="{Boolean}true"/>
+                                    <fileNetDocVarName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="OUTPUT - Enter variable (type List&lt;document>) name to store the list of documents returned from fileNet."
+                                        name="./metaData/fileNetDocVarName"
+                                        required="{Boolean}true"/>
+                                    <formIdsVarName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="OUTPUT - Enter variable (type List&lt;String>) name to store the list of formIds."
+                                        name="./metaData/formIdVarName"
+                                        required="{Boolean}true"/>
+                                    <fileNetAction
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="FileNet action"
+                                        name="./metaData/filenetAction"
+                                        required="{Boolean}true"
+                                        value="read"/>
+                                    <masterAppFormIDs
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel=" INPUT - Enter variable name to set the document TITLE of master app pdfs on FILENET."
+                                        name="./metaData/masterAppFormIdsVarName"
+                                        required="{Boolean}true"/>
+                                </items>
+                            </arguments>
+                        </items>
+                    </column>
+                </items>
+            </processargs>
+            <process
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"/>
+            <common
+                cq:hideOnEdit="true"
+                jcr:primaryType="nt:unstructured"/>
+        </items>
+    </content>
+</jcr:root>

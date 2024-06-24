@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3535fe34-e252-4235-a0c2-3c05e56a103d">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2023-09-18T19:54:15.375+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:ByteCount="{Long}315904"
+            dam:CodePage="{Long}1252"
+            dam:Company="CCIC"
+            dam:extracted="{Date}2023-09-18T19:54:15.286+05:30"
+            dam:LineCount="{Long}10"
+            dam:LinksDirty="False"
+            dam:ParCount="{Long}3"
+            dam:Scale="False"
+            dam:sha1="0d51f0054df5837b865606ad52b1479f01889775"
+            dam:size="{Long}332800"
+            dc:format="application/msword"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
